@@ -13,7 +13,7 @@ public class consultas {
 
     PreparedStatement sentencia;
     ResultSet resultado;
-    String query;
+    String query; 
     int nResultado = 0;
 
     public void AgProducto(int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
