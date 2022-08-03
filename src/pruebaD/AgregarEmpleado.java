@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+Daniel Andrés Cárdenas Alarcón
+Archivo .java para la ventana de agregar empleado
+27/06/22
  */
 package pruebaD;
 
