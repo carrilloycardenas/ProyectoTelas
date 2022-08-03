@@ -1,7 +1,12 @@
 /*
-Daniel Andrés Cárdenas Alarcón
-Archivo .java para la ventana de modificar cientes
-27/06/22
+ * Descripción: Ventana para modificar la información de un cliente ya registrado
+ * Fecha: 27 de Junio 2022
+ * Nombre de integrantes:
+ *  - Elizabeth Ramírez Lizárraga
+ *  - Alessandra Ramírez Lizárraga
+ *  - Elvira Josselin Estrada Lizárraga
+ *  - Daniel Andrés Cardenas Alarcón
+ *  - Jorge Luis Carrillo Cuevas
  */
 package pruebaD;
 
@@ -60,7 +65,6 @@ public class ModificarCliente extends javax.swing.JFrame {
         jPanel21 = new IconoInicio();
         jPanel24 = new IconoEmpleados();
         jButton2 = new javax.swing.JButton();
-        jPanel5 = new FondoUsuario();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -102,8 +106,7 @@ public class ModificarCliente extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Modificar cliente");
-        setSize(new java.awt.Dimension(940, 635));
+        setTitle("Tedemaz | Modificar cliente");
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -116,7 +119,7 @@ public class ModificarCliente extends javax.swing.JFrame {
         jLabel15.setText("Melissa Garza");
         barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(119, 119, 119));
         jLabel16.setText("25 Junio 2022");
         barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
@@ -163,7 +166,6 @@ public class ModificarCliente extends javax.swing.JFrame {
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
 
-        jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 180, 10));
 
@@ -230,11 +232,11 @@ public class ModificarCliente extends javax.swing.JFrame {
         jButton2.setFocusPainted(false);
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 22)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(21, 8, 79));
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(41, 22, 130));
         jLabel1.setText("Modificar Cliente");
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 22)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel2.setText("|  Clientes");
 
         jScrollPane1.setBorder(null);
@@ -250,14 +252,15 @@ public class ModificarCliente extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(550, 444));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel3.setText("Nombre:");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel4.setText("Apellidos:");
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 6, -1, -1));
 
+        jTextField2.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField2.setText("Garzas");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,83 +269,93 @@ public class ModificarCliente extends javax.swing.JFrame {
         });
         jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
 
+        jTextField3.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField3.setText("Melissa");
         jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 490, 20));
 
+        jTextField10.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField10.setText("Centro");
         jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 150, -1));
 
+        jTextField11.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField11.setText("Libertad");
         jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 150, -1));
 
-        jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
         jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel13.setText("Colonia:");
         jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
+        jTextField12.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField12.setText("13");
         jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, -1));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
 
+        jTextField13.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField13.setText("Mazatlán");
         jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 150, -1));
 
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
+        jTextField14.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField14.setText("Sinaloa");
         jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 118, -1));
 
-        jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, -1, -1));
 
+        jTextField15.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField15.setText("82000");
         jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
 
-        jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("CP:");
         jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, -1, -1));
 
         jSeparator3.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 490, 10));
 
-        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel21.setText("Telefonos");
         jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel22.setText("Números:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
+        jTextField16.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField16.setText("6692344351");
         jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 150, -1));
 
+        jTextField17.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField17.setText("Melissa");
         jPanel6.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 150, -1));
 
-        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel23.setText("Nombre de dueño:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
 
+        jTextField18.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField18.setText("Empleada");
         jPanel6.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 150, -1));
 
-        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel24.setText("Parentesco: ");
         jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
 
@@ -351,6 +364,7 @@ public class ModificarCliente extends javax.swing.JFrame {
         jLabel25.setText("Agregar teléfono");
         jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, -1, -1));
 
+        jTextField19.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         jTextField19.setText("melissa@gmail.com");
         jTextField19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -359,11 +373,11 @@ public class ModificarCliente extends javax.swing.JFrame {
         });
         jPanel6.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 486, -1));
 
-        jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel26.setText("Direccion de correo:");
         jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel27.setText("Correos");
         jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
@@ -404,9 +418,9 @@ public class ModificarCliente extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jPanel6);
 
         jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
+        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton10.setForeground(new java.awt.Color(21, 8, 79));
-        jButton10.setText("<  Guardar");
+        jButton10.setText("Guardar cambios");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -417,26 +431,24 @@ public class ModificarCliente extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(barraSup, javax.swing.GroupLayout.PREFERRED_SIZE, 1020, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(barraSup, javax.swing.GroupLayout.PREFERRED_SIZE, 1020, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton10)
+                        .addGap(200, 200, 200))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
                                 .addComponent(jLabel1)
-                                .addGap(9, 9, 9)
+                                .addGap(18, 18, 18)
                                 .addComponent(jLabel2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton10)
-                        .addGap(9, 9, 9))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(133, 133, 133))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -445,18 +457,15 @@ public class ModificarCliente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                        .addGap(36, 36, 36)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton10)
-                        .addGap(38, 38, 38))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -582,7 +591,6 @@ public class ModificarCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

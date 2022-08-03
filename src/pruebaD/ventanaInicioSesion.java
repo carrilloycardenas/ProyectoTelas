@@ -1,6 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+Descripción: Ventana para iniciar sesión en la interfaz. Avance del proyecto para el corte 2.
+* Fecha: 27 de Junio 2022
+ * Nombre de integrantes:
+ *  - Elizabeth Ramírez Lizárraga
+ *  - Alessandra Ramírez Lizárraga
+ *  - Elvira Josselin Estrada Lizárraga
+ *  - Daniel Andrés Cardenas Alarcón
+ *  - Jorge Luis Carrillo Cuevas
  */
 package pruebaD;
 
@@ -55,24 +61,20 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setSize(new java.awt.Dimension(940, 635));
+        setTitle("Tedemaz | Iniciar sesión");
 
         fondo.setBackground(new java.awt.Color(38, 18, 137));
         fondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setOpaque(false);
 
-        txtUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtUsuario.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        txtUsuario.setForeground(new java.awt.Color(0, 0, 0));
         txtUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(38, 18, 137)));
 
         lblUsuarioIS.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblUsuarioIS.setForeground(new java.awt.Color(0, 0, 0));
         lblUsuarioIS.setText("Usuario");
 
         lblContraIS.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        lblContraIS.setForeground(new java.awt.Color(0, 0, 0));
         lblContraIS.setText("Contraseña");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -86,13 +88,11 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
             .addGap(0, 66, Short.MAX_VALUE)
         );
 
-        txtContraIS.setBackground(new java.awt.Color(255, 255, 255));
         txtContraIS.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        txtContraIS.setForeground(new java.awt.Color(0, 0, 0));
         txtContraIS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(38, 18, 137)));
 
         jButton1.setBackground(new java.awt.Color(38, 18, 137));
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Entrar");
         jButton1.setBorderPainted(false);
@@ -135,17 +135,17 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        fondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 330, 410));
+        fondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 330, 410));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(fondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(fondo, javax.swing.GroupLayout.DEFAULT_SIZE, 857, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(fondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(fondo, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
         );
 
         pack();
@@ -281,14 +281,17 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
             this.radius = radius;
         }
 
+        @Override
         public Insets getBorderInsets(Component c) {
             return new Insets(this.radius+1, this.radius+1, this.radius+2, this.radius);
         }
 
+        @Override
         public boolean isBorderOpaque() {
             return true;
         }
 
+        @Override
         public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
             g.drawRoundRect(x, y, width-1, height-1, radius, radius);
         }

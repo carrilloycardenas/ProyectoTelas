@@ -1,6 +1,6 @@
 /*
-Descripción: Ventana para agregar productos a la base de datos. Avance del proyecto para el corte 2.
- * Fecha: 27 de Junio 2022
+Descripción: Ventana para modificar un producto ya registrado. Avance del proyecto para el corte 2.
+* Fecha: 27 de Junio 2022
  * Nombre de integrantes:
  *  - Elizabeth Ramírez Lizárraga
  *  - Alessandra Ramírez Lizárraga
@@ -8,7 +8,6 @@ Descripción: Ventana para agregar productos a la base de datos. Avance del proy
  *  - Daniel Andrés Cardenas Alarcón
  *  - Jorge Luis Carrillo Cuevas
  */
-
 package pruebaD;
 
 import java.awt.Color;
@@ -17,15 +16,13 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-public class ventanaAgProducto extends javax.swing.JFrame {
+public class ventanaModProducto extends javax.swing.JFrame {
 
     /**
      * Creates new form ventanaInicio
      */
-    public ventanaAgProducto() {
+    public ventanaModProducto() {
         initComponents();
-        // Ya que no se puede cambiar el fondo de estos componentes desde las propiedades
-        // se hizo el cambio desde el constructor de la ventana
         txtStock.setBackground(Color.white);
         txtStock.setForeground(Color.blue);
         txtPrecio.setBackground(Color.white);
@@ -92,7 +89,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         btnGuardarProducto = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tedemaz | Agregar productos");
+        setTitle("Tedemaz | Modificar productos");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
@@ -230,28 +227,23 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 19)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(38, 18, 137));
-        jLabel2.setText("Agregar producto");
+        jLabel2.setText("Modificar producto");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 19)); // NOI18N
         jLabel3.setText("| Productos");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 120, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, -1, -1));
 
         btnEliminarProducto.setBackground(new java.awt.Color(255, 255, 255));
         btnEliminarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnEliminarProducto.setForeground(new java.awt.Color(189, 0, 0));
-        btnEliminarProducto.setText("Cancelar");
+        btnEliminarProducto.setText("Eliminar producto");
         btnEliminarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
         btnEliminarProducto.setContentAreaFilled(false);
         btnEliminarProducto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarProductoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnEliminarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, 130, 30));
+        jPanel1.add(btnEliminarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 120, 150, 30));
 
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel4.setText("Nombre*");
@@ -333,10 +325,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         btnGuardarProducto.setBackground(new java.awt.Color(181, 194, 254));
         btnGuardarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnGuardarProducto.setForeground(new java.awt.Color(38, 18, 137));
-        btnGuardarProducto.setText("Agregar");
+        btnGuardarProducto.setText("Guardar cambios");
         btnGuardarProducto.setBorderPainted(false);
         btnGuardarProducto.setFocusPainted(false);
-        jPanel1.add(btnGuardarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 550, 130, 40));
+        jPanel1.add(btnGuardarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 550, 160, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -346,12 +338,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
-        ventanaProductos1 abrir= new ventanaProductos1();
-        abrir.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnEliminarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -370,23 +356,21 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaModProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaModProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaModProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaModProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventanaAgProducto().setVisible(true);
+                new ventanaModProducto().setVisible(true);
             }
         });
     }

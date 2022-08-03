@@ -1,7 +1,12 @@
 /*
-Daniel Andrés Cárdenas Alarcón
-Archivo .java para la ventana de agregar proveedor
-27/06/22
+ * Descripción: Ventana para agregar proveedores
+ * Fecha: 27 de Junio 2022
+ * Nombre de integrantes:
+ *  - Elizabeth Ramírez Lizárraga
+ *  - Alessandra Ramírez Lizárraga
+ *  - Elvira Josselin Estrada Lizárraga
+ *  - Daniel Andrés Cardenas Alarcón
+ *  - Jorge Luis Carrillo Cuevas
  */
 package pruebaD;
 
@@ -60,7 +65,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
-        jPanel5 = new FondoUsuario();
+        jPanel5 = new FotoProveedor();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -98,10 +103,12 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jPanel10 = new addIcon();
         jPanel11 = new addIcon();
         jButton10 = new javax.swing.JButton();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Agregar proveedor");
-        setSize(new java.awt.Dimension(940, 635));
+        setTitle("Tedemaz | Agregar proveedor");
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -114,7 +121,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel15.setText("Melissa Garza");
         barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(119, 119, 119));
         jLabel16.setText("25 Junio 2022");
         barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
@@ -152,7 +159,6 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
 
-        jSeparator1.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 180, 10));
 
@@ -228,11 +234,11 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 20, 20));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 22)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(21, 8, 79));
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(41, 22, 130));
         jLabel1.setText("Agregar proveedor");
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 22)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel2.setText("|  Proveedores");
 
         jScrollPane1.setBorder(null);
@@ -248,7 +254,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jPanel6.setPreferredSize(new java.awt.Dimension(550, 444));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel3.setText("Nombre:");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
         jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
@@ -258,57 +264,57 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 150, -1));
         jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 150, -1));
 
-        jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
         jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel13.setText("Colonia:");
         jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
         jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 150, -1));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
         jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
 
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
         jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 118, -1));
 
-        jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, -1, -1));
         jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 87, -1));
 
-        jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("CP:");
         jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, -1, -1));
 
         jSeparator3.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 490, 10));
 
-        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel21.setText("Telefonos");
         jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel22.setText("Números:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
         jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 150, -1));
         jPanel6.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 150, -1));
 
-        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel23.setText("Nombre de dueño:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, -1, -1));
         jPanel6.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 150, -1));
 
-        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel24.setText("Parentesco: ");
         jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
 
@@ -324,11 +330,11 @@ public class AgregarProveedor extends javax.swing.JFrame {
         });
         jPanel6.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 486, -1));
 
-        jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel26.setText("Direccion de correo:");
         jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
 
-        jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 15)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel27.setText("Correos");
         jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, -1));
 
@@ -369,12 +375,30 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jPanel6);
 
         jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
+        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton10.setForeground(new java.awt.Color(21, 8, 79));
-        jButton10.setText("<  Agregar");
+        jButton10.setText("Agregar");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
+            }
+        });
+
+        jLabel28.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel28.setText(" Editar foto");
+
+        jLabel29.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel29.setText("Eliminar");
+
+        jButton11.setBackground(new java.awt.Color(181, 194, 254));
+        jButton11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(21, 8, 79));
+        jButton11.setText("Cancelar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
             }
         });
 
@@ -387,19 +411,27 @@ public class AgregarProveedor extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel1)
-                        .addGap(9, 9, 9)
-                        .addComponent(jLabel2))
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel28)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel29))
+                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel2))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 30, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton10)
-                        .addGap(9, 9, 9))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(219, 219, 219)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(91, 91, 91))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -409,17 +441,23 @@ public class AgregarProveedor extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabel29)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton10)
-                        .addGap(38, 38, 38))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(22, 22, 22))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -449,6 +487,12 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField19ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        /*ventanaVerEmpleado abrir= new ventanaVerEmpleado();
+        abrir.setVisible(true);
+        this.setVisible(false);*/
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -492,6 +536,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private javax.swing.JPanel barraSup;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -518,6 +563,8 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JPanel jPanel1;
@@ -640,13 +687,13 @@ public class AgregarProveedor extends javax.swing.JFrame {
 
     }
 
-    class FondoEmpleados extends JPanel {
+    class FotoProveedor extends JPanel {
 
         private Image imagen;
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/workerIcon.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/pruebaD/fotoProveedores.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);

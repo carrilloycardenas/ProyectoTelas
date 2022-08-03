@@ -1,6 +1,6 @@
 /*
-Descripción: Ventana para agregar productos a la base de datos. Avance del proyecto para el corte 2.
- * Fecha: 27 de Junio 2022
+Descripción: Ventana para agregar stock a los productos ya registrados. Avance del proyecto para el corte 2.
+* Fecha: 27 de Junio 2022
  * Nombre de integrantes:
  *  - Elizabeth Ramírez Lizárraga
  *  - Alessandra Ramírez Lizárraga
@@ -8,7 +8,6 @@ Descripción: Ventana para agregar productos a la base de datos. Avance del proy
  *  - Daniel Andrés Cardenas Alarcón
  *  - Jorge Luis Carrillo Cuevas
  */
-
 package pruebaD;
 
 import java.awt.Color;
@@ -17,20 +16,17 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-public class ventanaAgProducto extends javax.swing.JFrame {
+public class ventanaAgStock extends javax.swing.JFrame {
+
+    String textoDesc = "<html><body>Tela metalizada color verde con <br> acabado inteso de 1.50m x 1.50m</body></html>";
 
     /**
      * Creates new form ventanaInicio
      */
-    public ventanaAgProducto() {
+    public ventanaAgStock() {
         initComponents();
-        // Ya que no se puede cambiar el fondo de estos componentes desde las propiedades
-        // se hizo el cambio desde el constructor de la ventana
-        txtStock.setBackground(Color.white);
-        txtStock.setForeground(Color.blue);
-        txtPrecio.setBackground(Color.white);
-        txtPrecio.setForeground(Color.blue);
-        txtLocal.setBackground(Color.white);
+        txtDescripcionStock.setText(textoDesc);
+        txtAgStock.setBackground(Color.white);
     }
 
     /**
@@ -56,6 +52,9 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jButton7 = new javax.swing.JButton();
+        jPanel20 = new javax.swing.JPanel();
+        jButton8 = new javax.swing.JButton();
+        jPanel22 = new IconoProductos();
         jPanel23 = new IconoClientes();
         jButton1 = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
@@ -64,35 +63,30 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jPanel27 = new IconoFacturas();
         jPanel28 = new IconoReporte();
         jPanel29 = new IconoCerrarSesion();
-        jPanel20 = new javax.swing.JPanel();
-        jPanel22 = new IconoProductos();
-        jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jPanel21 = new IconoInicio();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btnEliminarProducto = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        txtNombreProd = new javax.swing.JTextField();
-        txtMarca = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtDescripcion = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
-        txtStock = new javax.swing.JSpinner();
+        txtDescripcionStock = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        txtPrecio = new javax.swing.JSpinner();
         jLabel9 = new javax.swing.JLabel();
-        txtLocal = new javax.swing.JComboBox<String>();
         jLabel10 = new javax.swing.JLabel();
-        txtCategoria = new javax.swing.JComboBox<String>();
         jLabel11 = new javax.swing.JLabel();
-        btnGuardarProducto = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txtAgStock = new javax.swing.JSpinner();
+        btnGuardarStock = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tedemaz | Agregar productos");
+        setTitle("Tedemaz | Agregar stock");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
@@ -177,6 +171,22 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
 
+        jPanel20.setBackground(new java.awt.Color(34, 19, 101));
+        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton8.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Productos");
+        jButton8.setBorderPainted(false);
+        jButton8.setContentAreaFilled(false);
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel20.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
+
+        jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel20.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
+
+        jPanel2.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
+
         jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 20, 20));
 
@@ -196,22 +206,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jPanel2.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 20));
         jPanel2.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 20, 20));
 
-        jPanel20.setBackground(new java.awt.Color(34, 19, 101));
-        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel20.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
-
-        jButton8.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Productos");
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel20.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
-
-        jPanel2.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
-
         jButton9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Inicio");
@@ -225,118 +219,86 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(119, 119, 119));
-        jLabel1.setText("< Volver a Productos");
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
+        jLabel1.setForeground(new java.awt.Color(133, 133, 133));
+        jLabel1.setText("< Volver a productos");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(38, 18, 137));
-        jLabel2.setText("Agregar producto");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, -1, -1));
+        jLabel2.setText("Agregar stock");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel3.setText("| Productos");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 120, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, -1, -1));
 
-        btnEliminarProducto.setBackground(new java.awt.Color(255, 255, 255));
-        btnEliminarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnEliminarProducto.setForeground(new java.awt.Color(189, 0, 0));
-        btnEliminarProducto.setText("Cancelar");
-        btnEliminarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
-        btnEliminarProducto.setContentAreaFilled(false);
-        btnEliminarProducto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEliminarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarProductoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnEliminarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, 130, 30));
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 35)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel4.setText("Tela metalizada");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel4.setText("Nombre*");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel5.setText("ID:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, -1));
 
-        txtNombreProd.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtNombreProd.setForeground(new java.awt.Color(38, 18, 137));
-        txtNombreProd.setBorder(null);
-        jPanel1.add(txtNombreProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 270, 40));
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel6.setText("0001");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, -1, -1));
 
-        txtMarca.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtMarca.setForeground(new java.awt.Color(38, 18, 137));
-        txtMarca.setBorder(null);
-        jPanel1.add(txtMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 190, 270, 40));
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel7.setText("Descripción:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 330, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel5.setText("Marca");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, -1, -1));
+        txtDescripcionStock.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jPanel1.add(txtDescripcionStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 280, 50));
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel6.setText("Descripción");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, -1, -1));
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel8.setText("Marca:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, -1, -1));
 
-        txtDescripcion.setColumns(20);
-        txtDescripcion.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtDescripcion.setForeground(new java.awt.Color(38, 18, 137));
-        txtDescripcion.setRows(3);
-        txtDescripcion.setBorder(null);
-        txtDescripcion.setHighlighter(null);
-        jScrollPane1.setViewportView(txtDescripcion);
+        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel9.setText("Telex");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, -1, -1));
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 270, 560, 80));
+        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel10.setText("Precio:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel7.setText("Stock");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, -1, -1));
+        jLabel11.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel11.setText("$235.00");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 450, -1, -1));
 
-        txtStock.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtStock.setModel(new javax.swing.SpinnerNumberModel());
-        txtStock.setFocusable(false);
-        jPanel1.add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 270, 40));
+        jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel12.setText("Localidad:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 420, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel8.setText("Precio*");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, -1, -1));
+        jLabel13.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel13.setText("Culiacán");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, -1, -1));
 
-        txtPrecio.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtPrecio.setModel(new javax.swing.SpinnerNumberModel(Double.valueOf(0.0d), null, null, Double.valueOf(1.0d)));
-        txtPrecio.setFocusable(false);
-        jPanel1.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 390, 270, 40));
+        jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel14.setText("Categoria:");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel9.setText("Localidad*");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, -1, -1));
+        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel17.setText("Telas para muebles");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 450, -1, -1));
 
-        txtLocal.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtLocal.setForeground(new java.awt.Color(38, 18, 137));
-        txtLocal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        txtLocal.setBorder(null);
-        txtLocal.setFocusable(false);
-        jPanel1.add(txtLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 480, 270, 40));
+        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        jLabel18.setText("Stock:");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 490, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel10.setText("Categoría");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 450, -1, -1));
+        txtAgStock.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
+        txtAgStock.setModel(new javax.swing.SpinnerNumberModel());
+        jPanel1.add(txtAgStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 520, 210, 40));
 
-        txtCategoria.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtCategoria.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        txtCategoria.setBorder(null);
-        txtCategoria.setFocusable(false);
-        jPanel1.add(txtCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 480, 270, 40));
-
-        jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(189, 0, 0));
-        jLabel11.setText("Campos obligatorios*");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, -1, -1));
-
-        btnGuardarProducto.setBackground(new java.awt.Color(181, 194, 254));
-        btnGuardarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnGuardarProducto.setForeground(new java.awt.Color(38, 18, 137));
-        btnGuardarProducto.setText("Agregar");
-        btnGuardarProducto.setBorderPainted(false);
-        btnGuardarProducto.setFocusPainted(false);
-        jPanel1.add(btnGuardarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 550, 130, 40));
+        btnGuardarStock.setBackground(new java.awt.Color(181, 194, 254));
+        btnGuardarStock.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnGuardarStock.setForeground(new java.awt.Color(38, 18, 137));
+        btnGuardarStock.setText("Guardar stock");
+        btnGuardarStock.setBorderPainted(false);
+        btnGuardarStock.setFocusable(false);
+        jPanel1.add(btnGuardarStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 519, 150, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -346,12 +308,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
-        ventanaProductos1 abrir= new ventanaProductos1();
-        abrir.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnEliminarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -370,31 +326,28 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaAgStock.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaAgStock.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaAgStock.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventanaAgProducto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaAgStock.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventanaAgProducto().setVisible(true);
+                new ventanaAgStock().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnEliminarProducto;
-    private javax.swing.JButton btnGuardarProducto;
+    private javax.swing.JButton btnGuardarStock;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -407,8 +360,13 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -431,15 +389,9 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JComboBox<String> txtCategoria;
-    private javax.swing.JTextArea txtDescripcion;
-    private javax.swing.JComboBox<String> txtLocal;
-    private javax.swing.JTextField txtMarca;
-    private javax.swing.JTextField txtNombreProd;
-    private javax.swing.JSpinner txtPrecio;
-    private javax.swing.JSpinner txtStock;
+    private javax.swing.JSpinner txtAgStock;
+    private javax.swing.JLabel txtDescripcionStock;
     // End of variables declaration//GEN-END:variables
 
     // Clase para la imagen con el logo de Tedemaz
@@ -611,5 +563,8 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         }
 
     }
+
+    
+    
 
 }
