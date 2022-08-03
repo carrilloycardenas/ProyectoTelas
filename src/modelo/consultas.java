@@ -9,7 +9,7 @@ import java.sql.*;
 public class consultas {
     
     public void AgProducto(Connection con){
-        
+        System.out.println("hola");
     }
     
 }
