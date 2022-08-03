@@ -251,7 +251,7 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
         
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/iconoTedemaz.jpg")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/iconoTedemaz.jpg")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -265,7 +265,7 @@ public class ventanaInicioSesion extends javax.swing.JFrame {
         
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/fondo_inicioSesion.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/fondo_inicioSesion.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
