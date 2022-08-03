@@ -14,7 +14,7 @@ public class conexion {
         try{
             con = DriverManager.getConnection("jdbc:mysql://localhost/modeloBDProyecto", "root", "password");
         } catch (SQLException ex) {
-            System.out.println("Conexion fallida");
+            System.out.println(ex);
         }
         return con;
     }

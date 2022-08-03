@@ -11,6 +11,7 @@ Descripción: Ventana para agregar productos a la base de datos. Avance del proy
 
 package vista;
 
+import modelo.consultas;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -19,9 +20,9 @@ import javax.swing.JPanel;
 
 public class ventanaAgProducto extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ventanaInicio
-     */
+    
+    
+
     public ventanaAgProducto() {
         initComponents();
         // Ya que no se puede cambiar el fondo de estos componentes desde las propiedades
