@@ -21,7 +21,7 @@ public class consultas {
         int resultado = 0;
         Connection conex = null;
 
-        String consulta = "call AltaProductos(?,'?','?','?',?,?,'?','?',?,?,?,?);";
+        String consulta = "call AltaProductos(?,?,?,?,?,?,?,?,?,?,?,?);";
 
         try{
             conex = con.conectar();
