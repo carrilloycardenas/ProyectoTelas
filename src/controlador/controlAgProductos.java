@@ -8,11 +8,13 @@ import java.awt.event.ActionEvent;
 import vista.ventanaAgProducto;
 import modelo.consultas;
 import java.awt.event.ActionListener;
+import modelo.conexion;
 
 public class controlAgProductos implements ActionListener{
     
     ventanaAgProducto ventAg;
     consultas modelo;
+    conexion con;
 
     public controlAgProductos(consultas model, ventanaAgProducto vista){
         this.modelo = model;
@@ -22,7 +24,7 @@ public class controlAgProductos implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent evento) {
-        modelo.AgProducto(1, "Coca", "Una coca", "Coca", 2, 15, "Mazatlán", "Coca", 1, 1, 1, 1);
+        modelo.AgProducto(con.conectar(), 1, "Coca", "Una coca", "Coca", 2, 15, "Mazatlán", "Coca", 1, 1, 1, 1);
     }
 
 }

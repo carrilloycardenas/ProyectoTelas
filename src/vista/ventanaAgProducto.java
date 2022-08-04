@@ -103,7 +103,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar productos");
-        setPreferredSize(new java.awt.Dimension(1020, 700));
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -572,7 +571,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
     private javax.swing.JButton btnEliminarProducto;
-    private javax.swing.JButton btnGuardarProducto;
+    public javax.swing.JButton btnGuardarProducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -637,7 +636,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/iconoTedemaz.jpg")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/iconoTedemaz.jpg")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -651,7 +650,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/fondoPanelLateral.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/fondoPanelLateral.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -665,7 +664,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/fotoUsuario.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/fotoUsuario.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -680,7 +679,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/InicioIcon.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/InicioIcon.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -694,7 +693,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Productos_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Productos_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -708,7 +707,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Clientes_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Clientes_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -722,7 +721,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Empleados_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Empleados_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -736,7 +735,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Proveedores_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Proveedores_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -750,7 +749,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Caja_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Caja_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -764,7 +763,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Facturas_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Facturas_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -778,7 +777,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/Reporte_icono_Menu.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/Reporte_icono_Menu.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);
@@ -792,7 +791,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/pruebaD/cerrarSesion_icon.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/vista/cerrarSesion_icon.png")).getImage();
             g.drawImage(imagen, 0, 0, getWidth(), getHeight(), rootPane);
             setOpaque(false);
             super.paint(g);

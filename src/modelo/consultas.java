@@ -16,8 +16,8 @@ public class consultas {
     String query; 
     int nResultado = 0;
 
-    public void AgProducto(int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
-        Connection conex = null;
+    public void AgProducto(Connection conex, int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
+    
         String consulta = "call(?,?,?,?,?,?,?,?,?,?,?,?);";
         try{
             conex = con.conectar();
