@@ -16,9 +16,13 @@ public class consultas {
     String query; 
     int nResultado = 0;
 
-    public void AgProducto(Connection conex, int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
+    public int AgProducto(int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
     
-        String consulta = "call(?,?,?,?,?,?,?,?,?,?,?,?);";
+        int resultado = 0;
+        Connection conex = null;
+
+        String consulta = "call AltaProductos(?,'?','?','?',?,?,'?','?',?,?,?,?);";
+
         try{
             conex = con.conectar();
             sentencia = conex.prepareStatement(consulta);
@@ -35,11 +39,14 @@ public class consultas {
             sentencia.setString(11, Integer.toString(prov));
             sentencia.setString(12, Integer.toString(tipoStock));
 
-            sentencia.executeUpdate();
+            resultado = sentencia.executeUpdate();
 
         }catch(SQLException e){
-            System.out.println("Error detectado");
+            System.out.println(e);
         }
+
+        return resultado;
+
     }
     
 }

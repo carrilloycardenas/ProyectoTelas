@@ -16,12 +16,12 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import controlador.controlAgProductos;
 
 public class ventanaAgProducto extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ventanaInicio
-     */
+    controlAgProductos cons;
+
     public ventanaAgProducto() {
         initComponents();
         // Ya que no se puede cambiar el fondo de estos componentes desde las propiedades
@@ -88,7 +88,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         txtStock = new javax.swing.JSpinner();
         txtNombreProd = new javax.swing.JTextField();
-        btnGuardarProducto = new javax.swing.JButton();
         txtPrecio = new javax.swing.JSpinner();
         txtLocal = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
@@ -100,6 +99,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         txtCategoria4 = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
+        btnGuardarProducto1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar productos");
@@ -301,13 +301,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         txtNombreProd.setForeground(new java.awt.Color(38, 18, 137));
         txtNombreProd.setBorder(null);
 
-        btnGuardarProducto.setBackground(new java.awt.Color(181, 194, 254));
-        btnGuardarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnGuardarProducto.setForeground(new java.awt.Color(38, 18, 137));
-        btnGuardarProducto.setText("Agregar");
-        btnGuardarProducto.setBorderPainted(false);
-        btnGuardarProducto.setFocusPainted(false);
-
         txtPrecio.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtPrecio.setModel(new javax.swing.SpinnerNumberModel(0.0d, null, null, 1.0d));
         txtPrecio.setFocusable(false);
@@ -357,6 +350,18 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Proveedores");
 
+        btnGuardarProducto1.setBackground(new java.awt.Color(181, 194, 254));
+        btnGuardarProducto1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnGuardarProducto1.setForeground(new java.awt.Color(38, 18, 137));
+        btnGuardarProducto1.setText("Agregar");
+        btnGuardarProducto1.setBorderPainted(false);
+        btnGuardarProducto1.setFocusPainted(false);
+        btnGuardarProducto1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarProducto1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -364,6 +369,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addGap(229, 229, 229)
@@ -391,10 +397,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addGap(20, 20, 20)
                         .addComponent(txtCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addGap(283, 283, 283)
-                        .addComponent(btnGuardarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel12)
                             .addComponent(txtCategoria1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -402,14 +404,17 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
                             .addComponent(txtCategoria2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
-                            .addComponent(txtCategoria3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17)
-                            .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel5Layout.createSequentialGroup()
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel14)
+                                .addComponent(txtCategoria3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel17)
+                                .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnGuardarProducto1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -463,12 +468,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addGap(11, 11, 11)
                         .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(btnGuardarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25))
+                .addComponent(jLabel11)
+                .addGap(18, 18, 18)
+                .addComponent(btnGuardarProducto1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(180, 180, 180))
         );
 
         jScrollPane2.setViewportView(jPanel5);
@@ -530,6 +533,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void btnGuardarProducto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProducto1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarProducto1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -571,7 +578,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
     private javax.swing.JButton btnEliminarProducto;
-    public javax.swing.JButton btnGuardarProducto;
+    public javax.swing.JButton btnGuardarProducto1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
