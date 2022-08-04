@@ -92,7 +92,6 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         txtPrecio = new javax.swing.JSpinner();
         txtLocal = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
-        txtCategoria1 = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
         txtCategoria2 = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
@@ -100,6 +99,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         txtCategoria4 = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
+        txtColor = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar productos");
@@ -255,7 +255,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         txtCategoria.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtCategoria.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Telas", "Accesorios" }));
         txtCategoria.setBorder(null);
         txtCategoria.setFocusable(false);
 
@@ -314,25 +314,24 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         txtLocal.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtLocal.setForeground(new java.awt.Color(38, 18, 137));
-        txtLocal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtLocal.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Culiacán", "Mazatlán" }));
         txtLocal.setBorder(null);
         txtLocal.setFocusable(false);
+        txtLocal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLocalActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel9.setText("Localidad*");
-
-        txtCategoria1.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtCategoria1.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        txtCategoria1.setBorder(null);
-        txtCategoria1.setFocusable(false);
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Color");
 
         txtCategoria2.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtCategoria2.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtCategoria2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acrilico", "Lino", "Algodón", "Abaca" }));
         txtCategoria2.setBorder(null);
         txtCategoria2.setFocusable(false);
 
@@ -341,7 +340,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         txtCategoria3.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtCategoria3.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtCategoria3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Metro", "Rollo", " " }));
         txtCategoria3.setBorder(null);
         txtCategoria3.setFocusable(false);
 
@@ -397,7 +396,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel12)
-                            .addComponent(txtCategoria1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
@@ -448,8 +447,8 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                                     .addComponent(txtCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel12)
-                                .addGap(11, 11, 11)
-                                .addComponent(txtCategoria1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addComponent(jLabel13)
                                 .addGap(11, 11, 11)
@@ -462,7 +461,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addComponent(jLabel17)
                         .addGap(11, 11, 11)
                         .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addGroup(jPanel5Layout.createSequentialGroup()
@@ -529,6 +528,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void txtLocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLocalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -617,10 +620,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JComboBox<String> txtCategoria;
-    private javax.swing.JComboBox<String> txtCategoria1;
     private javax.swing.JComboBox<String> txtCategoria2;
     private javax.swing.JComboBox<String> txtCategoria3;
     private javax.swing.JComboBox<String> txtCategoria4;
+    private javax.swing.JTextField txtColor;
     private javax.swing.JTextArea txtDescripcion;
     private javax.swing.JComboBox<String> txtLocal;
     private javax.swing.JTextField txtMarca;
