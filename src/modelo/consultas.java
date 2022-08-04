@@ -38,7 +38,7 @@ public class consultas {
             sentencia.executeUpdate();
 
         }catch(SQLException e){
-
+            System.out.println("Error detectado");
         }
     }
     
