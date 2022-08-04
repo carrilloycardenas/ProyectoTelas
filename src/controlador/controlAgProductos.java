@@ -19,7 +19,7 @@ public class controlAgProductos implements ActionListener{
     public controlAgProductos(ventanaAgProducto ventAg, consultas modelo) {
         this.ventAg = ventAg;
         this.modelo = modelo;
-        this.ventAg.btnGuardarProducto1.addActionListener(this);
+        this.ventAg.btnGuardarProducto.addActionListener(this);
     }
 
     
@@ -34,7 +34,7 @@ public class controlAgProductos implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent evento) {
-        if(ventAg.btnGuardarProducto1 == evento.getSource()) {
+        if(ventAg.btnGuardarProducto == evento.getSource()) {
             modelo.AgProducto(2, "Coca", "Una coca", "Coca", 2, 15, "Mazatlán", "Coca", 1, 1, 1, 1);
         }
     }
