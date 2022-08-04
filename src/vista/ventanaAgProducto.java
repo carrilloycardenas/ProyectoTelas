@@ -9,7 +9,7 @@ Descripción: Ventana para agregar productos a la base de datos. Avance del proy
  *  - Jorge Luis Carrillo Cuevas
  */
 
-package pruebaD;
+package vista;
 
 import java.awt.Color;
 import java.awt.Graphics;
