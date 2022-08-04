@@ -337,6 +337,11 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         btnGuardarProducto.setText("Agregar");
         btnGuardarProducto.setBorderPainted(false);
         btnGuardarProducto.setFocusPainted(false);
+        btnGuardarProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarProductoActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnGuardarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 550, 130, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
@@ -353,6 +358,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnEliminarProductoActionPerformed
+
+    private void btnGuardarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -395,7 +404,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
     private javax.swing.JButton btnEliminarProducto;
-    private javax.swing.JButton btnGuardarProducto;
+    public javax.swing.JButton btnGuardarProducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

@@ -35,10 +35,10 @@ public class consultas {
             sentencia.setString(11, Integer.toString(prov));
             sentencia.setString(12, Integer.toString(tipoStock));
 
-            sentencia.executeUpdate();
+            nResultado = sentencia.executeUpdate();
 
         }catch(SQLException e){
-
+            System.out.println(e);
         }
     }
     
