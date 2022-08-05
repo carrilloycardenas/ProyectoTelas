@@ -16,7 +16,7 @@ public class consultas {
     String query; 
     int nResultado = 0;
 
-    public int AgProducto(int idProd, String nomProd, String desProd, String marProd, int Stock, float precio, String local, String color, int cate, int tipoTela, int prov, int tipoStock){
+    public int AgProducto(String idProd, String nomProd, String desProd, String marProd, String Stock, String precio, String local, String color, String cate, String tipoTela, String prov, String tipoStock){
     
         int resultado = 0;
         Connection conex = null;
@@ -26,18 +26,18 @@ public class consultas {
         try{
             conex = con.conectar();
             sentencia = conex.prepareStatement(consulta);
-            sentencia.setString(1, Integer.toString(idProd));
+            sentencia.setString(1, idProd);
             sentencia.setString(2, nomProd);
             sentencia.setString(3, desProd);
             sentencia.setString(4, marProd);
-            sentencia.setString(5, Integer.toString(Stock));
-            sentencia.setString(6, Float.toString(precio));
+            sentencia.setString(5, Stock);
+            sentencia.setString(6, precio);
             sentencia.setString(7, local);
             sentencia.setString(8, color);
-            sentencia.setString(9, Integer.toString(cate));
-            sentencia.setString(10, Integer.toString(tipoTela));
-            sentencia.setString(11, Integer.toString(prov));
-            sentencia.setString(12, Integer.toString(tipoStock));
+            sentencia.setString(9, cate);
+            sentencia.setString(10, tipoTela);
+            sentencia.setString(11, prov);
+            sentencia.setString(12, tipoStock);
 
             resultado = sentencia.executeUpdate();
 

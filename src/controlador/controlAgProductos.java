@@ -35,7 +35,7 @@ public class controlAgProductos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventAg.btnGuardarProducto == evento.getSource()) {
-            modelo.AgProducto(3, "Coca", "Una coca", "Coca", 2, 15, ventAg.txtLocal.getSelectedItem().toString(), "Coca", 1, 1, 1, 1);
+            modelo.AgProducto("3",ventAg.txtNombreProd.toString(),ventAg.txtDescripcion.toString(),ventAg.txtMarca.toString(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), ventAg.txtCategoria.getSelectedItem().toString(), ventAg.txtCategoria2.getSelectedItem().toString(),ventAg.txtCategoria4.getSelectedItem().toString(), ventAg.txtCategoria3.toString());
         }
     }
 

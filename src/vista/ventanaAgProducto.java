@@ -619,17 +619,17 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JComboBox<String> txtCategoria;
-    private javax.swing.JComboBox<String> txtCategoria2;
-    private javax.swing.JComboBox<String> txtCategoria3;
-    private javax.swing.JComboBox<String> txtCategoria4;
-    private javax.swing.JTextField txtColor;
-    private javax.swing.JTextArea txtDescripcion;
+    public javax.swing.JComboBox<String> txtCategoria;
+    public javax.swing.JComboBox<String> txtCategoria2;
+    public javax.swing.JComboBox<String> txtCategoria3;
+    public javax.swing.JComboBox<String> txtCategoria4;
+    public javax.swing.JTextField txtColor;
+    public javax.swing.JTextArea txtDescripcion;
     public javax.swing.JComboBox<String> txtLocal;
-    private javax.swing.JTextField txtMarca;
-    private javax.swing.JTextField txtNombreProd;
-    private javax.swing.JSpinner txtPrecio;
-    private javax.swing.JSpinner txtStock;
+    public javax.swing.JTextField txtMarca;
+    public javax.swing.JTextField txtNombreProd;
+    public javax.swing.JSpinner txtPrecio;
+    public javax.swing.JSpinner txtStock;
     // End of variables declaration//GEN-END:variables
 
     // Clase para la imagen con el logo de Tedemaz
