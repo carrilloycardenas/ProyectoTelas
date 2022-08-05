@@ -22,8 +22,6 @@ public class controlAgProductos implements ActionListener{
         this.ventAg.btnGuardarProducto.addActionListener(this);
     }
 
-    
-
     public void IniciarVista(){
         ventAg.setTitle("Agregar producto");
         ventAg.pack();
@@ -35,7 +33,7 @@ public class controlAgProductos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventAg.btnGuardarProducto == evento.getSource()) {
-            modelo.AgProducto("3",ventAg.txtNombreProd.toString(),ventAg.txtDescripcion.toString(),ventAg.txtMarca.toString(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), ventAg.txtCategoria.getSelectedItem().toString(), ventAg.txtCategoria2.getSelectedItem().toString(),ventAg.txtCategoria4.getSelectedItem().toString(), ventAg.txtCategoria3.toString());
+            modelo.AgProducto("3",ventAg.txtNombreProd.getText(),ventAg.txtDescripcion.getText(),ventAg.txtMarca.getText(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), ventAg.txtCategoria.getSelectedItem().toString(), ventAg.txtCategoria2.getSelectedItem().toString(),ventAg.txtCategoria4.getSelectedItem().toString(), Integer.toString(ventAg.txtCategoria3.getSelectedIndex()+1));
         }
     }
 
