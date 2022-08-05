@@ -35,7 +35,7 @@ public class controlAgProductos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventAg.btnGuardarProducto == evento.getSource()) {
-            modelo.AgProducto(2, "Coca", "Una coca", "Coca", 2, 15, "Mazatlán", "Coca", 1, 1, 1, 1);
+            modelo.AgProducto(3, "Coca", "Una coca", "Coca", 2, 15, ventAg.txtLocal.getSelectedItem().toString(), "Coca", 1, 1, 1, 1);
         }
     }
 
