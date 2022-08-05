@@ -625,7 +625,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> txtCategoria4;
     private javax.swing.JTextField txtColor;
     private javax.swing.JTextArea txtDescripcion;
-    private javax.swing.JComboBox<String> txtLocal;
+    public javax.swing.JComboBox<String> txtLocal;
     private javax.swing.JTextField txtMarca;
     private javax.swing.JTextField txtNombreProd;
     private javax.swing.JSpinner txtPrecio;
