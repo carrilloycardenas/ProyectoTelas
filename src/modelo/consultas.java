@@ -5,7 +5,9 @@
 package modelo;
 
 import java.sql.*;
+import javax.swing.table.DefaultTableModel;
 import modelo.conexion;
+import vista.ventanaProductos1;
 
 public class consultas {
 
@@ -47,6 +49,39 @@ public class consultas {
 
         return resultado;
 
+    }
+
+    public DefaultTableModel venProd(){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("select * from productos;");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            return null;
+        }
     }
     
 }

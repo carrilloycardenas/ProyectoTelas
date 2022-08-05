@@ -7,6 +7,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -146,7 +147,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
                 <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
@@ -171,7 +172,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -194,7 +195,7 @@
                 <Property name="text" type="java.lang.String" value="Caja"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Events>
@@ -221,7 +222,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -242,7 +243,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -275,7 +276,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -312,7 +313,7 @@
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Cursor Por defecto"/>
+                      <Color id="Default Cursor"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -365,7 +366,7 @@
                 <Property name="text" type="java.lang.String" value="Clientes"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -459,7 +460,7 @@
                 <Property name="text" type="java.lang.String" value="Inicio"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -529,81 +530,9 @@
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="3" rowCount="23">
-                    <Column editable="true" title="ID" type="java.lang.Object">
-                      <Data value="1"/>
-                      <Data value="2"/>
-                      <Data value="3"/>
-                      <Data value="4"/>
-                      <Data value="5"/>
-                      <Data value="6"/>
-                      <Data value="7"/>
-                      <Data value="8"/>
-                      <Data value="9"/>
-                      <Data value="10"/>
-                      <Data value="11"/>
-                      <Data value="12"/>
-                      <Data value="13"/>
-                      <Data value="14"/>
-                      <Data value="15"/>
-                      <Data value="16"/>
-                      <Data value="17"/>
-                      <Data value="18"/>
-                      <Data value="19"/>
-                      <Data value="20"/>
-                      <Data value="21"/>
-                      <Data value="22"/>
-                      <Data value="23"/>
-                    </Column>
-                    <Column editable="true" title="PRODUCTOS" type="java.lang.Object">
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="Tela metalica color verde de 1.50m x 1.50m "/>
-                      <Data value="null"/>
-                    </Column>
-                    <Column editable="true" title="STOCK" type="java.lang.Object">
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="30"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                    </Column>
+                    <Column editable="false" title="ID" type="java.lang.Integer"/>
+                    <Column editable="false" title="PRODUCTOS" type="java.lang.String"/>
+                    <Column editable="false" title="STOCK" type="java.lang.Integer"/>
                   </Table>
                 </Property>
                 <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -613,6 +542,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

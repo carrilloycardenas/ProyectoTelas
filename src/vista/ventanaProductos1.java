@@ -221,34 +221,49 @@ public class ventanaProductos1 extends javax.swing.JFrame {
         tablaproductos.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         tablaproductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"1", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"2", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"3", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"4", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"5", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"6", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"7", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"8", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"9", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"10", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"11", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"12", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"13", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"14", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"15", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"16", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"17", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"18", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"19", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"20", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"21", "Tela metalica color verde de 1.50m x 1.50m ", "30"},
-                {"22", "Tela metalica color verde de 1.50m x 1.50m ", null},
-                {"23", null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
                 "ID", "PRODUCTOS", "STOCK"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         tablaproductos.setGridColor(new java.awt.Color(181, 194, 254));
         jScrollPane1.setViewportView(tablaproductos);
 
@@ -420,7 +435,7 @@ public class ventanaProductos1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaproductos;
+    public javax.swing.JTable tablaproductos;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
