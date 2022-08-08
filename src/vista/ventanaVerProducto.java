@@ -68,7 +68,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jPanel29 = new IconoCerrarSesion();
         jButton9 = new javax.swing.JButton();
         jPanel21 = new IconoInicio();
-        btnGuardarStock = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
         jPanel5 = new RoundedPanel(30, Color.white);
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -87,7 +87,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Ver producto");
@@ -121,7 +121,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton2.setText("Empleados");
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.setFocusPainted(false);
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
 
@@ -131,7 +131,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton3.setText("Proveedores");
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
 
         jButton4.setBackground(new java.awt.Color(38, 18, 137));
@@ -139,7 +139,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Caja");
         jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -153,7 +153,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton5.setText("Facturas");
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
         jButton6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
@@ -161,7 +161,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton6.setText("Reporte");
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
 
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
@@ -172,7 +172,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton7.setText("Cerrar sesión");
         jButton7.setBorderPainted(false);
         jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
 
         jPanel20.setBackground(new java.awt.Color(34, 19, 101));
@@ -183,7 +183,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton8.setText("Productos");
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel20.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -199,7 +199,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Clientes");
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 60));
 
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -214,7 +214,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Inicio");
         jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -222,19 +222,19 @@ public class ventanaVerProducto extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
-        btnGuardarStock.setBackground(new java.awt.Color(181, 194, 254));
-        btnGuardarStock.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        btnGuardarStock.setForeground(new java.awt.Color(38, 18, 137));
-        btnGuardarStock.setText("Volver a productos");
-        btnGuardarStock.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        btnGuardarStock.setBorderPainted(false);
-        btnGuardarStock.setFocusable(false);
-        btnGuardarStock.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setBackground(new java.awt.Color(181, 194, 254));
+        btnVolver.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnVolver.setForeground(new java.awt.Color(38, 18, 137));
+        btnVolver.setText("Volver a productos");
+        btnVolver.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        btnVolver.setBorderPainted(false);
+        btnVolver.setFocusable(false);
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarStockActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
-        jPanel1.add(btnGuardarStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 540, 190, 42));
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 540, 190, 42));
 
         jPanel5.setBackground(new java.awt.Color(245, 245, 245));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -310,12 +310,12 @@ public class ventanaVerProducto extends javax.swing.JFrame {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 470, 390));
 
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(189, 0, 0));
-        jButton10.setText("Eliminar producto");
-        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
-        jButton10.setContentAreaFilled(false);
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 170, 40));
+        btnEliminar.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(189, 0, 0));
+        btnEliminar.setText("Eliminar producto");
+        btnEliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
+        btnEliminar.setContentAreaFilled(false);
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 170, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -326,11 +326,11 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void btnGuardarStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarStockActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         ventanaProductos1 abrir= new ventanaProductos1();
         abrir.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnGuardarStockActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -372,9 +372,9 @@ public class ventanaVerProducto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnGuardarStock;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnVolver;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

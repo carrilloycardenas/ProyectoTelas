@@ -10,9 +10,11 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaProductos1;
 import vista.ventanaAgProducto;
+import vista.ventanaVerProducto;
 
 public class controlVentanaProductos1 implements ActionListener{
     
+    ventanaVerProducto ventVrProd =new ventanaVerProducto();
     ventanaAgProducto ventAgProd = new ventanaAgProducto();
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     consultas modelo = new consultas();
@@ -46,8 +48,15 @@ public class controlVentanaProductos1 implements ActionListener{
             } catch(Exception e){
                 System.out.println(e);
             }
-            
+        }
+        else if(ventProd1.btnVerProducto==evento.getSource()){
+            try{
+                controlVrProductos vrProd = new controlVrProductos(ventVrProd,modelo,ventProd1.tablaproductos.getSelectedRow());
+                vrProd.IniciarVista();
+                ventProd1.setVisible(false);
+            }catch(Exception e){
+                System.out.println(e);
+            }
         }
     }
-    
 }
