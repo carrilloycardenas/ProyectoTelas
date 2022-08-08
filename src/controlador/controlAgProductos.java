@@ -34,7 +34,11 @@ public class controlAgProductos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventAg.btnGuardarProducto == evento.getSource()) {
-            modelo.AgProducto("6",ventAg.txtNombreProd.getText(),ventAg.txtDescripcion.getText(),ventAg.txtMarca.getText(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), Integer.toString(ventAg.txtCategoria.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria2.getSelectedIndex()+1),Integer.toString(ventAg.txtCategoria4.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria3.getSelectedIndex()+1));
+            modelo.AgProducto("2",ventAg.txtNombreProd.getText(),ventAg.txtDescripcion.getText(),ventAg.txtMarca.getText(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), Integer.toString(ventAg.txtCategoria.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria2.getSelectedIndex()+1),Integer.toString(ventAg.txtCategoria4.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria3.getSelectedIndex()+1));
+            controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
+            ctProd.IniciarVista();
+            ventAg.setVisible(false);
+        } else if(ventAg.btnCancelar == evento.getSource()){
             controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
             ctProd.IniciarVista();
             ventAg.setVisible(false);

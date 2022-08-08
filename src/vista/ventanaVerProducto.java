@@ -327,9 +327,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        ventanaProductos1 abrir= new ventanaProductos1();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVolverActionPerformed
 
     /**

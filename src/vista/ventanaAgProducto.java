@@ -72,7 +72,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btnEliminarProducto = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel5 = new javax.swing.JPanel();
         txtCategoria = new javax.swing.JComboBox<>();
@@ -240,12 +240,17 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel3.setText("| Productos");
 
-        btnEliminarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnEliminarProducto.setForeground(new java.awt.Color(189, 0, 0));
-        btnEliminarProducto.setText("Cancelar");
-        btnEliminarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
-        btnEliminarProducto.setContentAreaFilled(false);
-        btnEliminarProducto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCancelar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(189, 0, 0));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
+        btnCancelar.setContentAreaFilled(false);
+        btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
 
         jScrollPane2.setPreferredSize(new java.awt.Dimension(550, 400));
 
@@ -489,7 +494,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addGap(11, 11, 11)
                         .addComponent(jLabel3)
                         .addGap(144, 144, 144)
-                        .addComponent(btnEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -506,7 +511,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
-                            .addComponent(btnEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
@@ -532,6 +537,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private void txtLocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLocalActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -573,7 +582,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnEliminarProducto;
+    public javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnGuardarProducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
