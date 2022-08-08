@@ -4,23 +4,27 @@
  */
 package controlador;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JFrame;
-import javax.swing.table.DefaultTableModel;
 import modelo.consultas;
 import vista.ventanaProductos1;
+import vista.ventanaAgProducto;
 
-/**
- *
- * @author daniel
- */
-public class controlVentanaProductos1 {
+public class controlVentanaProductos1 implements ActionListener{
     
-    ventanaProductos1 ventProd1;
-    consultas modelo;
+    ventanaAgProducto ventAgProd = new ventanaAgProducto();
+    ventanaProductos1 ventProd1 = new ventanaProductos1();
+    consultas modelo = new consultas();
 
     public controlVentanaProductos1(ventanaProductos1 vent, consultas model){
         this.ventProd1 = vent;
         this.modelo = model;
+        this.ventProd1.btnAgregarProducto.addActionListener(this);
+        this.ventProd1.btnAgregarStock.addActionListener(this);
+        this.ventProd1.btnModificarProducto.addActionListener(this);
+        this.ventProd1.btnVerProducto.addActionListener(this);
+        this.ventProd1.btnEliminarProducto.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -30,6 +34,20 @@ public class controlVentanaProductos1 {
         ventProd1.setLocationRelativeTo(null);
         ventProd1.tablaproductos.setModel(modelo.venProd());
         ventProd1.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent evento) {
+        if(ventProd1.btnAgregarProducto == evento.getSource()) {
+            try {
+                controlAgProductos agProd = new controlAgProductos(ventAgProd, modelo);
+                agProd.IniciarVista();
+                ventProd1.setVisible(false);
+            } catch(Exception e){
+                System.out.println(e);
+            }
+            
+        }
     }
     
 }

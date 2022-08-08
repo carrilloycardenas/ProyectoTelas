@@ -9,11 +9,13 @@ import modelo.consultas;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import vista.ventanaAgProducto;
+import vista.ventanaProductos1;
 
 public class controlAgProductos implements ActionListener{
     
-    ventanaAgProducto ventAg;
-    consultas modelo;
+    ventanaAgProducto ventAg = new ventanaAgProducto();
+    consultas modelo = new consultas();
+    ventanaProductos1 ventProd = new ventanaProductos1();
 
     public controlAgProductos(ventanaAgProducto ventAg, consultas modelo) {
         this.ventAg = ventAg;
@@ -32,7 +34,10 @@ public class controlAgProductos implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventAg.btnGuardarProducto == evento.getSource()) {
-            modelo.AgProducto("3",ventAg.txtNombreProd.getText(),ventAg.txtDescripcion.getText(),ventAg.txtMarca.getText(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), Integer.toString(ventAg.txtCategoria.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria2.getSelectedIndex()+1),Integer.toString(ventAg.txtCategoria4.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria3.getSelectedIndex()+1));
+            modelo.AgProducto("6",ventAg.txtNombreProd.getText(),ventAg.txtDescripcion.getText(),ventAg.txtMarca.getText(), ventAg.txtStock.getValue().toString(),ventAg.txtPrecio.getValue().toString(), ventAg.txtLocal.getSelectedItem().toString(), ventAg.txtColor.getText(), Integer.toString(ventAg.txtCategoria.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria2.getSelectedIndex()+1),Integer.toString(ventAg.txtCategoria4.getSelectedIndex()+1), Integer.toString(ventAg.txtCategoria3.getSelectedIndex()+1));
+            controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
+            ctProd.IniciarVista();
+            ventAg.setVisible(false);
         }
     }
 

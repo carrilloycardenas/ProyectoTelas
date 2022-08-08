@@ -339,27 +339,19 @@ public class ventanaProductos1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnAgregarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProductoActionPerformed
-        ventanaAgProducto abrir= new ventanaAgProducto();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnAgregarProductoActionPerformed
 
     private void btnAgregarStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarStockActionPerformed
-        ventanaAgStock abrir= new ventanaAgStock();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnAgregarStockActionPerformed
 
     private void btnModificarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarProductoActionPerformed
-        ventanaModProducto abrir= new ventanaModProducto();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnModificarProductoActionPerformed
 
     private void btnVerProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerProductoActionPerformed
-        ventanaVerProducto abrir= new ventanaVerProducto();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVerProductoActionPerformed
 
     /**
@@ -399,11 +391,11 @@ public class ventanaProductos1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnAgregarProducto;
-    private javax.swing.JButton btnAgregarStock;
-    private javax.swing.JButton btnEliminarProducto;
-    private javax.swing.JButton btnModificarProducto;
-    private javax.swing.JButton btnVerProducto;
+    public javax.swing.JButton btnAgregarProducto;
+    public javax.swing.JButton btnAgregarStock;
+    public javax.swing.JButton btnEliminarProducto;
+    public javax.swing.JButton btnModificarProducto;
+    public javax.swing.JButton btnVerProducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
