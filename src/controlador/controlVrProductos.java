@@ -19,13 +19,14 @@ public class controlVrProductos implements ActionListener{
     ventanaVerProducto ventVr = new ventanaVerProducto();
     consultas modelo=new consultas();
     ventanaProductos1 ventProd = new ventanaProductos1();
+    int ids;
     
-    public controlVrProductos(ventanaVerProducto ventVr,consultas modelo,int id){
-        System.out.println(id);
+    public controlVrProductos(ventanaVerProducto ventVr,consultas modelo,int ids){
         this.ventVr=ventVr;
         this.modelo=modelo;
         this.ventVr.btnEliminar.addActionListener(this);
         this.ventVr.btnVolver.addActionListener(this);
+        this.ids=ids;
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");
@@ -33,6 +34,7 @@ public class controlVrProductos implements ActionListener{
         ventVr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventVr.setLocationRelativeTo(null);
         ventVr.setVisible(true);
+        String id = ventProd.tablaproductos.getValueAt(ids, 0).toString();
     }
 
     @Override
