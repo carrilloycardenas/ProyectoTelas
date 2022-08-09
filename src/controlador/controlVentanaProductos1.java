@@ -54,6 +54,7 @@ public class controlVentanaProductos1 implements ActionListener{
         else if(ventProd1.btnVerProducto == evento.getSource()){
             try {
                 this.row = ventProd1.tablaproductos.getSelectedRow();
+                System.out.println(this.row);
                 controlVrProductos vrProd = new controlVrProductos(ventVrProd, modelo, row);
                 vrProd.IniciarVista();
                 ventProd1.setVisible(false);
