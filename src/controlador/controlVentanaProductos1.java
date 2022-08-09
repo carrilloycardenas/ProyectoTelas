@@ -55,7 +55,7 @@ public class controlVentanaProductos1 implements ActionListener{
             try {
                 this.row = ventProd1.tablaproductos.getSelectedRow();
                 System.out.println(this.row);
-                controlVrProductos vrProd = new controlVrProductos(ventVrProd, modelo, row);
+                controlVrProductos vrProd = new controlVrProductos(ventVrProd, modelo, row,ventProd1);
                 vrProd.IniciarVista();
                 ventProd1.setVisible(false);
             } catch(Exception e){
