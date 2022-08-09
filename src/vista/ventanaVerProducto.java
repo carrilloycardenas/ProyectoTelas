@@ -29,7 +29,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
      */
     public ventanaVerProducto() {
         initComponents();
-        txtDescripcionStock.setText(textoDesc);
+        lblDesProd.setText(textoDesc);
     }
 
     /**
@@ -70,22 +70,22 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jPanel21 = new IconoInicio();
         btnVolver = new javax.swing.JButton();
         jPanel5 = new RoundedPanel(30, Color.white);
-        jLabel1 = new javax.swing.JLabel();
+        lblStock = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblID = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        txtDescripcionStock = new javax.swing.JLabel();
+        lblDesProd = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        lblMarca = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        lblPrecio = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lblLocal = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        lblCat = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         btnEliminar = new javax.swing.JButton();
 
@@ -239,9 +239,9 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(245, 245, 245));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel1.setText("55");
-        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
+        lblStock.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblStock.setText("55");
+        jPanel5.add(lblStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(38, 18, 137));
@@ -252,14 +252,14 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jLabel3.setText("| Productos");
         jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 35)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setText("Tela metalizada");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
+        lblNombre.setFont(new java.awt.Font("Century Gothic", 1, 35)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(51, 51, 51));
+        lblNombre.setText("Tela metalizada");
+        jPanel5.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel6.setText("0001");
-        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        lblID.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblID.setText("0001");
+        jPanel5.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel5.setText("ID:");
@@ -269,40 +269,40 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jLabel7.setText("Descripción:");
         jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
-        txtDescripcionStock.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jPanel5.add(txtDescripcionStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 280, 50));
+        lblDesProd.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jPanel5.add(lblDesProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 280, 50));
 
         jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel8.setText("Marca:");
         jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel9.setText("Telex");
-        jPanel5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, -1, -1));
+        lblMarca.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblMarca.setText("Telex");
+        jPanel5.add(lblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 190, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel10.setText("Precio:");
         jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel11.setText("$235.00");
-        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+        lblPrecio.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblPrecio.setText("$235.00");
+        jPanel5.add(lblPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel12.setText("Localidad:");
         jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel13.setText("Culiacán");
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+        lblLocal.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblLocal.setText("Culiacán");
+        jPanel5.add(lblLocal, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel14.setText("Categoria:");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel17.setText("Telas para muebles");
-        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, -1, -1));
+        lblCat.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        lblCat.setText("Telas para muebles");
+        jPanel5.add(lblCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel18.setText("Stock:");
@@ -381,24 +381,17 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
@@ -415,7 +408,14 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel txtDescripcionStock;
+    public javax.swing.JLabel lblCat;
+    public javax.swing.JLabel lblDesProd;
+    public javax.swing.JLabel lblID;
+    public javax.swing.JLabel lblLocal;
+    public javax.swing.JLabel lblMarca;
+    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblPrecio;
+    public javax.swing.JLabel lblStock;
     // End of variables declaration//GEN-END:variables
 
     // Clase para la imagen con el logo de Tedemaz

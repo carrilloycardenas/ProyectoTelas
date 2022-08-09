@@ -10,6 +10,8 @@ import modelo.consultas;
 import vista.ventanaProductos1;
 import vista.ventanaVerProducto;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -19,14 +21,14 @@ public class controlVrProductos implements ActionListener{
     ventanaVerProducto ventVr = new ventanaVerProducto();
     consultas modelo=new consultas();
     ventanaProductos1 ventProd = new ventanaProductos1();
-    int ids;
+    ResultSet rs;
     
     public controlVrProductos(ventanaVerProducto ventVr,consultas modelo,int ids){
         this.ventVr=ventVr;
         this.modelo=modelo;
         this.ventVr.btnEliminar.addActionListener(this);
         this.ventVr.btnVolver.addActionListener(this);
-        this.ids=ids;
+        this.rs=modelo.VrProductos(ventProd.tablaproductos.getValueAt(ids, 0).toString());
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");
@@ -34,7 +36,20 @@ public class controlVrProductos implements ActionListener{
         ventVr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventVr.setLocationRelativeTo(null);
         ventVr.setVisible(true);
-        String id = ventProd.tablaproductos.getValueAt(ids, 0).toString();
+        try{
+            ventVr.lblNombre.setText(rs.getString("Nombre"));
+            ventVr.lblID.setText(rs.getString("idProductos"));
+            ventVr.lblCat.setText(rs.getString("NombreCategoria"));
+            ventVr.lblDesProd.setText(rs.getString("Descripcion"));
+            ventVr.lblLocal.setText(rs.getString("Localidad"));
+            ventVr.lblMarca.setText(rs.getString("Marca"));
+            ventVr.lblPrecio.setText(rs.getString("precioUnitario"));
+            ventVr.lblStock.setText(rs.getString("Stock"));
+        }catch(SQLException e){
+            System.out.println(e);
+        }
+        
+        
     }
 
     @Override

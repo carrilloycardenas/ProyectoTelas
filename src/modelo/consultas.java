@@ -4,6 +4,7 @@
  */
 package modelo;
 
+import controlador.controlVrProductos;
 import java.sql.*;
 import javax.swing.table.DefaultTableModel;
 import modelo.conexion;
@@ -17,6 +18,7 @@ public class consultas {
     ResultSet resultado;
     String query; 
     int nResultado = 0;
+    
 
     public int AgProducto(String idProd, String nomProd, String desProd, String marProd, String Stock, String precio, String local, String color, String cate, String tipoTela, String prov, String tipoStock){
     
@@ -83,6 +85,20 @@ public class consultas {
             return null;
         }
     }
-    //Public
+    public ResultSet VrProductos(String id){
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+        try{
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            
+            ps=con.prepareStatement("call MostrarProductos(?);");
+            ps.setString(1, id);
+            rs=ps.executeQuery();
+        }catch(SQLException e){
+            System.out.println(e);
+        }
+        return rs;
+    }
     
 }
