@@ -273,44 +273,24 @@ public class ventanaProductos1 extends javax.swing.JFrame {
         btnAgregarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnAgregarProducto.setForeground(new java.awt.Color(21, 8, 79));
         btnAgregarProducto.setText("Agregar producto");
-        btnAgregarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarProductoActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnAgregarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 245, 150, 40));
 
         btnAgregarStock.setBackground(new java.awt.Color(181, 194, 254));
         btnAgregarStock.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnAgregarStock.setForeground(new java.awt.Color(21, 8, 79));
         btnAgregarStock.setText("Agregar stock");
-        btnAgregarStock.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarStockActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnAgregarStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 295, 150, 40));
 
         btnModificarProducto.setBackground(new java.awt.Color(181, 194, 254));
         btnModificarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnModificarProducto.setForeground(new java.awt.Color(21, 8, 79));
         btnModificarProducto.setText("Modificar producto");
-        btnModificarProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModificarProductoActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnModificarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 345, 150, 40));
 
         btnVerProducto.setBackground(new java.awt.Color(181, 194, 254));
         btnVerProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnVerProducto.setForeground(new java.awt.Color(21, 8, 79));
         btnVerProducto.setText("Ver producto");
-        btnVerProducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerProductoActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnVerProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 395, 150, 40));
 
         btnEliminarProducto.setBackground(new java.awt.Color(189, 0, 0));
@@ -337,22 +317,6 @@ public class ventanaProductos1 extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void btnAgregarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProductoActionPerformed
-
-    }//GEN-LAST:event_btnAgregarProductoActionPerformed
-
-    private void btnAgregarStockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarStockActionPerformed
-
-    }//GEN-LAST:event_btnAgregarStockActionPerformed
-
-    private void btnModificarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarProductoActionPerformed
-
-    }//GEN-LAST:event_btnModificarProductoActionPerformed
-
-    private void btnVerProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerProductoActionPerformed
-
-    }//GEN-LAST:event_btnVerProductoActionPerformed
 
     /**
      * @param args the command line arguments
