@@ -18,10 +18,12 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaAgProducto ventAgProd = new ventanaAgProducto();
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     consultas modelo = new consultas();
+    int row;
 
     public controlVentanaProductos1(ventanaProductos1 vent, consultas model){
         this.ventProd1 = vent;
         this.modelo = model;
+        //this.row = ventProd1.tablaproductos.getSelectedRow();
         this.ventProd1.btnAgregarProducto.addActionListener(this);
         this.ventProd1.btnAgregarStock.addActionListener(this);
         this.ventProd1.btnModificarProducto.addActionListener(this);
@@ -49,12 +51,13 @@ public class controlVentanaProductos1 implements ActionListener{
                 System.out.println(e);
             }
         }
-        else if(ventProd1.btnVerProducto==evento.getSource()){
-            try{
-                controlVrProductos vrProd = new controlVrProductos(ventVrProd,modelo,ventProd1.tablaproductos.getSelectedRow());
+        else if(ventProd1.btnVerProducto == evento.getSource()){
+            try {
+                this.row = ventProd1.tablaproductos.getSelectedRow();
+                controlVrProductos vrProd = new controlVrProductos(ventVrProd, modelo, row);
                 vrProd.IniciarVista();
                 ventProd1.setVisible(false);
-            }catch(Exception e){
+            } catch(Exception e){
                 System.out.println(e);
             }
         }

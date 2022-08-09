@@ -21,6 +21,7 @@ public class controlAgProductos implements ActionListener{
         this.ventAg = ventAg;
         this.modelo = modelo;
         this.ventAg.btnGuardarProducto.addActionListener(this);
+        this.ventAg.btnCancelar.addActionListener(this);
     }
 
     public void IniciarVista(){
