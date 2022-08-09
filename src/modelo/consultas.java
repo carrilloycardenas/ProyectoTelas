@@ -93,8 +93,7 @@ public class consultas {
             Connection con=conn.conectar();
             
             ps=con.prepareStatement("call MostrarProductos(?);");
-            System.out.println(id.toString());
-            ps.setString(1, id.toString());
+            ps.setString(1, id);
             rs=ps.executeQuery();
         }catch(SQLException e){
             System.out.println(e);

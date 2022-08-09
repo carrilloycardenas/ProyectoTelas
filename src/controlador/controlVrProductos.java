@@ -30,8 +30,12 @@ public class controlVrProductos implements ActionListener{
         this.ventVr.btnEliminar.addActionListener(this);
         this.ventVr.btnVolver.addActionListener(this);
         //System.out.println(row);
+<<<<<<< Updated upstream
         String valor = String.valueOf(ventProd.tablaProductos.getValueAt(row, 0));
         this.rs = modelo.VrProductos(valor);
+=======
+        this.rs = modelo.VrProductos("1");
+>>>>>>> Stashed changes
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");
