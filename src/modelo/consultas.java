@@ -95,6 +95,7 @@ public class consultas {
             ps=con.prepareStatement("call MostrarProductos(?);");
             ps.setString(1, id);
             rs=ps.executeQuery();
+            rs.next();
         }catch(SQLException e){
             System.out.println("error en consultas "+e);
         }
