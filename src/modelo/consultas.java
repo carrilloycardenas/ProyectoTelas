@@ -96,7 +96,7 @@ public class consultas {
             ps.setString(1, id);
             rs=ps.executeQuery();
         }catch(SQLException e){
-            System.out.println(e);
+            System.out.println("error en consultas "+e);
         }
         return rs;
     }

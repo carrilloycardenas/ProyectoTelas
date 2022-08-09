@@ -52,7 +52,7 @@ public class controlVrProductos implements ActionListener{
             ventVr.lblPrecio.setText(rs.getString("precioUnitario"));
             ventVr.lblStock.setText(rs.getString("Stock"));
         } catch(SQLException e){
-            System.out.println(e);
+            System.out.println("error en controlVrProducto"+e);
         }
         
         
