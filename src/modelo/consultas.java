@@ -85,7 +85,7 @@ public class consultas {
             return null;
         }
     }
-    public ResultSet VrProductos(String id){
+    public ResultSet VrProductos(Object id){
         PreparedStatement ps=null;
         ResultSet rs = null;
         try{
@@ -93,7 +93,8 @@ public class consultas {
             Connection con=conn.conectar();
             
             ps=con.prepareStatement("call MostrarProductos(?);");
-            ps.setString(1, id);
+            System.out.println(id.toString());
+            ps.setString(1, id.toString());
             rs=ps.executeQuery();
         }catch(SQLException e){
             System.out.println(e);
