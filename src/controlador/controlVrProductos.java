@@ -19,9 +19,9 @@ import java.sql.SQLException;
  */
 public class controlVrProductos implements ActionListener{
 
-    ventanaVerProducto ventVr = new ventanaVerProducto();
+    ventanaVerProducto ventVr;
     consultas modelo = new consultas();
-    ventanaProductos1 ventProd = new ventanaProductos1();
+    ventanaProductos1 ventProd;
     ResultSet rs;
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row){
@@ -30,7 +30,8 @@ public class controlVrProductos implements ActionListener{
         this.ventVr.btnEliminar.addActionListener(this);
         this.ventVr.btnVolver.addActionListener(this);
         //System.out.println(row);
-        this.rs = modelo.VrProductos(ventProd.tablaproductos.getValueAt(row, 0));
+        String valor = String.valueOf(ventProd.tablaProductos.getValueAt(row, 0));
+        this.rs = modelo.VrProductos(valor);
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");

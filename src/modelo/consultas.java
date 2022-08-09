@@ -85,7 +85,7 @@ public class consultas {
             return null;
         }
     }
-    public ResultSet VrProductos(Object id){
+    public ResultSet VrProductos(String id){
         PreparedStatement ps=null;
         ResultSet rs = null;
         try{
