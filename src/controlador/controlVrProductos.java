@@ -34,7 +34,7 @@ public class controlVrProductos implements ActionListener{
         String valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
         System.out.println(valor);
         this.rs = modelo.VrProductos(valor);
-        this.rs = modelo.VrProductos("1");
+        //this.rs = modelo.VrProductos("1");
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");
