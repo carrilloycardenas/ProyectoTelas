@@ -41,14 +41,24 @@ public class controlModProducto implements ActionListener {
             ventMod.txtNombreProd.setText(rs.getString("Nombre"));
             ventMod.txtMarca.setText(rs.getString("Marca"));
             ventMod.txtDescripcion.setText(rs.getString("Descripcion"));
-            ventMod.txtStock.setValue(rs.getString("Stock"));
-            ventMod.txtPrecio.setValue(rs.getString("precioUnitario"));
-            ventMod.txtLocal.setSelectedItem(rs.getString("Localidad"));
+            ventMod.txtStock.setValue(Integer.getInteger(rs.getString("Stock")));
+            ventMod.txtPrecio.setValue(Float.parseFloat(rs.getString("precioUnitario")));
+            System.out.println(rs.getString("Nombre"));
+            System.out.println(rs.getString("Localidad"));
+            String local=rs.getString("Localidad");
+            if(local.equals("Mazatlán")){
+                //ventMod.txtLocal.setSelectedIndex(1);
+                System.out.println("Maza");
+            } else if(local.equals("Culiacán")){
+                //ventMod.txtLocal.setSelectedIndex(0);
+                System.out.println("culi");
+            }
+            
             ventMod.txtCategoria.setSelectedItem(rs.getString("NombreCategoria"));
             ventMod.txtColor.setText(rs.getString("Color"));
             //ventMod.txtTipoTela.setSelectedItem(rs.getString(""));
         }catch(SQLException e){
-            System.out.println(e);
+            System.out.println("Mod:" + e);
         }
     }
 
