@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaProductos1;
 import vista.ventanaAgProducto;
+import vista.ventanaAgStock;
 import vista.ventanaVerProducto;
 import vista.ventanaModProducto;
 
@@ -19,6 +20,7 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaVerProducto ventVrProd =new ventanaVerProducto();
     ventanaAgProducto ventAgProd = new ventanaAgProducto();
     ventanaProductos1 ventProd1 = new ventanaProductos1();
+    ventanaAgStock ventSt = new ventanaAgStock();
     consultas modelo = new consultas();
     int row;
 
@@ -74,6 +76,16 @@ public class controlVentanaProductos1 implements ActionListener{
                 System.out.println(e);
             }
             
+        }
+        else if(ventProd1.btnAgregarStock == evento.getSource()){
+            try {
+                this.row = ventProd1.tablaproductos.getSelectedRow();
+                controlAgStock ctStock = new controlAgStock(ventSt, modelo, this.row, this.ventProd1);
+                ctStock.IniciarVista();
+                ventProd1.setVisible(false);
+            } catch(Exception e){
+                
+            }
         }
     }
 }
