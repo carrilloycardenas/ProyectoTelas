@@ -25,7 +25,7 @@ public class controlVrProductos implements ActionListener{
     ResultSet rs;
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row,ventanaProductos1 ventProd){
-        this.ventProd=ventProd;
+        this.ventProd = ventProd;
         this.ventVr = ventVr;
         this.modelo = modelo;
         this.ventVr.btnEliminar.addActionListener(this);
@@ -52,7 +52,7 @@ public class controlVrProductos implements ActionListener{
             ventVr.lblPrecio.setText(rs.getString("precioUnitario"));
             ventVr.lblStock.setText(rs.getString("Stock"));
         } catch(SQLException e){
-            System.out.println("error en controlVrProducto"+e);
+            System.out.println("error en controlVrProducto "+e);
         }
         
         
