@@ -90,17 +90,16 @@ public class ventanaModProducto extends javax.swing.JFrame {
         txtLocal = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        txtCategoria2 = new javax.swing.JComboBox<>();
+        txtTipoTela = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
-        txtCategoria3 = new javax.swing.JComboBox<>();
+        txtTipoStock = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        txtCategoria4 = new javax.swing.JComboBox<>();
+        txtProveedor = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Modificar productos");
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(245, 245, 245));
 
@@ -300,7 +299,7 @@ public class ventanaModProducto extends javax.swing.JFrame {
         btnGuardarProducto.setBackground(new java.awt.Color(181, 194, 254));
         btnGuardarProducto.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnGuardarProducto.setForeground(new java.awt.Color(38, 18, 137));
-        btnGuardarProducto.setText("Agregar");
+        btnGuardarProducto.setText("Guardar");
         btnGuardarProducto.setBorderPainted(false);
         btnGuardarProducto.setFocusPainted(false);
 
@@ -325,29 +324,29 @@ public class ventanaModProducto extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Color");
 
-        txtCategoria2.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtCategoria2.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acrilico", "Lino", "Algodón", "Abaca" }));
-        txtCategoria2.setBorder(null);
-        txtCategoria2.setFocusable(false);
+        txtTipoTela.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtTipoTela.setForeground(new java.awt.Color(38, 18, 137));
+        txtTipoTela.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acrilico", "Lino", "Algodón", "Abaca" }));
+        txtTipoTela.setBorder(null);
+        txtTipoTela.setFocusable(false);
 
         jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel13.setText("Tipo Tela");
 
-        txtCategoria3.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtCategoria3.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Metro", "Rollo", " " }));
-        txtCategoria3.setBorder(null);
-        txtCategoria3.setFocusable(false);
+        txtTipoStock.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtTipoStock.setForeground(new java.awt.Color(38, 18, 137));
+        txtTipoStock.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Metro", "Rollo", " " }));
+        txtTipoStock.setBorder(null);
+        txtTipoStock.setFocusable(false);
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel14.setText("Tipo Stock");
 
-        txtCategoria4.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtCategoria4.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        txtCategoria4.setBorder(null);
-        txtCategoria4.setFocusable(false);
+        txtProveedor.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtProveedor.setForeground(new java.awt.Color(38, 18, 137));
+        txtProveedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtProveedor.setBorder(null);
+        txtProveedor.setFocusable(false);
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Proveedores");
@@ -396,15 +395,15 @@ public class ventanaModProducto extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
-                            .addComponent(txtCategoria2, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtTipoTela, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel14)
-                            .addComponent(txtCategoria3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtTipoStock, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17)
-                            .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -448,15 +447,15 @@ public class ventanaModProducto extends javax.swing.JFrame {
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addComponent(jLabel13)
                                 .addGap(11, 11, 11)
-                                .addComponent(txtCategoria2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txtTipoTela, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel14)
                         .addGap(11, 11, 11)
-                        .addComponent(txtCategoria3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtTipoStock, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addGap(11, 11, 11)
-                        .addComponent(txtCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
@@ -475,22 +474,19 @@ public class ventanaModProducto extends javax.swing.JFrame {
             .addComponent(barraSup, javax.swing.GroupLayout.PREFERRED_SIZE, 1020, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(90, 90, 90)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
+                        .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(190, 190, 190)
-                                        .addComponent(jLabel3)))
+                                .addComponent(jLabel2)
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel3)
                                 .addGap(117, 117, 117)
-                                .addComponent(btnEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(btnEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -510,7 +506,16 @@ public class ventanaModProducto extends javax.swing.JFrame {
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -561,7 +566,7 @@ public class ventanaModProducto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnEliminarProducto;
+    public javax.swing.JButton btnEliminarProducto;
     public javax.swing.JButton btnGuardarProducto;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -608,16 +613,16 @@ public class ventanaModProducto extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     public javax.swing.JComboBox<String> txtCategoria;
-    public javax.swing.JComboBox<String> txtCategoria2;
-    public javax.swing.JComboBox<String> txtCategoria3;
-    public javax.swing.JComboBox<String> txtCategoria4;
     public javax.swing.JTextField txtColor;
     public javax.swing.JTextArea txtDescripcion;
     public javax.swing.JComboBox<String> txtLocal;
     public javax.swing.JTextField txtMarca;
     public javax.swing.JTextField txtNombreProd;
     public javax.swing.JSpinner txtPrecio;
+    public javax.swing.JComboBox<String> txtProveedor;
     public javax.swing.JSpinner txtStock;
+    public javax.swing.JComboBox<String> txtTipoStock;
+    public javax.swing.JComboBox<String> txtTipoTela;
     // End of variables declaration//GEN-END:variables
 
     // Clase para la imagen con el logo de Tedemaz

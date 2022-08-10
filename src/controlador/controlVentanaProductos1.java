@@ -11,9 +11,11 @@ import modelo.consultas;
 import vista.ventanaProductos1;
 import vista.ventanaAgProducto;
 import vista.ventanaVerProducto;
+import vista.ventanaModProducto;
 
 public class controlVentanaProductos1 implements ActionListener{
     
+    ventanaModProducto ventMod = new ventanaModProducto();
     ventanaVerProducto ventVrProd =new ventanaVerProducto();
     ventanaAgProducto ventAgProd = new ventanaAgProducto();
     ventanaProductos1 ventProd1 = new ventanaProductos1();
@@ -61,6 +63,17 @@ public class controlVentanaProductos1 implements ActionListener{
             } catch(Exception e){
                 System.out.println(e);
             }
+        }
+        else if(ventProd1.btnModificarProducto == evento.getSource()){
+            try {
+                this.row = ventProd1.tablaproductos.getSelectedRow();
+                controlModProducto ctMod = new controlModProducto(ventMod, modelo, row, ventProd1);
+                ctMod.IniciarVista();
+                ventProd1.setVisible(false);
+            } catch(Exception e){
+                System.out.println(e);
+            }
+            
         }
     }
 }
