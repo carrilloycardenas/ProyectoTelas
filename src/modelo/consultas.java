@@ -102,5 +102,26 @@ public class consultas {
         }
         return rs;
     }
+
+    public int stockUpdate(String sto, String id){
+        int resultado=0;
+        Connection conex = null;
+
+        String consulta="update productos set Stock=?+Stock where idProductos=?";
+        
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, sto);
+            sentencia.setString(2, id);
+
+            resultado = sentencia.executeUpdate();
+            
+        }catch(SQLException e){
+            System.out.println("Error en consultas: "+e);
+        }
+
+        return resultado;
+    }
     
 }

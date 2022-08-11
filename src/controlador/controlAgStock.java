@@ -19,13 +19,14 @@ public class controlAgStock implements ActionListener {
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
     ResultSet rs;
-
+    String valor;
     public controlAgStock(ventanaAgStock ventSt, consultas model, int row, ventanaProductos1 ventProd){
         this.ventSt = ventSt;
         this.modelo = model;
         this.ventProd = ventProd;
-        String valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
+        this.valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
         this.rs = modelo.VrProductos(valor);
+        this.ventSt.btnGuardarStock.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -49,7 +50,10 @@ public class controlAgStock implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent evento){
-        
+        if(this.ventSt.btnGuardarStock==evento.getSource()){
+            System.out.println("Hola");
+            modelo.stockUpdate(ventSt.txtAgStock.toString(),this.valor);
+        }
     }
 
 }
