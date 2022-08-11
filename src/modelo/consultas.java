@@ -107,7 +107,7 @@ public class consultas {
         int resultado=0;
         Connection conex = null;
 
-        String consulta="update productos set Stock=?+Stock where idProductos=?";
+        String consulta="update productos set Stock= ?+Stock where idProductos=?";
         
         try{
             conex = con.conectar();

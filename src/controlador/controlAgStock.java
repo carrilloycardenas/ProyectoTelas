@@ -52,7 +52,7 @@ public class controlAgStock implements ActionListener {
     public void actionPerformed(ActionEvent evento){
         if(this.ventSt.btnGuardarStock==evento.getSource()){
             System.out.println("Hola");
-            modelo.stockUpdate(ventSt.txtAgStock.toString(),this.valor);
+            modelo.stockUpdate(ventSt.txtAgStock.getValue().toString(),this.valor);
         }
     }
 
