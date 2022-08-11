@@ -52,10 +52,10 @@ public class controlAgStock implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent evento){
         if(this.ventSt.btnGuardarStock==evento.getSource()){
-            System.out.println("Hola");
+            controlVentanaProductos1 ventP1 = new controlVentanaProductos1(this.ventProd1, this.modelo);
             modelo.stockUpdate(ventSt.txtAgStock.getValue().toString(),this.valor);
             ventSt.setVisible(false);
-            ventProd1.setVisible(true);
+            ventP1.IniciarVista();
         }
     }
 
