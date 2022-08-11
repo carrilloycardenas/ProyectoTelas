@@ -16,6 +16,7 @@ import vista.ventanaProductos1;
 public class controlAgStock implements ActionListener {
     
     ventanaAgStock ventSt;
+    ventanaProductos1 ventProd1 = new ventanaProductos1();
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
     ResultSet rs;
@@ -53,6 +54,8 @@ public class controlAgStock implements ActionListener {
         if(this.ventSt.btnGuardarStock==evento.getSource()){
             System.out.println("Hola");
             modelo.stockUpdate(ventSt.txtAgStock.getValue().toString(),this.valor);
+            ventSt.setVisible(false);
+            ventProd1.setVisible(true);
         }
     }
 
