@@ -344,12 +344,15 @@ public class ventanaModProducto extends javax.swing.JFrame {
 
         txtProveedor.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtProveedor.setForeground(new java.awt.Color(38, 18, 137));
-        txtProveedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtProveedor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Silvana", "Devatex", "Oimsa", "Temores" }));
         txtProveedor.setBorder(null);
         txtProveedor.setFocusable(false);
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Proveedores");
+
+        txtColor.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtColor.setForeground(new java.awt.Color(38, 18, 137));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);

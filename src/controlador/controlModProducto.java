@@ -57,8 +57,17 @@ public class controlModProducto implements ActionListener {
                 ventMod.txtCategoria.setSelectedIndex(1);
             }
             ventMod.txtColor.setText(rs.getString("Color"));
-            //ventMod.txtTipoTela.setSelectedItem(rs.getString(""));
-        }catch(SQLException e){
+            String tipo = rs.getString("NombreTipo");
+            if(tipo.equals("Acrilico")){
+                ventMod.txtTipoTela.setSelectedIndex(0);
+            } else if (tipo.equals("Lino")){
+                ventMod.txtTipoTela.setSelectedIndex(1);
+            } else if (tipo.equals("Algodón")){
+                ventMod.txtTipoTela.setSelectedIndex(2);
+            } else if (tipo.equals("Abaca")){
+                ventMod.txtTipoTela.setSelectedIndex(3);
+            }
+        } catch(SQLException e){
             System.out.println("Mod:" + e);
         }
     }
