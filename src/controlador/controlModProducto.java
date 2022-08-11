@@ -70,17 +70,17 @@ public class controlModProducto implements ActionListener {
             String tipoS =rs.getString("NombreTipoStock");
             if(tipoS.equals("Metro")){
                 ventMod.txtTipoStock.setSelectedIndex(0);
-            }else if(tipoS.equals("Rollo")){
+            } else if(tipoS.equals("Rollo")){
                 ventMod.txtTipoStock.setSelectedIndex(1);
             }
             String prov = rs.getString("Marca");
             if(prov.equals("Silvana")){
                 ventMod.txtProveedor.setSelectedIndex(0);
-            }else if(prov.equals("Devatex")){
+            } else if(prov.equals("Devatex")){
                 ventMod.txtProveedor.setSelectedIndex(1);
             }
         } catch(SQLException e){
-            System.out.println("Mod:" + e);
+            System.out.println("Mod: " + e);
         }
     }
 
