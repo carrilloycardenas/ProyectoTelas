@@ -304,7 +304,7 @@ public class ventanaModProducto extends javax.swing.JFrame {
         btnGuardarProducto.setFocusPainted(false);
 
         txtPrecio.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        txtPrecio.setModel(new javax.swing.SpinnerNumberModel(0.0d, null, null, 1.0d));
+        txtPrecio.setModel(new javax.swing.SpinnerNumberModel(0.0f, null, null, 1.0f));
         txtPrecio.setFocusable(false);
 
         txtLocal.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N

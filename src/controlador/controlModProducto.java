@@ -41,20 +41,21 @@ public class controlModProducto implements ActionListener {
             ventMod.txtNombreProd.setText(rs.getString("Nombre"));
             ventMod.txtMarca.setText(rs.getString("Marca"));
             ventMod.txtDescripcion.setText(rs.getString("Descripcion"));
-            ventMod.txtStock.setValue(Integer.getInteger(rs.getString("Stock")));
+            int stock = Integer.parseInt(rs.getString("Stock"));            
+            ventMod.txtStock.setValue(stock);
             ventMod.txtPrecio.setValue(Float.parseFloat(rs.getString("precioUnitario")));
-            System.out.println(rs.getString("Nombre"));
-            System.out.println(rs.getString("Localidad"));
             String local=rs.getString("Localidad");
             if(local.equals("Mazatlán")){
-                //ventMod.txtLocal.setSelectedIndex(1);
-                System.out.println("Maza");
+                ventMod.txtLocal.setSelectedIndex(1);
             } else if(local.equals("Culiacán")){
-                //ventMod.txtLocal.setSelectedIndex(0);
-                System.out.println("culi");
+                ventMod.txtLocal.setSelectedIndex(0);
             }
-            
-            ventMod.txtCategoria.setSelectedItem(rs.getString("NombreCategoria"));
+            String cat = rs.getString("NombreCategoria");
+            if(cat.equals("Telas")){
+                ventMod.txtCategoria.setSelectedIndex(0);
+            } else {
+                ventMod.txtCategoria.setSelectedIndex(1);
+            }
             ventMod.txtColor.setText(rs.getString("Color"));
             //ventMod.txtTipoTela.setSelectedItem(rs.getString(""));
         }catch(SQLException e){
