@@ -4,11 +4,8 @@
  */
 package modelo;
 
-import controlador.controlVrProductos;
 import java.sql.*;
 import javax.swing.table.DefaultTableModel;
-import modelo.conexion;
-import vista.ventanaProductos1;
 
 public class consultas {
 
@@ -45,7 +42,7 @@ public class consultas {
             resultado = sentencia.executeUpdate();
 
         }catch(SQLException e){
-            System.out.println(e);
+            System.out.println("Agregar: " + e);
         }
 
         return resultado;
@@ -156,14 +153,17 @@ public class consultas {
     
     public void EliminProd(String idProd){
         Connection conex=null;
+        System.out.println(idProd);
         
-        String consulta="call EliminarProductos(?)";
+        String consulta="call EliminarProductos(?);";
         
         try{
             conex=con.conectar();
+            sentencia = conex.prepareStatement(consulta);
             sentencia.setString(1, idProd);
+            sentencia.executeUpdate();
         }catch(SQLException e){
-            System.out.println("Error en consultas: "+e);
+            System.out.println("Error eliminar: " + e);
         }
     }
     
