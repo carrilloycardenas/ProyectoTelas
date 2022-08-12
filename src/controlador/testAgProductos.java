@@ -5,14 +5,14 @@
 package controlador;
 
 import modelo.consultas;
-import vista.ventanaAgProducto;
+import vista.VentanaClientes2;
 
 public class testAgProductos {
     public static void main(String[] args) {
         
         consultas modelo = new consultas();
-        ventanaAgProducto vista = new ventanaAgProducto();
-        controlAgProductos controlador = new controlAgProductos(vista, modelo);
+        VentanaClientes2 vista = new VentanaClientes2();
+        controlVentanaClientes controlador = new controlVentanaClientes(vista, modelo);
         controlador.IniciarVista();
 
     }
