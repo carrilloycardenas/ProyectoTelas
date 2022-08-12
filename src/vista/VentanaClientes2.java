@@ -321,9 +321,7 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnAgregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarClienteActionPerformed
-        AgregarCliente abrir= new AgregarCliente();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnAgregarClienteActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -331,21 +329,15 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnModificarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarClienteActionPerformed
-        ModificarCliente abrir= new ModificarCliente();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnModificarClienteActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        VentanaClientes2 abrir= new VentanaClientes2();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnVerclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerclienteActionPerformed
-        ventanaVerClientes abrir= new ventanaVerClientes();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVerclienteActionPerformed
 
     /**

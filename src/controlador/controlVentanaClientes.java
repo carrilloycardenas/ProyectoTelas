@@ -8,11 +8,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.AgregarCliente;
 import vista.VentanaClientes2;
 
 public class controlVentanaClientes implements ActionListener{
 
     VentanaClientes2 ventCli = new VentanaClientes2();
+    AgregarCliente agCli = new AgregarCliente();
     consultas modelo = new consultas();
 
     public controlVentanaClientes(VentanaClientes2 ventCl, consultas model){
@@ -35,7 +37,11 @@ public class controlVentanaClientes implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent evento){
-
+        if(this.ventCli.btnAgregarCliente == evento.getSource()){
+            controlAgClientes ctAgC = new controlAgClientes(this.agCli, this.modelo);
+            ctAgC.IniciarVista();
+            this.ventCli.setVisible(false);
+        }
     }
 
 }

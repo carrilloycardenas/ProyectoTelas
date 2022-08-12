@@ -66,7 +66,7 @@ public class controlVrClientes implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(ventVr.btnVolverClientes == evento.getSource() ){
-            controlVentanaClientes2 ctClien = new controlVentanaClientes2 (ventClien, modelo);
+            controlVentanaClientes ctClien = new controlVentanaClientes (ventClien, modelo);
             
         }
         throw new UnsupportedOperationException("Not supported yet.");
