@@ -19,6 +19,7 @@ public class controlModProducto implements ActionListener {
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
     ResultSet rs;
+    String valor;
 
     public controlModProducto(ventanaModProducto ventMod, consultas model, int row, ventanaProductos1 venProd){
         this.ventMod = ventMod;
@@ -26,7 +27,7 @@ public class controlModProducto implements ActionListener {
         this.ventProd = venProd;
         this.ventMod.btnGuardarProducto.addActionListener(this);
         this.ventMod.btnEliminarProducto.addActionListener(this);
-        String valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
+        valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
         System.out.println(valor);
         this.rs = modelo.VrProductos(valor);
     }
@@ -88,7 +89,7 @@ public class controlModProducto implements ActionListener {
     public void actionPerformed(ActionEvent evento){
         if(this.ventMod.btnGuardarProducto == evento.getSource()){
             controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
-            modelo.prodUpdate("2",ventMod.txtNombreProd.getText(),ventMod.txtDescripcion.getText(),ventMod.txtMarca.getText(), ventMod.txtStock.getValue().toString(),ventMod.txtPrecio.getValue().toString(), ventMod.txtLocal.getSelectedItem().toString(), ventMod.txtColor.getText(), Integer.toString(ventMod.txtCategoria.getSelectedIndex()+1), Integer.toString(ventMod.txtTipoTela.getSelectedIndex()+1),Integer.toString(ventMod.txtProveedor.getSelectedIndex()+1), Integer.toString(ventMod.txtTipoStock.getSelectedIndex()+1));
+            modelo.prodUpdate(this.valor,ventMod.txtNombreProd.getText(),ventMod.txtDescripcion.getText(),ventMod.txtMarca.getText(), ventMod.txtStock.getValue().toString(),ventMod.txtPrecio.getValue().toString(), ventMod.txtLocal.getSelectedItem().toString(), ventMod.txtColor.getText(), Integer.toString(ventMod.txtCategoria.getSelectedIndex()+1), Integer.toString(ventMod.txtTipoTela.getSelectedIndex()+1),Integer.toString(ventMod.txtProveedor.getSelectedIndex()+1), Integer.toString(ventMod.txtTipoStock.getSelectedIndex()+1));
             ventMod.setVisible(false);
             ctProd.IniciarVista();
         }
