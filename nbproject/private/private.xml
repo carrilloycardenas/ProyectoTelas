@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlModProducto.java</file>
-            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/modelo/conexion.java</file>
-            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProductos1.java</file>
-            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/modelo/consultas.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVrClientes.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlAgStock.java</file>
-            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/testVentanaProd1.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlAgClientes.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/VentanaClientes2.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlModProducto.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProductos1.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaClientes.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlAgProductos.java</file>
         </group>
     </open-files>

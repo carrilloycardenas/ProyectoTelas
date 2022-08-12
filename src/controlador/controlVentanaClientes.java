@@ -29,7 +29,7 @@ public class controlVentanaClientes implements ActionListener{
         ventCli.pack();
         ventCli.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventCli.setLocationRelativeTo(null);
-        //ventCli.tablaClientes.setModel(modelo.venProd());
+        ventCli.tablaClientes.setModel(modelo.verClientes());
         ventCli.setVisible(true);
     }
 
