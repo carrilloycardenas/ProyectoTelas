@@ -154,4 +154,17 @@ public class consultas {
         return resultado;
     }
     
+    public void EliminProd(String idProd){
+        Connection conex=null;
+        
+        String consulta="call EliminarProductos(?)";
+        
+        try{
+            conex=con.conectar();
+            sentencia.setString(1, idProd);
+        }catch(SQLException e){
+            System.out.println("Error en consultas: "+e);
+        }
+    }
+    
 }
