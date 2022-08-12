@@ -73,24 +73,24 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         jPanel27 = new IconoFacturas();
         jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        lblCalleProveedor = new javax.swing.JLabel();
+        lblCalleCliente = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnVolverClientes = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lbl = new javax.swing.JLabel();
-        lblColoniaProveedor = new javax.swing.JLabel();
+        lblColoniaCliente = new javax.swing.JLabel();
         lbl1 = new javax.swing.JLabel();
         lbl2 = new javax.swing.JLabel();
-        lblNumeroProveedor = new javax.swing.JLabel();
+        lblNumeroCliente = new javax.swing.JLabel();
         lbl3 = new javax.swing.JLabel();
-        lblCiudadProveedor = new javax.swing.JLabel();
+        lblCiudadCliente = new javax.swing.JLabel();
         lbl4 = new javax.swing.JLabel();
-        lblEstadoProveedor = new javax.swing.JLabel();
+        lblEstadoCliente = new javax.swing.JLabel();
         lbl5 = new javax.swing.JLabel();
         lblCodigoPProveedor = new javax.swing.JLabel();
         lbl6 = new javax.swing.JLabel();
-        lblidEmpleado = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
         lbl15 = new javax.swing.JLabel();
         lblCiudad3 = new javax.swing.JLabel();
         lbl19 = new javax.swing.JLabel();
@@ -105,16 +105,16 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         jPanel45 = new javax.swing.JPanel();
         jButton16 = new javax.swing.JButton();
         jPanel46 = new IconoFacturas();
-        lblCiudad10 = new javax.swing.JLabel();
+        lblNumero1 = new javax.swing.JLabel();
         lbl30 = new javax.swing.JLabel();
         lbl31 = new javax.swing.JLabel();
-        lblCiudad11 = new javax.swing.JLabel();
+        lblNombre1 = new javax.swing.JLabel();
         lbl32 = new javax.swing.JLabel();
         lbl34 = new javax.swing.JLabel();
         lbl35 = new javax.swing.JLabel();
-        lblCiudad13 = new javax.swing.JLabel();
+        lblNumero2 = new javax.swing.JLabel();
         lbl36 = new javax.swing.JLabel();
-        lblCiudad14 = new javax.swing.JLabel();
+        lblNombre2 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         scrollbar2 = new java.awt.Scrollbar();
         jPanel20 = new javax.swing.JPanel();
@@ -125,20 +125,20 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         jPanel33 = new javax.swing.JPanel();
         jButton12 = new javax.swing.JButton();
         jPanel34 = new IconoFacturas();
-        lblCiudad1 = new javax.swing.JLabel();
+        lblCorreo1 = new javax.swing.JLabel();
         lbl14 = new javax.swing.JLabel();
         lbl17 = new javax.swing.JLabel();
         lbl21 = new javax.swing.JLabel();
         lbl22 = new javax.swing.JLabel();
-        lblCiudad5 = new javax.swing.JLabel();
+        lblCorreo2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         scrollbar1 = new java.awt.Scrollbar();
         lbl25 = new javax.swing.JLabel();
         lbl7 = new javax.swing.JLabel();
-        lblidEmpleado1 = new javax.swing.JLabel();
+        lblidCliente = new javax.swing.JLabel();
         lbl8 = new javax.swing.JLabel();
-        lblidEmpleado2 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        lblNombre = new javax.swing.JLabel();
+        btnEliminarCliente = new javax.swing.JButton();
 
         lbl16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl16.setText("Número:");
@@ -311,9 +311,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
-        lblCalleProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCalleProveedor.setText("Andador Palomas");
-        jPanel1.add(lblCalleProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, -1, -1));
+        lblCalleCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblCalleCliente.setText("Andador Palomas");
+        jPanel1.add(lblCalleCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(1, 1, 1));
@@ -344,9 +344,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl.setText("Calle:");
         jPanel1.add(lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, -1, -1));
 
-        lblColoniaProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblColoniaProveedor.setText("Infonavit Alarcón");
-        jPanel1.add(lblColoniaProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, -1));
+        lblColoniaCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblColoniaCliente.setText("Infonavit Alarcón");
+        jPanel1.add(lblColoniaCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, -1));
 
         lbl1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl1.setText("Colonia:");
@@ -356,25 +356,25 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl2.setText("Número:");
         jPanel1.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 190, -1, -1));
 
-        lblNumeroProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblNumeroProveedor.setText("321");
-        jPanel1.add(lblNumeroProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 210, -1, -1));
+        lblNumeroCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNumeroCliente.setText("321");
+        jPanel1.add(lblNumeroCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 210, -1, -1));
 
         lbl3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl3.setText("Ciudad:");
         jPanel1.add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 190, -1, -1));
 
-        lblCiudadProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudadProveedor.setText("Mazatlán");
-        jPanel1.add(lblCiudadProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, -1, -1));
+        lblCiudadCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblCiudadCliente.setText("Mazatlán");
+        jPanel1.add(lblCiudadCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, -1, -1));
 
         lbl4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl4.setText("Estado:");
         jPanel1.add(lbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 190, -1, -1));
 
-        lblEstadoProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblEstadoProveedor.setText("Sinaloa");
-        jPanel1.add(lblEstadoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 210, -1, -1));
+        lblEstadoCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblEstadoCliente.setText("Sinaloa");
+        jPanel1.add(lblEstadoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 210, -1, -1));
 
         lbl5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl5.setText("CP:");
@@ -388,9 +388,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl6.setText("Apellidos:");
         jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, -1, -1));
 
-        lblidEmpleado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblidEmpleado.setText("Ramírez Lizárraga");
-        jPanel1.add(lblidEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
+        lblApellido.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblApellido.setText("Ramírez Lizárraga");
+        jPanel1.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
 
         lbl15.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl15.setText("Correos");
@@ -448,9 +448,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
 
         jPanel41.add(jPanel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
-        lblCiudad10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad10.setText("6692727998");
-        jPanel41.add(lblCiudad10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
+        lblNumero1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNumero1.setText("6692727998");
+        jPanel41.add(lblNumero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         lbl30.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl30.setText("1");
@@ -460,9 +460,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl31.setText("Número:");
         jPanel41.add(lbl31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
-        lblCiudad11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad11.setText("Dania Valquez");
-        jPanel41.add(lblCiudad11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
+        lblNombre1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNombre1.setText("Dania Valquez");
+        jPanel41.add(lblNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
 
         lbl32.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl32.setText("Nombre del dueño:");
@@ -476,17 +476,17 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl35.setText("Número:");
         jPanel41.add(lbl35, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
-        lblCiudad13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad13.setText("6692727992");
-        jPanel41.add(lblCiudad13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
+        lblNumero2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNumero2.setText("6692727992");
+        jPanel41.add(lblNumero2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
 
         lbl36.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl36.setText("Nombre del dueño:");
         jPanel41.add(lbl36, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, -1, -1));
 
-        lblCiudad14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad14.setText("Lizbeth López");
-        jPanel41.add(lblCiudad14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, -1, -1));
+        lblNombre2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNombre2.setText("Lizbeth López");
+        jPanel41.add(lblNombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, -1, -1));
 
         jSeparator6.setForeground(new java.awt.Color(204, 204, 204));
         jPanel41.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 490, 10));
@@ -532,9 +532,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
 
         jPanel20.add(jPanel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
-        lblCiudad1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad1.setText("silvanaDistribuidora@gmail.com");
-        jPanel20.add(lblCiudad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
+        lblCorreo1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblCorreo1.setText("silvanaDistribuidora@gmail.com");
+        jPanel20.add(lblCorreo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         lbl14.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         lbl14.setText("1");
@@ -552,9 +552,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl22.setText("Dirección de correo:");
         jPanel20.add(lbl22, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
-        lblCiudad5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCiudad5.setText("contacto@silvanaDistribuidora.com");
-        jPanel20.add(lblCiudad5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
+        lblCorreo2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblCorreo2.setText("contacto@silvanaDistribuidora.com");
+        jPanel20.add(lblCorreo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
 
         jSeparator2.setForeground(new java.awt.Color(204, 204, 204));
         jPanel20.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 490, 10));
@@ -570,25 +570,30 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl7.setText("ID:");
         jPanel1.add(lbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, -1, -1));
 
-        lblidEmpleado1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblidEmpleado1.setText("00012");
-        jPanel1.add(lblidEmpleado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
+        lblidCliente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblidCliente.setText("00012");
+        jPanel1.add(lblidCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
 
         lbl8.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl8.setText("Nombre:");
         jPanel1.add(lbl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, -1, -1));
 
-        lblidEmpleado2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblidEmpleado2.setText("Alessandra");
-        jPanel1.add(lblidEmpleado2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
+        lblNombre.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblNombre.setText("Alessandra");
+        jPanel1.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
 
-        jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(189, 0, 0));
-        jButton10.setText("Eliminar");
-        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0)));
-        jButton10.setContentAreaFilled(false);
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 100, 110, 30));
+        btnEliminarCliente.setBackground(new java.awt.Color(181, 194, 254));
+        btnEliminarCliente.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnEliminarCliente.setForeground(new java.awt.Color(189, 0, 0));
+        btnEliminarCliente.setText("Eliminar");
+        btnEliminarCliente.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0)));
+        btnEliminarCliente.setContentAreaFilled(false);
+        btnEliminarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarClienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEliminarCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 100, 110, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -604,6 +609,10 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVolverClientesActionPerformed
+
+    private void btnEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarClienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -642,9 +651,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnVolverClientes;
+    public javax.swing.JButton btnEliminarCliente;
+    public javax.swing.JButton btnVolverClientes;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
@@ -724,22 +733,22 @@ public class ventanaVerClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lbl6;
     private javax.swing.JLabel lbl7;
     private javax.swing.JLabel lbl8;
-    private javax.swing.JLabel lblCalleProveedor;
-    private javax.swing.JLabel lblCiudad1;
-    private javax.swing.JLabel lblCiudad10;
-    private javax.swing.JLabel lblCiudad11;
-    private javax.swing.JLabel lblCiudad13;
-    private javax.swing.JLabel lblCiudad14;
+    public javax.swing.JLabel lblApellido;
+    public javax.swing.JLabel lblCalleCliente;
     private javax.swing.JLabel lblCiudad3;
-    private javax.swing.JLabel lblCiudad5;
-    private javax.swing.JLabel lblCiudadProveedor;
+    public javax.swing.JLabel lblCiudadCliente;
     private javax.swing.JLabel lblCodigoPProveedor;
-    private javax.swing.JLabel lblColoniaProveedor;
-    private javax.swing.JLabel lblEstadoProveedor;
-    private javax.swing.JLabel lblNumeroProveedor;
-    private javax.swing.JLabel lblidEmpleado;
-    private javax.swing.JLabel lblidEmpleado1;
-    private javax.swing.JLabel lblidEmpleado2;
+    public javax.swing.JLabel lblColoniaCliente;
+    public javax.swing.JLabel lblCorreo1;
+    public javax.swing.JLabel lblCorreo2;
+    public javax.swing.JLabel lblEstadoCliente;
+    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblNombre1;
+    public javax.swing.JLabel lblNombre2;
+    public javax.swing.JLabel lblNumero1;
+    public javax.swing.JLabel lblNumero2;
+    public javax.swing.JLabel lblNumeroCliente;
+    public javax.swing.JLabel lblidCliente;
     private java.awt.Scrollbar scrollbar1;
     private java.awt.Scrollbar scrollbar2;
     // End of variables declaration//GEN-END:variables

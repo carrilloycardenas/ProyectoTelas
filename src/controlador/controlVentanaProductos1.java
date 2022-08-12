@@ -8,11 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.ventanaProductos1;
 import vista.ventanaAgProducto;
 import vista.ventanaAgStock;
-import vista.ventanaVerProducto;
 import vista.ventanaModProducto;
+import vista.ventanaProductos1;
+import vista.ventanaVerProducto;
 
 public class controlVentanaProductos1 implements ActionListener{
     

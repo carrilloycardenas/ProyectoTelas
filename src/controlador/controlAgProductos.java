@@ -5,9 +5,9 @@
 package controlador;
 
 import java.awt.event.ActionEvent;
-import modelo.consultas;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import modelo.consultas;
 import vista.ventanaAgProducto;
 import vista.ventanaProductos1;
 

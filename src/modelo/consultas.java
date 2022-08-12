@@ -166,5 +166,26 @@ public class consultas {
             System.out.println("Error eliminar: " + e);
         }
     }
+    //CLIENTES
+    public ResultSet VrClientes(String id){
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+        try{
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            
+            ps=con.prepareStatement("call MostrarClientes(?);");
+            ps.setString(1, id);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException e){
+            System.out.println("error en consultas "+e);
+        }
+        return rs;
+    }
+    
+    
+    
+    
     
 }

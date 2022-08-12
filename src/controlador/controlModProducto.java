@@ -9,9 +9,9 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
+import modelo.consultas;
 import vista.ventanaModProducto;
 import vista.ventanaProductos1;
-import modelo.consultas;
 
 public class controlModProducto implements ActionListener {
     

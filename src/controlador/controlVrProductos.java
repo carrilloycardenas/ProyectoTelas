@@ -5,13 +5,13 @@
 package controlador;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaProductos1;
 import vista.ventanaVerProducto;
-import java.awt.event.ActionListener;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  *
