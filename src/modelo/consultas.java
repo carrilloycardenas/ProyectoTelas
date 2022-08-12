@@ -149,7 +149,7 @@ public class consultas {
             resultado = sentencia.executeUpdate();
 
         }catch(SQLException e){
-            System.out.println("Error en consultas: "+e);
+            System.out.println("Error en consultas: " + e.toString());
         }
         return resultado;
     }
