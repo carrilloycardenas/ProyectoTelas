@@ -227,22 +227,21 @@ public class consultas {
         int resultado = 0;
         Connection conex = null;
 
-        String consulta = "call AltasProductos(?,?,?,?,?,?,?,?,?,?,?);";
+        String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?);";
 
         try{
             conex = con.conectar();
             sentencia = conex.prepareStatement(consulta);
-            sentencia.setString(1, nomProd);
-            sentencia.setString(2, desProd);
-            sentencia.setString(3, marProd);
-            sentencia.setString(4, Stock);
-            sentencia.setString(5, precio);
-            sentencia.setString(6, local);
-            sentencia.setString(7, color);
-            sentencia.setString(8, cate);
-            sentencia.setString(9, tipoTela);
-            sentencia.setString(10, prov);
-            sentencia.setString(11, tipoStock);
+            sentencia.setString(1, NomCli);
+            sentencia.setString(2, Apell);
+            sentencia.setString(3, Correo);
+            sentencia.setString(4, TelNum);
+            sentencia.setString(5, Calle);
+            sentencia.setString(6, Colonia);
+            sentencia.setString(7, NumeroDire);
+            sentencia.setString(8, CP);
+            sentencia.setString(9, Ciudad);
+            sentencia.setString(10, Estado);
 
             resultado = sentencia.executeUpdate();
 

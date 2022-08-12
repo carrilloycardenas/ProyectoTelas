@@ -40,7 +40,7 @@ public class controlAgClientes implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(ventAgC.btnAgregar==e.getSource()){
-            modelo.AgProducto(ventAgC.txtNomCli.getText(),ventAgC.txtApell.getText(),ventAgC.txtCalle.getText(), ventAgC.txtColonia.getText(),ventAgC.txtNumeroDire.getText(), ventAgC.txtCiudad.getText(), ventAgC.txtEstado.getText(), ventAgC.txtCP.getText(), ventAgC.txtTelNum.getText(),ventAgC.txtNomDue.getText(),ventAgC.txtParent.getText(),ventAgC.txtCorreo.getText());
+            modelo.AgClientes(ventAgC.txtNomCli.getText(),ventAgC.txtApell.getText(),ventAgC.txtCalle.getText(), ventAgC.txtColonia.getText(),ventAgC.txtNumeroDire.getText(), ventAgC.txtCiudad.getText(), ventAgC.txtEstado.getText(), ventAgC.txtCP.getText(), ventAgC.txtTelNum.getText(),ventAgC.txtNomDue.getText(),ventAgC.txtParent.getText(),ventAgC.txtCorreo.getText());
         }
     }
     
