@@ -124,4 +124,34 @@ public class consultas {
         return resultado;
     }
     
+    public int prodUpdate(String idProd, String nomProd, String desProd, String marProd, String Stock, String precio, String local, String color, String cate, String tipoTela, String prov, String tipoStock){
+        int resultado=0;
+        Connection conex=null;
+        
+        String consulta="call ModificarProductos(?,?,?,?,?,?,?,?,?,?,?,?)";
+        
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, nomProd);
+            sentencia.setString(2, desProd);
+            sentencia.setString(3, marProd);
+            sentencia.setString(4, Stock);
+            sentencia.setString(5, precio);
+            sentencia.setString(6, local);
+            sentencia.setString(7, color);
+            sentencia.setString(8, cate);
+            sentencia.setString(9, tipoTela);
+            sentencia.setString(10, prov);
+            sentencia.setString(11, tipoStock);
+            sentencia.setString(12, idProd);
+
+            resultado = sentencia.executeUpdate();
+
+        }catch(SQLException e){
+            System.out.println("Error en consultas: "+e);
+        }
+        return resultado;
+    }
+    
 }
