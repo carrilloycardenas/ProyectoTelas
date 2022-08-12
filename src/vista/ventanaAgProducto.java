@@ -349,7 +349,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
 
         txtCategoria4.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         txtCategoria4.setForeground(new java.awt.Color(38, 18, 137));
-        txtCategoria4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        txtCategoria4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Silvana", "Devatex", "Oimsa", "Temores" }));
         txtCategoria4.setBorder(null);
         txtCategoria4.setFocusable(false);
 

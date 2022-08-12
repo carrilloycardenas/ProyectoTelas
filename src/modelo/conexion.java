@@ -12,7 +12,7 @@ public class conexion {
     public Connection conectar(){
         Connection con = null;
         try{
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/modelobdproyecto", "root", "MyPass123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pbdtedemazc3", "root", "MyPass123");
         } catch (SQLException ex) {
             System.out.println(ex);
         }

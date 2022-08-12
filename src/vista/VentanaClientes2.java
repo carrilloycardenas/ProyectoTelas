@@ -68,7 +68,7 @@ public class VentanaClientes2 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tablaempleados = new javax.swing.JTable();
+        tablaClientes = new javax.swing.JTable();
         btnAgregarCliente = new javax.swing.JButton();
         btnModificarCliente = new javax.swing.JButton();
         btnVercliente = new javax.swing.JButton();
@@ -227,8 +227,8 @@ public class VentanaClientes2 extends javax.swing.JFrame {
         jLabel2.setText("Lista de clientes");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, -1, -1));
 
-        tablaempleados.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        tablaempleados.setModel(new javax.swing.table.DefaultTableModel(
+        tablaClientes.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"1", "Alessandra Ramírez Lizárraga"},
                 {"2", "Daniel Andres Cardenas Alarcón"},
@@ -257,8 +257,8 @@ public class VentanaClientes2 extends javax.swing.JFrame {
                 "ID", "Nombre "
             }
         ));
-        tablaempleados.setGridColor(new java.awt.Color(181, 194, 254));
-        jScrollPane1.setViewportView(tablaempleados);
+        tablaClientes.setGridColor(new java.awt.Color(181, 194, 254));
+        jScrollPane1.setViewportView(tablaClientes);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 480, 330));
 
@@ -385,10 +385,10 @@ public class VentanaClientes2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnAgregarCliente;
-    private javax.swing.JButton btnEliminarcliente;
-    private javax.swing.JButton btnModificarCliente;
-    private javax.swing.JButton btnVercliente;
+    public javax.swing.JButton btnAgregarCliente;
+    public javax.swing.JButton btnEliminarcliente;
+    public javax.swing.JButton btnModificarCliente;
+    public javax.swing.JButton btnVercliente;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -420,7 +420,7 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaempleados;
+    public javax.swing.JTable tablaClientes;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

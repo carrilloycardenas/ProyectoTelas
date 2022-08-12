@@ -28,7 +28,6 @@ public class controlModProducto implements ActionListener {
         this.ventMod.btnGuardarProducto.addActionListener(this);
         this.ventMod.btnEliminarProducto.addActionListener(this);
         valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
-        System.out.println(valor);
         this.rs = modelo.VrProductos(valor);
     }
 
@@ -94,6 +93,10 @@ public class controlModProducto implements ActionListener {
             ctProd.IniciarVista();
         }
         else if(this.ventMod.btnEliminarProducto == evento.getSource()){
+            modelo.EliminProd(this.valor);
+            ventMod.setVisible(false);
+            controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
+            ctProd.IniciarVista();
 
         }
     }
