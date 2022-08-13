@@ -261,11 +261,6 @@ public class ventanaProvedores extends javax.swing.JFrame {
         btnAgregarProveedor.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnAgregarProveedor.setForeground(new java.awt.Color(21, 8, 79));
         btnAgregarProveedor.setText("Agregar proveedor");
-        btnAgregarProveedor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarProveedorActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnAgregarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 240, 160, 40));
 
         btnModificarProveedor.setBackground(new java.awt.Color(181, 194, 254));
@@ -314,12 +309,6 @@ public class ventanaProvedores extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void btnAgregarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarProveedorActionPerformed
-        AgregarProveedor abrir= new AgregarProveedor();
-        abrir.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnAgregarProveedorActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
