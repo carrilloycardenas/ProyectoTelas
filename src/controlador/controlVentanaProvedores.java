@@ -39,8 +39,16 @@ class controlVentanaProvedores implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void actionPerformed(ActionEvent evento) {
+        if(ventProv.btnAgregarProveedor==evento.getSource()){
+            try{
+                controlAgProveedores agProv=new controlAgProveedores(ventAgP,modelo);
+                agProv.IniciarVista();
+                ventProv.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error en iniciar ventana Ag Proveedores: "+e);
+            }
+        }
     }
     
 }
