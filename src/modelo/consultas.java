@@ -248,5 +248,38 @@ public class consultas {
         return resultado;
 
     }
+        
+    
+        public int AgEmpleados(String NomCli,String Apell,String Calle,String Colonia,String NumeroDire,String Ciudad,String Estado,String CP,String TelNum,String NomDue,String Parent,String Correo){
+    
+        int resultado = 0;
+        Connection conex = null;
+
+        String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, NomCli);
+            sentencia.setString(2, Apell);
+            sentencia.setString(3, Correo);
+            sentencia.setString(4, TelNum);
+            sentencia.setString(5, Calle);
+            sentencia.setString(6, Colonia);
+            sentencia.setString(7, NumeroDire);
+            sentencia.setString(8, CP);
+            sentencia.setString(9, Ciudad);
+            sentencia.setString(10, Estado);
+
+            resultado = sentencia.executeUpdate();
+
+        }catch(SQLException e){
+            System.out.println("Agregar: " + e);
+        }
+
+        return resultado;
+
+    }
+        
     
 }
