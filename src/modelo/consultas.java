@@ -116,6 +116,74 @@ public class consultas {
             return null;
         }
     }
+
+    public DefaultTableModel numCliente(String id){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call MostrarTelefonosCliente("+id+");");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Telefonos Cli: " + e);
+            return null;
+        }
+    }
+
+    public DefaultTableModel correoCliente(String id){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call MostrarCorreosCliente("+id+");");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Correos Cli: " + e);
+            return null;
+        }
+    }
     
     public ResultSet VrProductos(String id){
         PreparedStatement ps=null;
@@ -337,6 +405,7 @@ public class consultas {
                     }
                     dtm.addRow(fila);
                 }
+
                 return dtm;
 
 
