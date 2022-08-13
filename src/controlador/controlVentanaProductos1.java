@@ -107,8 +107,8 @@ public class controlVentanaProductos1 implements ActionListener{
         
         else if(ventProd1.btnProveedores==evento.getSource()){
             try{
-                System.out.println(ventProv);
-                System.out.println(modelo);
+                System.out.println("ventana"+ventProv);
+                System.out.println("modelo"+modelo);
                 controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
                 ctProv.IniciarVista();
                 ventProd1.setVisible(false);
