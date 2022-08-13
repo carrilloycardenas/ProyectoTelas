@@ -35,12 +35,16 @@ public class controlAgProveedores implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        if(ventAgP.btnAgregar==e.getSource()){
+    public void actionPerformed(ActionEvent evento) {
+        if(ventAgP.btnAgregar==evento.getSource()){
+            try{
             modelo.AgProveedores(ventAgP.txtNomP.getText(), ventAgP.txtCalle.getText(), ventAgP.txtColonia.getText(), ventAgP.txtNumDir.getText(), ventAgP.txtCiudad.getText(), ventAgP.txtEstado.getText(), ventAgP.txtPais.getText(), ventAgP.txtNumTel.getText(), ventAgP.txtNomDueño.getText(), ventAgP.txtPuesto.getText(), ventAgP.txtCorreo.getText(),ventAgP.txtNomDueñoC.getText(),ventAgP.txtPuestoC.getText(),ventAgP.txtPais.getText());
             controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
             ctProv.IniciarVista();
             ventAgP.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error en btn agregar proveedor: "+e);
+            }
         }
     }
 }
