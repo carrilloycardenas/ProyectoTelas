@@ -23,44 +23,41 @@ public class controlVrClientes implements ActionListener {
     consultas modelo =new consultas();
     VentanaClientes2 ventClien;
     ResultSet rs;
-    
+    String valor;
+
     public controlVrClientes(ventanaVerClientes ventVr,consultas modelo,VentanaClientes2 ventClien, int row){
         this.ventClien= ventClien;
         this.ventVr=ventVr;
         this.modelo=modelo;
         this.ventVr.btnEliminarCliente.addActionListener(this);
         this.ventVr.btnVolverClientes.addActionListener(this);
-        
-        String valor = String.valueOf(ventClien.tablaClientes.getValueAt(row, 0));
+        this.valor = String.valueOf(ventClien.tablaClientes.getValueAt(row, 0));
         //System.out.println(valor);
-        this.rs = modelo.VrClientes( valor);  
+        this.rs = modelo.VrClientes(this.valor);  
     }
-     public void IniciarVista(){
-         ventVr.setTitle("Mostrar Cliente");
-         ventVr.pack();
-         ventVr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         ventVr.setLocationRelativeTo(null);
-         ventVr.setVisible(true);
-         try{
-             ventVr.lblidCliente.setText(rs.getString("idClientes"));            
-             ventVr.lblNombre.setText(rs.getString("Nombre"));
-             ventVr.lblApellido.setText(rs.getString("Apellidos"));
-             ventVr.lblCalleCliente.setText(rs.getString("calle"));
-             ventVr.lblColoniaCliente.setText(rs.getString("Colonia"));
-             ventVr.lblNumeroCliente.setText(rs.getString("numCasa"));
-             ventVr.lblCiudadCliente.setText(rs.getString("Ciudad"));
-             ventVr.lblEstadoCliente.setText(rs.getString("Estado"));
-             ventVr.lblNumero1.setText(rs.getString("Número"));
-             ventVr.lblNombre1.setText(rs.getString("Nombre"));
-             ventVr.lblNumero2.setText(rs.getString("Número"));
-             ventVr.lblNombre2.setText(rs.getString("Nombre"));
-             ventVr.lblCorreo1.setText(rs.getString("Correo"));
-             ventVr.lblCorreo2.setText(rs.getString("Correo"));      
-         }catch(SQLException e){
-             System.out.println("error en controlVrClientes: " + e);
+    
+    public void IniciarVista(){
+        ventVr.setTitle("Mostrar Cliente");
+        ventVr.pack();
+        ventVr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventVr.setLocationRelativeTo(null);
+        ventVr.setVisible(true);
+        try{
+            ventVr.lblidCliente.setText(rs.getString("idClientes"));            
+            ventVr.lblNombre.setText(rs.getString("Nombre"));
+            ventVr.lblApellido.setText(rs.getString("Apellidos"));
+            ventVr.lblCalleCliente.setText(rs.getString("calle"));
+            ventVr.lblColoniaCliente.setText(rs.getString("Colonia"));
+            ventVr.lblNumeroCliente.setText(rs.getString("numCasa"));
+            ventVr.lblCiudadCliente.setText(rs.getString("Ciudad"));
+            ventVr.lblEstadoCliente.setText(rs.getString("Estado"));
+            ventVr.tablaTelefonosCli.setModel(this.modelo.numCliente(this.valor));
+            ventVr.tablaCorreoCli.setModel(this.modelo.correoCliente(this.valor));
+        }catch(SQLException e){
+            System.out.println("error en controlVrClientes: " + e);
              
-         }
-     }
+        }
+    }
     
 
     @Override

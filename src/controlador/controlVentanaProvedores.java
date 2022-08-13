@@ -33,7 +33,7 @@ class controlVentanaProvedores implements ActionListener{
         ventProv.setTitle("Proveedores");
         ventProv.pack();
         ventProv.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventProv.setLocation(null);
+        ventProv.setLocationRelativeTo(null);
         ventProv.tablaempleados.setModel(modelo.venProv());
         ventProv.setVisible(true);
     }
