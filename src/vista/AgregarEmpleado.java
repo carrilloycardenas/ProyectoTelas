@@ -73,45 +73,45 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        txtFechaN = new javax.swing.JTextField();
+        txtApell = new javax.swing.JTextField();
+        txtNomE = new javax.swing.JTextField();
+        txtFechaDCon = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txtNumSS = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtSueldo = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        txtPuesto = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txtPassword = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtUser = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        txtColonia = new javax.swing.JTextField();
+        txtCalle = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtNumDire = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtCiudad = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        txtEstado = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        txtCp = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
+        txtTelNume = new javax.swing.JTextField();
+        txtNomDueño = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        txtParent = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        txtCorreo = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
@@ -281,35 +281,35 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel5.setText("Fecha de nacimiento: ");
         jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 60, -1, -1));
-        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 86, 182, -1));
-        jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
-        jPanel6.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 152, 185, -1));
+        jPanel6.add(txtFechaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 86, 182, -1));
+        jPanel6.add(txtApell, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
+        jPanel6.add(txtNomE, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
+        jPanel6.add(txtFechaDCon, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 152, 185, -1));
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel6.setText("Fecha de contratacion:");
         jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 126, -1, -1));
-        jPanel6.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 152, 182, -1));
+        jPanel6.add(txtNumSS, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 152, 182, -1));
 
         jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel7.setText("Num Seguro Social:");
         jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 126, -1, -1));
-        jPanel6.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 226, 185, -1));
+        jPanel6.add(txtSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 226, 185, -1));
 
         jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel8.setText("Sueldo:");
         jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 200, -1, -1));
-        jPanel6.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 226, 182, -1));
+        jPanel6.add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 226, 182, -1));
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel9.setText("Puesto:");
         jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 200, -1, -1));
-        jPanel6.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 292, 185, -1));
+        jPanel6.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 292, 185, -1));
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel10.setText("Contraseña:");
         jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 266, -1, -1));
-        jPanel6.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 292, 182, -1));
+        jPanel6.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 292, 182, -1));
 
         jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel11.setText("Usuario:");
@@ -317,8 +317,8 @@ public class AgregarEmpleado extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 326, 490, 20));
-        jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 406, 150, -1));
-        jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 406, 150, -1));
+        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 406, 150, -1));
+        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 406, 150, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
@@ -331,22 +331,22 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 348, -1, -1));
-        jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 406, 150, -1));
+        jPanel6.add(txtNumDire, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 406, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 380, -1, -1));
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 150, -1));
+        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 150, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
-        jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 118, -1));
+        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 460, 118, -1));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, -1, -1));
-        jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 87, -1));
+        jPanel6.add(txtCp, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 460, 87, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel20.setText("CP:");
@@ -362,13 +362,13 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel22.setText("Números:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 522, -1, -1));
-        jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 548, 150, -1));
-        jPanel6.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 548, 150, -1));
+        jPanel6.add(txtTelNume, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 548, 150, -1));
+        jPanel6.add(txtNomDueño, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 548, 150, -1));
 
         jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel23.setText("Nombre de dueño:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 522, -1, -1));
-        jPanel6.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 548, 150, -1));
+        jPanel6.add(txtParent, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 548, 150, -1));
 
         jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel24.setText("Parentesco: ");
@@ -379,12 +379,12 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel25.setText("Agregar teléfono");
         jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, -1, -1));
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+        txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
+                txtCorreoActionPerformed(evt);
             }
         });
-        jPanel6.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 655, 486, -1));
+        jPanel6.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 655, 486, -1));
 
         jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
         jLabel26.setText("Direccion de correo:");
@@ -535,9 +535,9 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
@@ -651,25 +651,25 @@ public class AgregarEmpleado extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    public javax.swing.JTextField txtApell;
+    public javax.swing.JTextField txtCalle;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtColonia;
+    public javax.swing.JTextField txtCorreo;
+    public javax.swing.JTextField txtCp;
+    public javax.swing.JTextField txtEstado;
+    private javax.swing.JTextField txtFechaDCon;
+    public javax.swing.JTextField txtFechaN;
+    public javax.swing.JTextField txtNomDueño;
+    public javax.swing.JTextField txtNomE;
+    private javax.swing.JTextField txtNumDire;
+    public javax.swing.JTextField txtNumSS;
+    public javax.swing.JTextField txtParent;
+    public javax.swing.JTextField txtPassword;
+    public javax.swing.JTextField txtPuesto;
+    public javax.swing.JTextField txtSueldo;
+    public javax.swing.JTextField txtTelNume;
+    public javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

@@ -71,41 +71,45 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtNomP = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        txtColonia = new javax.swing.JTextField();
+        txtCalle = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtNumDir = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtCiudad = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        txtEstado = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        txtCp = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
+        txtNumTel = new javax.swing.JTextField();
+        txtNomDueño = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
+        txtPuesto = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
+        txtCorreo = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
         jPanel10 = new addIcon();
         jPanel11 = new addIcon();
-        jButton10 = new javax.swing.JButton();
+        txtNomDueñoC = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        txtPuestoC = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        btnAgregar = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar proveedor");
@@ -257,12 +261,12 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel3.setText("Nombre:");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
+        jPanel6.add(txtNomP, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 490, 20));
-        jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 150, -1));
-        jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 150, -1));
+        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 150, -1));
+        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 150, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
@@ -275,22 +279,22 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-        jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 150, -1));
+        jPanel6.add(txtNumDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
+        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
-        jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 118, -1));
+        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 118, -1));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, -1, -1));
-        jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 87, -1));
+        jPanel6.add(txtCp, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 87, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("CP:");
@@ -306,16 +310,16 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel22.setText("Números:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
-        jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 150, -1));
-        jPanel6.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 150, -1));
+        jPanel6.add(txtNumTel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 150, -1));
+        jPanel6.add(txtNomDueño, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 150, -1));
 
         jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel23.setText("Nombre de dueño:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, -1, -1));
-        jPanel6.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 150, -1));
+        jPanel6.add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 150, -1));
 
         jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel24.setText("Parentesco: ");
+        jLabel24.setText("Puesto:");
         jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
@@ -323,12 +327,12 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel25.setText("Agregar teléfono");
         jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, -1, -1));
 
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+        txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
+                txtCorreoActionPerformed(evt);
             }
         });
-        jPanel6.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 486, -1));
+        jPanel6.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 230, -1));
 
         jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel26.setText("Direccion de correo:");
@@ -371,16 +375,26 @@ public class AgregarProveedor extends javax.swing.JFrame {
         );
 
         jPanel6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 10, 10));
+        jPanel6.add(txtNomDueñoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, 110, -1));
+
+        jLabel31.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel31.setText("Nombre de dueño:");
+        jPanel6.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 140, -1));
+        jPanel6.add(txtPuestoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 110, -1));
+
+        jLabel32.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel32.setText("Puesto:");
+        jPanel6.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 370, 70, -1));
 
         jScrollPane1.setViewportView(jPanel6);
 
-        jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(21, 8, 79));
-        jButton10.setText("Agregar");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregar.setBackground(new java.awt.Color(181, 194, 254));
+        btnAgregar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(21, 8, 79));
+        btnAgregar.setText("Agregar");
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnAgregarActionPerformed(evt);
             }
         });
 
@@ -392,13 +406,13 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel29.setForeground(new java.awt.Color(51, 51, 51));
         jLabel29.setText("Eliminar");
 
-        jButton11.setBackground(new java.awt.Color(181, 194, 254));
-        jButton11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(21, 8, 79));
-        jButton11.setText("Cancelar");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelar.setBackground(new java.awt.Color(181, 194, 254));
+        btnCancelar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(21, 8, 79));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnCancelarActionPerformed(evt);
             }
         });
 
@@ -428,9 +442,9 @@ public class AgregarProveedor extends javax.swing.JFrame {
                         .addGap(0, 30, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(219, 219, 219)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(91, 91, 91))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -455,8 +469,8 @@ public class AgregarProveedor extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(22, 22, 22))))
         );
 
@@ -480,19 +494,19 @@ public class AgregarProveedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnAgregarActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         /*ventanaVerEmpleado abrir= new ventanaVerEmpleado();
         abrir.setVisible(true);
         this.setVisible(false);*/
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -534,9 +548,9 @@ public class AgregarProveedor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnCancelar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -567,6 +581,8 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -590,17 +606,19 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTextField txtCalle;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtColonia;
+    public javax.swing.JTextField txtCorreo;
+    public javax.swing.JTextField txtCp;
+    public javax.swing.JTextField txtEstado;
+    public javax.swing.JTextField txtNomDueño;
+    public javax.swing.JTextField txtNomDueñoC;
+    public javax.swing.JTextField txtNomP;
+    public javax.swing.JTextField txtNumDir;
+    public javax.swing.JTextField txtNumTel;
+    public javax.swing.JTextField txtPuesto;
+    public javax.swing.JTextField txtPuestoC;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

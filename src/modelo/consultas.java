@@ -220,66 +220,94 @@ public class consultas {
     
         public int AgClientes(String NomCli,String Apell,String Calle,String Colonia,String NumeroDire,String Ciudad,String Estado,String CP,String TelNum,String NomDue,String Parent,String Correo){
     
-        int resultado = 0;
-        Connection conex = null;
+            int resultado = 0;
+            Connection conex = null;
 
-        String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
+            String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
 
-        try{
-            conex = con.conectar();
-            sentencia = conex.prepareStatement(consulta);
-            sentencia.setString(1, NomCli);
-            sentencia.setString(2, Apell);
-            sentencia.setString(3, Correo);
-            sentencia.setString(4, TelNum);
-            sentencia.setString(5, Calle);
-            sentencia.setString(6, Colonia);
-            sentencia.setString(7, NumeroDire);
-            sentencia.setString(8, CP);
-            sentencia.setString(9, Ciudad);
-            sentencia.setString(10, Estado);
+                try{
+                    conex = con.conectar();
+                    sentencia = conex.prepareStatement(consulta);
+                    sentencia.setString(1, NomCli);
+                    sentencia.setString(2, Apell);
+                    sentencia.setString(3, Correo);
+                    sentencia.setString(4, TelNum);
+                    sentencia.setString(5, Calle);
+                    sentencia.setString(6, Colonia);
+                    sentencia.setString(7, NumeroDire);
+                    sentencia.setString(8, CP);
+                    sentencia.setString(9, Ciudad);
+                    sentencia.setString(10, Estado);
 
-            resultado = sentencia.executeUpdate();
+                    resultado = sentencia.executeUpdate();
 
-        }catch(SQLException e){
-            System.out.println("Agregar: " + e);
-        }
+                }catch(SQLException e){
+                    System.out.println("Agregar: " + e);
+                }
 
-        return resultado;
+            return resultado;
 
     }
         
     
         public int AgEmpleados(String NomCli,String Apell,String Calle,String Colonia,String NumeroDire,String Ciudad,String Estado,String CP,String TelNum,String NomDue,String Parent,String Correo){
     
-        int resultado = 0;
-        Connection conex = null;
+            int resultado = 0;
+            Connection conex = null;
 
-        String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
+            String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
 
-        try{
-            conex = con.conectar();
-            sentencia = conex.prepareStatement(consulta);
-            sentencia.setString(1, NomCli);
-            sentencia.setString(2, Apell);
-            sentencia.setString(3, Correo);
-            sentencia.setString(4, TelNum);
-            sentencia.setString(5, Calle);
-            sentencia.setString(6, Colonia);
-            sentencia.setString(7, NumeroDire);
-            sentencia.setString(8, CP);
-            sentencia.setString(9, Ciudad);
-            sentencia.setString(10, Estado);
+                try{
+                    conex = con.conectar();
+                    sentencia = conex.prepareStatement(consulta);
+                    sentencia.setString(1, NomCli);
+                    sentencia.setString(2, Apell);
+                    sentencia.setString(3, Correo);
+                    sentencia.setString(4, TelNum);
+                    sentencia.setString(5, Calle);
+                    sentencia.setString(6, Colonia);
+                    sentencia.setString(7, NumeroDire);
+                    sentencia.setString(8, CP);
+                    sentencia.setString(9, Ciudad);
+                    sentencia.setString(10, Estado);
 
-            resultado = sentencia.executeUpdate();
+                    resultado = sentencia.executeUpdate();
 
-        }catch(SQLException e){
-            System.out.println("Agregar: " + e);
+                }catch(SQLException e){
+                    System.out.println("Agregar: " + e);
+                }
+
+            return resultado;
+
         }
-
-        return resultado;
-
-    }
         
+        
+        public int AgProveedores(String nom, String calle, String colonia, String numD, String ciudad, String estado, String cp, String TelNum, Sting NomDue, String parent, String correo){
+            int resultado=0;
+            Connection conex =null;
+            
+            String consulta="call (?,?,?,?,?,?,?,?,?,?,?)";
+            
+            try{
+                conex = con.conectar();
+                sentencia.setString(1, );
+                sentencia.setString(2, );
+                sentencia.setString(3, );
+                sentencia.setString(4, );
+                sentencia.setString(5, );
+                sentencia.setString(6, );
+                sentencia.setString(7, );
+                sentencia.setString(8, );
+                sentencia.setString(9, );
+                sentencia.setString(10, );
+                sentencia.setString(11, );
+            }catch(SQLException e){
+                System.out.println("Error en consultas (agregarPro)");
+            }
+            
+            
+            return resultado;
+        }
+    
     
 }
