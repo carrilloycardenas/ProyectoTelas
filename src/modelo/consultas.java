@@ -282,31 +282,68 @@ public class consultas {
         }
         
         
-        public int AgProveedores(String nom, String calle, String colonia, String numD, String ciudad, String estado, String cp, String TelNum, Sting NomDue, String parent, String correo){
+        public int AgProveedores(String nom, String calle, String colonia, String numD, String ciudad, String estado, String cp, String TelNum, String NomDue, String puestoN, String correo, String nomDC, String puestoC, String pais){
             int resultado=0;
             Connection conex =null;
             
-            String consulta="call (?,?,?,?,?,?,?,?,?,?,?)";
+            String consulta="call (?,?,?,?,?,?,?,?,?,?,?,?,?)";
             
             try{
                 conex = con.conectar();
-                sentencia.setString(1, );
-                sentencia.setString(2, );
-                sentencia.setString(3, );
-                sentencia.setString(4, );
-                sentencia.setString(5, );
-                sentencia.setString(6, );
-                sentencia.setString(7, );
-                sentencia.setString(8, );
-                sentencia.setString(9, );
-                sentencia.setString(10, );
-                sentencia.setString(11, );
+                sentencia.setString(1, nom);
+                sentencia.setString(2, correo);
+                sentencia.setString(3, nomDC);
+                sentencia.setString(4, calle);
+                sentencia.setString(5, colonia);
+                sentencia.setString(6, numD);
+                sentencia.setString(7, cp);
+                sentencia.setString(8, ciudad);
+                sentencia.setString(9, estado);
+                sentencia.setString(10, pais);
+                sentencia.setString(11, TelNum);
+                sentencia.setString(12, NomDue);
+                sentencia.setString(13, puestoN);
             }catch(SQLException e){
                 System.out.println("Error en consultas (agregarPro)");
             }
             
             
             return resultado;
+        }
+        
+        
+        public DefaultTableModel venProv(){
+            try{
+                PreparedStatement ps=null;
+                conexion conn=new conexion();
+                Connection con=conn.conectar();
+                Statement s=con.createStatement();
+
+                ResultSet rs=s.executeQuery("call MostrarTodosProveedores();");//aqui se pone la consulta a sql
+                DefaultTableModel dtm=new DefaultTableModel();
+
+                ResultSetMetaData rsMd=rs.getMetaData();
+                int columnas=rsMd.getColumnCount();
+
+                //ciclo de las columnas
+                for(int i=1;i<=columnas;i++){
+                    dtm.addColumn(rsMd.getColumnLabel(i));
+                }
+
+                while(rs.next()){
+                    Object[] fila=new Object[columnas];
+                    for(int i=0;i<columnas;i++){
+                        fila[i]=rs.getObject(i+1);
+                    }
+                    dtm.addRow(fila);
+                }
+                return dtm;
+
+
+            }catch(SQLException e){
+                System.out.println("Tabla: " + e);
+                return null;
+            }
         }
     
     

@@ -84,7 +84,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         txtEstado = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        txtCp = new javax.swing.JTextField();
+        txtPais = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
@@ -106,6 +106,8 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         txtPuestoC = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
+        txtCp = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -265,40 +267,40 @@ public class AgregarProveedor extends javax.swing.JFrame {
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 490, 20));
-        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 150, -1));
-        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 150, -1));
+        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 130, -1));
+        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 130, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
-        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 50, -1));
 
         jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel13.setText("Colonia:");
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, -1));
+        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 70, -1));
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-        jPanel6.add(txtNumDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 150, -1));
+        jPanel6.add(txtNumDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 130, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
-        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
-        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 150, -1));
+        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 70, -1));
+        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 130, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
-        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
-        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 118, -1));
+        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 70, -1));
+        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 100, -1));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
-        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, -1, -1));
-        jPanel6.add(txtCp, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 87, -1));
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 60, -1));
+        jPanel6.add(txtPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 70, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel20.setText("CP:");
-        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, -1, -1));
+        jLabel20.setText("Pais:");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 50, -1));
 
         jSeparator3.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 490, 10));
@@ -385,6 +387,11 @@ public class AgregarProveedor extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel32.setText("Puesto:");
         jPanel6.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 370, 70, -1));
+        jPanel6.add(txtCp, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 70, -1));
+
+        jLabel33.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel33.setText("CP:");
+        jPanel6.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 30, -1));
 
         jScrollPane1.setViewportView(jPanel6);
 
@@ -583,6 +590,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -617,6 +625,7 @@ public class AgregarProveedor extends javax.swing.JFrame {
     public javax.swing.JTextField txtNomP;
     public javax.swing.JTextField txtNumDir;
     public javax.swing.JTextField txtNumTel;
+    public javax.swing.JTextField txtPais;
     public javax.swing.JTextField txtPuesto;
     public javax.swing.JTextField txtPuestoC;
     // End of variables declaration//GEN-END:variables

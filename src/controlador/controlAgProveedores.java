@@ -37,7 +37,10 @@ public class controlAgProveedores implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(ventAgP.btnAgregar==e.getSource()){
-            modelo.AgProveedores(ventAgP.txtNomP.getText(), ventAgP.txtCalle.getText(), ventAgP.txtColonia.getText(), ventAgP.txtNumDir.getText(), ventAgP.txtCiudad.getText(), ventAgP.txtEstado.getText(), ventAgP.txtCp.getText(), ventAgP.txtNumTel.getText(), e, parent, correo)
+            modelo.AgProveedores(ventAgP.txtNomP.getText(), ventAgP.txtCalle.getText(), ventAgP.txtColonia.getText(), ventAgP.txtNumDir.getText(), ventAgP.txtCiudad.getText(), ventAgP.txtEstado.getText(), ventAgP.txtPais.getText(), ventAgP.txtNumTel.getText(), ventAgP.txtNomDueño.getText(), ventAgP.txtPuesto.getText(), ventAgP.txtCorreo.getText(),ventAgP.txtNomDueñoC.getText(),ventAgP.txtPuestoC.getText(),ventAgP.txtPais.getText());
+            controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
+            ctProv.IniciarVista();
+            ventAgP.setVisible(false);
         }
     }
 }

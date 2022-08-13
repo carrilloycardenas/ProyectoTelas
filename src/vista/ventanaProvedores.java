@@ -374,10 +374,10 @@ public class ventanaProvedores extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnAgregarProveedor;
+    public javax.swing.JButton btnAgregarProveedor;
     private javax.swing.JButton btnEliminarProveedor;
-    private javax.swing.JButton btnModificarProveedor;
-    private javax.swing.JButton btnVerProveedor;
+    public javax.swing.JButton btnModificarProveedor;
+    public javax.swing.JButton btnVerProveedor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -409,7 +409,7 @@ public class ventanaProvedores extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaempleados;
+    public javax.swing.JTable tablaempleados;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
