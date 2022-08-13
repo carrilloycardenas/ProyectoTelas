@@ -93,16 +93,10 @@ public class AgregarCliente extends javax.swing.JFrame {
         txtTelNum = new javax.swing.JTextField();
         txtNomDue = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        txtParent = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jPanel10 = new addIcon();
-        jPanel11 = new addIcon();
         btnAgregar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
 
@@ -316,16 +310,6 @@ public class AgregarCliente extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel23.setText("Nombre de dueño:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
-        jPanel6.add(txtParent, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 150, -1));
-
-        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel24.setText("Parentesco: ");
-        jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel25.setText("Agregar teléfono");
-        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, -1, -1));
 
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -342,39 +326,8 @@ public class AgregarCliente extends javax.swing.JFrame {
         jLabel27.setText("Correos");
         jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel30.setText("Agregar correo");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, -1, 27));
-
         jSeparator4.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 490, 20));
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        jPanel6.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, 10, 10));
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        jPanel6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 10, 10));
 
         jScrollPane1.setViewportView(jPanel6);
 
@@ -538,16 +491,11 @@ public class AgregarCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
@@ -577,7 +525,6 @@ public class AgregarCliente extends javax.swing.JFrame {
     public javax.swing.JTextField txtNomCli;
     public javax.swing.JTextField txtNomDue;
     public javax.swing.JTextField txtNumeroDire;
-    public javax.swing.JTextField txtParent;
     public javax.swing.JTextField txtTelNum;
     // End of variables declaration//GEN-END:variables
 
