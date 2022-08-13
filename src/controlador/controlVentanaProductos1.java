@@ -12,6 +12,7 @@ import vista.ventanaAgProducto;
 import vista.ventanaAgStock;
 import vista.ventanaModProducto;
 import vista.ventanaProductos1;
+import vista.ventanaProvedores;
 import vista.ventanaVerProducto;
 
 public class controlVentanaProductos1 implements ActionListener{
@@ -21,6 +22,7 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaAgProducto ventAgProd = new ventanaAgProducto();
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     ventanaAgStock ventSt = new ventanaAgStock();
+    ventanaProvedores ventProv=new ventanaProvedores();
     consultas modelo = new consultas();
     int row;
 
@@ -33,6 +35,7 @@ public class controlVentanaProductos1 implements ActionListener{
         this.ventProd1.btnModificarProducto.addActionListener(this);
         this.ventProd1.btnVerProducto.addActionListener(this);
         this.ventProd1.btnEliminarProducto.addActionListener(this);
+        this.ventProd1.btnProveedores.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -90,7 +93,7 @@ public class controlVentanaProductos1 implements ActionListener{
         else if(ventProd1.btnEliminarProducto == evento.getSource()){
             try {
                 this.row = ventProd1.tablaproductos.getSelectedRow();
-                System.out.println(this.row);
+                //System.out.println(this.row);
                 String valor = String.valueOf(ventProd1.tablaproductos.getValueAt(row, 0));
                 System.out.println(valor);
                 this.modelo.EliminProd(valor);
@@ -100,6 +103,16 @@ public class controlVentanaProductos1 implements ActionListener{
                 System.out.println("btnEliminar: " + e);
             }
             
+        }
+        
+        else if(ventProd1.btnProveedores==evento.getSource()){
+            try{
+                controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
+                ctProv.IniciarVista();
+                ventProd1.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana productos: "+e);
+            }
         }
     }
 }
