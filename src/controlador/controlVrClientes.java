@@ -32,7 +32,7 @@ public class controlVrClientes implements ActionListener {
         this.ventVr.btnVolverClientes.addActionListener(this);
         
         String valor = String.valueOf(ventClien.tablaClientes.getValueAt(row, 0));
-        System.out.println(valor);
+        //System.out.println(valor);
         this.rs = modelo.VrClientes( valor);  
     }
      public void IniciarVista(){
@@ -42,12 +42,12 @@ public class controlVrClientes implements ActionListener {
          ventVr.setLocationRelativeTo(null);
          ventVr.setVisible(true);
          try{
-             ventVr.lblidCliente.setText(rs.getString("ID"));            
+             ventVr.lblidCliente.setText(rs.getString("idClientes"));            
              ventVr.lblNombre.setText(rs.getString("Nombre"));
              ventVr.lblApellido.setText(rs.getString("Apellidos"));
-             ventVr.lblCalleCliente.setText(rs.getString("Calle"));
+             ventVr.lblCalleCliente.setText(rs.getString("calle"));
              ventVr.lblColoniaCliente.setText(rs.getString("Colonia"));
-             ventVr.lblNumeroCliente.setText(rs.getString("Número"));
+             ventVr.lblNumeroCliente.setText(rs.getString("numCasa"));
              ventVr.lblCiudadCliente.setText(rs.getString("Ciudad"));
              ventVr.lblEstadoCliente.setText(rs.getString("Estado"));
              ventVr.lblNumero1.setText(rs.getString("Número"));
@@ -57,7 +57,7 @@ public class controlVrClientes implements ActionListener {
              ventVr.lblCorreo1.setText(rs.getString("Correo"));
              ventVr.lblCorreo2.setText(rs.getString("Correo"));      
          }catch(SQLException e){
-             System.out.println("error en controlVrClientes" + e);
+             System.out.println("error en controlVrClientes: " + e);
              
          }
      }
