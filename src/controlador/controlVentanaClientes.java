@@ -10,6 +10,9 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.AgregarCliente;
 import vista.VentanaClientes2;
+import vista.ventanaEmpleados;
+import vista.ventanaProductos1;
+import vista.ventanaProvedores;
 import vista.ventanaVerClientes;
 
 public class controlVentanaClientes implements ActionListener{
@@ -18,6 +21,9 @@ public class controlVentanaClientes implements ActionListener{
     AgregarCliente agCli = new AgregarCliente();
     ventanaVerClientes vrCli = new ventanaVerClientes();
     consultas modelo = new consultas();
+    ventanaEmpleados ventEmp=new ventanaEmpleados();
+    ventanaProvedores ventProv=new ventanaProvedores();
+    ventanaProductos1 ventProd1=new ventanaProductos1();
     int row;
 
     public controlVentanaClientes(VentanaClientes2 ventCl, consultas model){
@@ -50,6 +56,35 @@ public class controlVentanaClientes implements ActionListener{
             ctVCli.IniciarVista();
             this.ventCli.setVisible(false);
         }
+        
+        else if(this.ventCli.btnEmpleados==evento.getSource()){
+            try{
+                controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp,modelo);
+                ctEmp.IniciarVista();
+                ventCli.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        
+        else if(ventCli.btnProveedores==evento.getSource()){
+            try{
+                controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
+                ctProv.IniciarVista();
+                ventCli.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana productos: "+e);
+            }
+        }
+        
+        else if(ventCli.btnProductos==evento.getSource()){
+            try{
+                controlVentanaProductos1 ctProd1=new controlVentanaProductos1(ventProd1,modelo);
+                ctProd1.IniciarVista();
+                ventCli.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
     }
-
 }
