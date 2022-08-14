@@ -101,7 +101,7 @@ public class controlVentanaProductos1 implements ActionListener{
                 this.row = ventProd1.tablaproductos.getSelectedRow();
                 //System.out.println(this.row);
                 String valor = String.valueOf(ventProd1.tablaproductos.getValueAt(row, 0));
-                System.out.println(valor);
+                //System.out.println(valor);
                 this.modelo.EliminProd(valor);
                 ventProd1.setVisible(false);
                 this.IniciarVista();

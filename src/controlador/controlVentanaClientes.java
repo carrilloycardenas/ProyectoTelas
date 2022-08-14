@@ -96,5 +96,19 @@ public class controlVentanaClientes implements ActionListener{
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
+        
+        else if(ventCli.btnEliminarcliente==evento.getSource()){
+            try {
+                this.row = ventCli.tablaClientes.getSelectedRow();
+                //System.out.println(this.row); //debug line
+                String valor = String.valueOf(ventCli.tablaClientes.getValueAt(row, 0));
+                //System.out.println(valor); //debug line
+                this.modelo.elimCli(valor);
+                ventProd1.setVisible(false);
+                this.IniciarVista();
+            } catch(Exception e){
+                System.out.println("Error btnEliminar: " + e);
+            }
+        }
     }
 }
