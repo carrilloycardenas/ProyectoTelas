@@ -354,7 +354,7 @@ public class consultas {
             int resultado=0;
             Connection conex =null;
             
-            String consulta="call AltasProveedores(?,?,?,?,?,?,?,?,?,?,?,?,?);";
+            String consulta="call AltasProveedores(?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
             
             try{
                 conex = con.conectar();
@@ -418,6 +418,77 @@ public class consultas {
                 return null;
             }
         }
+        
+        public int AgEmpleados(String nom, String apellido, String fechaN, String numSS, 
+                String fechaDCon, String puesto, String user, String pass, String calle, String col, 
+                String numDire, String ciudad, String estado, String cp, String telNum, String correo){
+            int resultado=0;
+            Connection conex =null;
+            
+            String consulta="call AltasEmpleados(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+            
+            try{
+                conex = con.conectar();
+                sentencia = conex.prepareStatement(consulta);
+                sentencia.setString(1, nom);
+                sentencia.setString(2, apellido);
+                sentencia.setString(3, fechaN);
+                sentencia.setString(4, fechaDCon);
+                sentencia.setString(5, numSS);
+                sentencia.setString(6, user);
+                sentencia.setString(7, pass);
+                sentencia.setString(8, puesto);
+                sentencia.setString(9, correo);
+                sentencia.setString(10, calle);
+                sentencia.setString(11, col);
+                sentencia.setString(12, numDire);
+                sentencia.setString(13, cp);
+                sentencia.setString(14, ciudad);
+                sentencia.setString(15, estado);
+                sentencia.setString(16, telNum);
+                
+                resultado = sentencia.executeUpdate();
+            }catch(SQLException e){
+                System.out.println("Error en consultas (agregarPro)");
+            }
+            
+            
+            return resultado;
+        }
+        
+    public DefaultTableModel verEmpleados(){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call MostrarTodosEmpleados();");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Tabla clientes: " + e);
+            return null;
+        }
+    }
     
     
 }

@@ -365,10 +365,10 @@ public class ventanaEmpleados extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnAgregarEmpleado;
+    public javax.swing.JButton btnAgregarEmpleado;
     private javax.swing.JButton btnEliminarEmpleado;
-    private javax.swing.JButton btnModificarEmpleado;
-    private javax.swing.JButton btnVerEmpleado;
+    public javax.swing.JButton btnModificarEmpleado;
+    public javax.swing.JButton btnVerEmpleado;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -400,7 +400,7 @@ public class ventanaEmpleados extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable tablaempleados;
+    public javax.swing.JTable tablaempleados;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

@@ -80,9 +80,6 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         txtNumSS = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        txtSueldo = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtPuesto = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -106,22 +103,15 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         txtTelNume = new javax.swing.JTextField();
-        txtNomDueño = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        txtParent = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jPanel10 = new addIcon();
-        jPanel11 = new addIcon();
-        jButton10 = new javax.swing.JButton();
+        txtPuesto = new javax.swing.JComboBox<>();
+        btnAgregar = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar empleado");
@@ -294,12 +284,6 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel7.setText("Num Seguro Social:");
         jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 126, -1, -1));
-        jPanel6.add(txtSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 226, 185, -1));
-
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel8.setText("Sueldo:");
-        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 200, -1, -1));
-        jPanel6.add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 226, 182, -1));
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel9.setText("Puesto:");
@@ -360,24 +344,9 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 502, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        jLabel22.setText("Números:");
+        jLabel22.setText("Número:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 522, -1, -1));
         jPanel6.add(txtTelNume, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 548, 150, -1));
-        jPanel6.add(txtNomDueño, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 548, 150, -1));
-
-        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        jLabel23.setText("Nombre de dueño:");
-        jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 522, -1, -1));
-        jPanel6.add(txtParent, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 548, 150, -1));
-
-        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-        jLabel24.setText("Parentesco: ");
-        jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 522, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel25.setText("Agregar teléfono");
-        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, -1, -1));
 
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,49 +363,26 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel27.setText("Correos");
         jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 604, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel30.setText("Agregar correo");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 600, -1, 27));
-
         jSeparator4.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 588, 490, 0));
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        jPanel6.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 610, 10, 10));
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        jPanel6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 500, 10, 10));
+        txtPuesto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente general", "Supervisor", "Gerente", "Encargado de ventas", "Cajero", "Vendedor", "Almacenista" }));
+        txtPuesto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPuestoActionPerformed(evt);
+            }
+        });
+        jPanel6.add(txtPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 150, -1));
 
         jScrollPane1.setViewportView(jPanel6);
 
-        jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(21, 8, 79));
-        jButton10.setText("Agregar");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregar.setBackground(new java.awt.Color(181, 194, 254));
+        btnAgregar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(21, 8, 79));
+        btnAgregar.setText("Agregar");
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnAgregarActionPerformed(evt);
             }
         });
 
@@ -448,13 +394,13 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jLabel29.setForeground(new java.awt.Color(51, 51, 51));
         jLabel29.setText("Eliminar");
 
-        jButton11.setBackground(new java.awt.Color(181, 194, 254));
-        jButton11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(21, 8, 79));
-        jButton11.setText("Cancelar");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelar.setBackground(new java.awt.Color(181, 194, 254));
+        btnCancelar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(21, 8, 79));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnCancelarActionPerformed(evt);
             }
         });
 
@@ -482,9 +428,9 @@ public class AgregarEmpleado extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(67, 67, 67))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
@@ -510,8 +456,8 @@ public class AgregarEmpleado extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(25, 25, 25))))
         );
 
@@ -539,15 +485,19 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCorreoActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnAgregarActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         /*ventanaVerEmpleado abrir= new ventanaVerEmpleado();
         abrir.setVisible(true);
         this.setVisible(false);*/
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void txtPuestoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPuestoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPuestoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -587,9 +537,9 @@ public class AgregarEmpleado extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnCancelar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -613,24 +563,17 @@ public class AgregarEmpleado extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
@@ -658,16 +601,13 @@ public class AgregarEmpleado extends javax.swing.JFrame {
     public javax.swing.JTextField txtCorreo;
     public javax.swing.JTextField txtCp;
     public javax.swing.JTextField txtEstado;
-    private javax.swing.JTextField txtFechaDCon;
+    public javax.swing.JTextField txtFechaDCon;
     public javax.swing.JTextField txtFechaN;
-    public javax.swing.JTextField txtNomDueño;
     public javax.swing.JTextField txtNomE;
-    private javax.swing.JTextField txtNumDire;
+    public javax.swing.JTextField txtNumDire;
     public javax.swing.JTextField txtNumSS;
-    public javax.swing.JTextField txtParent;
     public javax.swing.JTextField txtPassword;
-    public javax.swing.JTextField txtPuesto;
-    public javax.swing.JTextField txtSueldo;
+    public javax.swing.JComboBox<String> txtPuesto;
     public javax.swing.JTextField txtTelNume;
     public javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
