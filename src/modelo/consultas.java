@@ -490,5 +490,34 @@ public class consultas {
         }
     }
     
+    public int modCliente(String nom, String ape, String calle, String col, String numC, String CP, String ciudad, String estado, String id){
+        
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarClientes(?,?,?,?,?,?,?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, nom);
+            sentencia.setString(2, ape);
+            sentencia.setString(3, calle);
+            sentencia.setString(4, col);
+            sentencia.setString(5, numC);
+            sentencia.setString(6, CP);
+            sentencia.setString(7, ciudad);
+            sentencia.setString(8, estado);
+            sentencia.setString(9, id);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Error en consultas (ModCli): " + e);
+        }
+
+
+        return resultado;
+
+    }
     
 }

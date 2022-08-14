@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.AgregarCliente;
+import vista.ModificarCliente;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaProductos1;
@@ -20,6 +21,7 @@ public class controlVentanaClientes implements ActionListener{
     VentanaClientes2 ventCli = new VentanaClientes2();
     AgregarCliente agCli = new AgregarCliente();
     ventanaVerClientes vrCli = new ventanaVerClientes();
+    ModificarCliente modCli = new ModificarCliente();
     consultas modelo = new consultas();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProvedores ventProv=new ventanaProvedores();
@@ -57,6 +59,11 @@ public class controlVentanaClientes implements ActionListener{
             this.row = this.ventCli.tablaClientes.getSelectedRow();
             controlVrClientes ctVCli = new controlVrClientes(this.vrCli, this.modelo, this.ventCli, this.row);
             ctVCli.IniciarVista();
+            this.ventCli.setVisible(false);
+        } else if(this.ventCli.btnModificarCliente == evento.getSource()){
+            this.row = this.ventCli.tablaClientes.getSelectedRow();
+            controlModClientes ctModCli = new controlModClientes(this.modCli, this.modelo, this.ventCli, this.row);
+            ctModCli.IniciarVista();
             this.ventCli.setVisible(false);
         }
         

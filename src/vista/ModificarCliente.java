@@ -71,30 +71,30 @@ public class ModificarCliente extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        txtColonia = new javax.swing.JTextField();
+        txtCalle = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtNumC = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtCiudad = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        txtEstado = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        txtCP = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaTelefonos = new javax.swing.JTable();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        tablaCorreos = new javax.swing.JTable();
         btnModTelefono = new javax.swing.JButton();
         btnModCorreo = new javax.swing.JButton();
         btnGuardarModCli = new javax.swing.JButton();
@@ -254,29 +254,29 @@ public class ModificarCliente extends javax.swing.JFrame {
         jLabel4.setText("Apellidos:");
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 6, -1, -1));
 
-        jTextField2.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField2.setText("Garzas");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txtApellido.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtApellido.setText("Garzas");
+        txtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txtApellidoActionPerformed(evt);
             }
         });
-        jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
+        jPanel6.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
 
-        jTextField3.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField3.setText("Melissa");
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
+        txtNombre.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtNombre.setText("Melissa");
+        jPanel6.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 490, 20));
 
-        jTextField10.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField10.setText("Centro");
-        jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 150, -1));
+        txtColonia.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtColonia.setText("Centro");
+        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 150, -1));
 
-        jTextField11.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField11.setText("Libertad");
-        jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 150, -1));
+        txtCalle.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCalle.setText("Libertad");
+        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 150, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
@@ -290,33 +290,33 @@ public class ModificarCliente extends javax.swing.JFrame {
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        jTextField12.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField12.setText("13");
-        jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, -1));
+        txtNumC.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtNumC.setText("13");
+        jPanel6.add(txtNumC, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
 
-        jTextField13.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField13.setText("Mazatlán");
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 150, -1));
+        txtCiudad.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCiudad.setText("Mazatlán");
+        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 150, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
-        jTextField14.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField14.setText("Sinaloa");
-        jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 118, -1));
+        txtEstado.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtEstado.setText("Sinaloa");
+        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 118, -1));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, -1, -1));
 
-        jTextField15.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField15.setText("82000");
-        jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
+        txtCP.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCP.setText("82000");
+        jPanel6.add(txtCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("CP:");
@@ -336,7 +336,7 @@ public class ModificarCliente extends javax.swing.JFrame {
         jSeparator4.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 588, 490, 0));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaTelefonos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null}
@@ -345,11 +345,11 @@ public class ModificarCliente extends javax.swing.JFrame {
                 "Title 1", "Title 2"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(tablaTelefonos);
 
         jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 90));
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        tablaCorreos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null}
@@ -358,7 +358,7 @@ public class ModificarCliente extends javax.swing.JFrame {
                 "Title 1", "Title 2"
             }
         ));
-        jScrollPane3.setViewportView(jTable2);
+        jScrollPane3.setViewportView(tablaCorreos);
 
         jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 410, 90));
 
@@ -445,9 +445,9 @@ public class ModificarCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarModCliActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtApellidoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -542,16 +542,16 @@ public class ModificarCliente extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTable tablaCorreos;
+    public javax.swing.JTable tablaTelefonos;
+    public javax.swing.JTextField txtApellido;
+    public javax.swing.JTextField txtCP;
+    public javax.swing.JTextField txtCalle;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtColonia;
+    public javax.swing.JTextField txtEstado;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtNumC;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
