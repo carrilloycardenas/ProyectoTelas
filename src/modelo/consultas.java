@@ -358,6 +358,7 @@ public class consultas {
             
             try{
                 conex = con.conectar();
+                sentencia = conex.prepareStatement(consulta);
                 sentencia.setString(1, nom);
                 sentencia.setString(2, correo);
                 sentencia.setString(3, nomDC);
