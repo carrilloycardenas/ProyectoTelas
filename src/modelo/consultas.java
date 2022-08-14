@@ -579,7 +579,7 @@ public class consultas {
         return rs;
     }
     
-        public ResultSet VrProveedores(String id){
+    public ResultSet VrProveedores(String id){
         PreparedStatement ps=null;
         ResultSet rs = null;
         try{
