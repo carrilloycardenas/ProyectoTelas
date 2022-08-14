@@ -561,5 +561,41 @@ public class consultas {
         return resultado;
 
     }
+    
+    public ResultSet VrEmpleados(String id){
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+        try{
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            
+            ps=con.prepareStatement("call MostrarEmpleados(?);");
+            ps.setString(1, id);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException e){
+            System.out.println("error en consultas "+e);
+        }
+        return rs;
+    }
+    
+        public ResultSet VrProveedores(String id){
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+        try{
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            
+            ps=con.prepareStatement("call MostrarProveedores(?);");
+            ps.setString(1, id);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException e){
+            System.out.println("error en consultas "+e);
+        }
+        return rs;
+    }
+        
+        
 
 }

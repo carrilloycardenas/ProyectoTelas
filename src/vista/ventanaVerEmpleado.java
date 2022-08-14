@@ -78,7 +78,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel5 = new FotoEmpleadoFacturas();
-        jButton10 = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lbl = new javax.swing.JLabel();
         lblColonia = new javax.swing.JLabel();
@@ -154,7 +154,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         scrollbar1 = new java.awt.Scrollbar();
         lbl25 = new javax.swing.JLabel();
-        jButton17 = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
 
         lbl16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl16.setText("Número:");
@@ -191,7 +191,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton2.setText("Empleados");
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.setFocusPainted(false);
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
 
@@ -201,7 +201,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton3.setText("Proveedores");
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
 
         jButton4.setBackground(new java.awt.Color(38, 18, 137));
@@ -209,7 +209,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Caja");
         jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -225,7 +225,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton7.setText("Cerrar sesión");
         jButton7.setBorderPainted(false);
         jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
 
         jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -239,7 +239,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Clientes");
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 60));
 
         jButton8.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
@@ -247,7 +247,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton8.setText("Productos");
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
 
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -264,7 +264,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Inicio");
         jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel35.setBackground(new java.awt.Color(34, 19, 101));
@@ -279,7 +279,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton13.setText("Facturas");
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
-        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel36.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -297,7 +297,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton14.setText("Facturas");
         jButton14.setBorderPainted(false);
         jButton14.setContentAreaFilled(false);
-        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel39.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel39.add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -312,7 +312,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton5.setText("Facturas");
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel35.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel2.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, 60));
@@ -322,7 +322,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton6.setText("Reporte");
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
@@ -346,13 +346,13 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, -1, -1));
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 170, 180));
 
-        jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(189, 0, 0));
-        jButton10.setText("Eliminar");
-        jButton10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0)));
-        jButton10.setContentAreaFilled(false);
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 90, 110, 30));
+        btnEliminar.setBackground(new java.awt.Color(181, 194, 254));
+        btnEliminar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(189, 0, 0));
+        btnEliminar.setText("Eliminar");
+        btnEliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0)));
+        btnEliminar.setContentAreaFilled(false);
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 90, 110, 30));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel5.setText("Dirección");
@@ -496,7 +496,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton15.setText("Facturas");
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);
-        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel42.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel42.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -514,7 +514,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton16.setText("Facturas");
         jButton16.setBorderPainted(false);
         jButton16.setContentAreaFilled(false);
-        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel45.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel45.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -596,7 +596,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton11.setText("Facturas");
         jButton11.setBorderPainted(false);
         jButton11.setContentAreaFilled(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel30.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel30.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -614,7 +614,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jButton12.setText("Facturas");
         jButton12.setBorderPainted(false);
         jButton12.setContentAreaFilled(false);
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel33.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel33.add(jPanel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -656,16 +656,16 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         lbl25.setText("Teléfonos");
         jPanel1.add(lbl25, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, -1, -1));
 
-        jButton17.setBackground(new java.awt.Color(181, 194, 254));
-        jButton17.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton17.setForeground(new java.awt.Color(21, 8, 79));
-        jButton17.setText("Volver a Empleados");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btnVolver.setBackground(new java.awt.Color(181, 194, 254));
+        btnVolver.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnVolver.setForeground(new java.awt.Color(21, 8, 79));
+        btnVolver.setText("Volver a Empleados");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btnVolverActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 570, 190, 40));
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 570, 190, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -676,11 +676,11 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         ventanaEmpleados abrir= new ventanaEmpleados();
         abrir.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -719,15 +719,15 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnVolver;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
