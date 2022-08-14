@@ -534,11 +534,32 @@ public class consultas {
 
             resultado = sentencia.executeUpdate();
         }catch(SQLException e){
-            System.out.println("Error en consultas (ModCli): " + e);
+            System.out.println("Error en consultas (ElimCli): " + e);
         }
 
         return resultado;
 
     }
     
+    public int elimProveedor(String id){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call EliminarProveedor(?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, id);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Error en consultas (ElimProv): " + e);
+        }
+
+        return resultado;
+
+    }
+
 }
