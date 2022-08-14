@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaAgProducto;
 import vista.ventanaAgStock;
+import vista.ventanaEmpleados;
 import vista.ventanaModProducto;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
@@ -23,6 +24,7 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     ventanaAgStock ventSt = new ventanaAgStock();
     ventanaProvedores ventProv=new ventanaProvedores();
+    ventanaEmpleados ventEmp = new ventanaEmpleados();
     consultas modelo = new consultas();
     int row;
 
@@ -36,6 +38,7 @@ public class controlVentanaProductos1 implements ActionListener{
         this.ventProd1.btnVerProducto.addActionListener(this);
         this.ventProd1.btnEliminarProducto.addActionListener(this);
         this.ventProd1.btnProveedores.addActionListener(this);
+        this.ventProd1.btnEmpleados.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -113,6 +116,11 @@ public class controlVentanaProductos1 implements ActionListener{
             }catch(Exception e){
                 System.out.println("Error iniciando ventana productos: "+e);
             }
+        }
+        else if(ventProd1.btnEmpleados == evento.getSource()){
+            controlVentanaEmpleados ctEmp = new controlVentanaEmpleados(this.ventEmp, this.modelo);
+            ctEmp.IniciarVista();
+            this.ventProd1.setVisible(false);
         }
     }
 }

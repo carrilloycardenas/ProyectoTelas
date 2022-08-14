@@ -48,8 +48,10 @@ public class controlAgClientes implements ActionListener{
             } catch(Exception e){
                 System.out.println("btn: " + e);
             }
-
-            
+        } else if(ventAgC.btnCancelar == evento.getSource()){
+            controlVentanaClientes ctVentCli = new controlVentanaClientes(this.ventCli, this.modelo);
+            ctVentCli.IniciarVista();
+            this.ventAgC.setVisible(false);
         }
     }
     
