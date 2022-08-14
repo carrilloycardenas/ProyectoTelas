@@ -519,5 +519,26 @@ public class consultas {
         return resultado;
 
     }
+
+    public int elimCli(String id){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call EliminarClientes(?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, id);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Error en consultas (ModCli): " + e);
+        }
+
+        return resultado;
+
+    }
     
 }
