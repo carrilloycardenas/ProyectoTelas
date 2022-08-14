@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< Updated upstream
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/testAgProductos.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProvedores.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/AgregarCliente.java</file>
@@ -14,6 +15,20 @@
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/modelo/consultas.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/ModificarCliente.java</file>
             <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProductos1.java</file>
+=======
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlAgClientes.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProductos1.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/testAgProductos.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/modelo/consultas.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaClientes.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVentanaProvedores.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/AgregarCliente.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlAgProveedores.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlModProducto.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/ventanaVerClientes.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/VentanaClientes2.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlVrClientes.java</file>
+>>>>>>> Stashed changes
         </group>
     </open-files>
 </project-private>
