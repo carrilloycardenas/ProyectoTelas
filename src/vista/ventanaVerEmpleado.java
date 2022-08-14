@@ -73,7 +73,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel27 = new IconoFacturas();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
         lblCalle = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -92,7 +92,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         lbl5 = new javax.swing.JLabel();
         lblCodigoP = new javax.swing.JLabel();
         lbl6 = new javax.swing.JLabel();
-        lblidEmpleado = new javax.swing.JLabel();
+        lblID = new javax.swing.JLabel();
         lbl7 = new javax.swing.JLabel();
         lblFecNacimiento = new javax.swing.JLabel();
         lblNumSocial = new javax.swing.JLabel();
@@ -291,9 +291,9 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel1.setText("Melissa Garzas");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+        lblNombre.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        lblNombre.setText("Melissa Garzas");
+        jPanel1.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
 
         lblCalle.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblCalle.setText("Andador Palomas");
@@ -370,9 +370,9 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         lbl6.setText("ID:");
         jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
 
-        lblidEmpleado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblidEmpleado.setText("0001");
-        jPanel1.add(lblidEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+        lblID.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblID.setText("0001");
+        jPanel1.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
 
         lbl7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl7.setText("Fecha de nacimiento:");
@@ -554,7 +554,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
@@ -604,21 +603,22 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     private javax.swing.JLabel lbl7;
     private javax.swing.JLabel lbl8;
     private javax.swing.JLabel lbl9;
-    private javax.swing.JLabel lblCalle;
-    private javax.swing.JLabel lblCiudad;
+    public javax.swing.JLabel lblCalle;
+    public javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblCiudad3;
-    private javax.swing.JLabel lblCodigoP;
-    private javax.swing.JLabel lblColonia;
-    private javax.swing.JLabel lblEstado;
-    private javax.swing.JLabel lblFecContratacion;
-    private javax.swing.JLabel lblFecNacimiento;
-    private javax.swing.JLabel lblNumSocial;
-    private javax.swing.JLabel lblNumero;
-    private javax.swing.JLabel lblPassword;
-    private javax.swing.JLabel lblPuesto;
-    private javax.swing.JLabel lblSueldo;
-    private javax.swing.JLabel lblUsuario;
-    private javax.swing.JLabel lblidEmpleado;
+    public javax.swing.JLabel lblCodigoP;
+    public javax.swing.JLabel lblColonia;
+    public javax.swing.JLabel lblEstado;
+    public javax.swing.JLabel lblFecContratacion;
+    public javax.swing.JLabel lblFecNacimiento;
+    public javax.swing.JLabel lblID;
+    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblNumSocial;
+    public javax.swing.JLabel lblNumero;
+    public javax.swing.JLabel lblPassword;
+    public javax.swing.JLabel lblPuesto;
+    public javax.swing.JLabel lblSueldo;
+    public javax.swing.JLabel lblUsuario;
     public javax.swing.JTable tablaCorreos;
     public javax.swing.JTable tablaTelefonos;
     // End of variables declaration//GEN-END:variables
