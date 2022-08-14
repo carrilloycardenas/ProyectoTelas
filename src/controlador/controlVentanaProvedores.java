@@ -96,10 +96,10 @@ class controlVentanaProvedores implements ActionListener{
                 String valor = String.valueOf(ventProv.tablaempleados.getValueAt(row, 0));
                 //System.out.println(valor); //debug line
                 this.modelo.elimProveedor(valor);
-                ventProd1.setVisible(false);
+                ventProv.setVisible(false);
                 this.IniciarVista();
             } catch(Exception e){
-                System.out.println("Error btnEliminar: " + e);
+                System.out.println("Error btnEliminar en proveedores: " + e);
             }
         }
     }
