@@ -362,16 +362,17 @@ public class consultas {
                 sentencia.setString(1, nom);
                 sentencia.setString(2, correo);
                 sentencia.setString(3, nomDC);
-                sentencia.setString(4, calle);
-                sentencia.setString(5, colonia);
-                sentencia.setString(6, numD);
-                sentencia.setString(7, cp);
-                sentencia.setString(8, ciudad);
-                sentencia.setString(9, estado);
-                sentencia.setString(10, pais);
-                sentencia.setString(11, TelNum);
-                sentencia.setString(12, NomDue);
-                sentencia.setString(13, puestoN);
+                sentencia.setString(4, puestoC);
+                sentencia.setString(5, calle);
+                sentencia.setString(6, colonia);
+                sentencia.setString(7, numD);
+                sentencia.setString(8, cp);
+                sentencia.setString(9, ciudad);
+                sentencia.setString(10, estado);
+                sentencia.setString(11, pais);
+                sentencia.setString(12, TelNum);
+                sentencia.setString(13, NomDue);
+                sentencia.setString(14, puestoN);
                 
                 resultado = sentencia.executeUpdate();
             }catch(SQLException e){
