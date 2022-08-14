@@ -372,6 +372,8 @@ public class consultas {
                 sentencia.setString(11, TelNum);
                 sentencia.setString(12, NomDue);
                 sentencia.setString(13, puestoN);
+                
+                resultado = sentencia.executeUpdate();
             }catch(SQLException e){
                 System.out.println("Error en consultas (agregarPro)");
             }
