@@ -38,8 +38,12 @@ public class controlAgProveedores implements ActionListener{
     public void actionPerformed(ActionEvent evento) {
         if(ventAgP.btnAgregar==evento.getSource()){
             try{
-                System.out.println(ventAgP.txtNomP.getText()+ ventAgP.txtCalle.getText()+ ventAgP.txtColonia.getText()+ ventAgP.txtNumDir.getText()+ ventAgP.txtCiudad.getText()+ ventAgP.txtEstado.getText()+ ventAgP.txtPais.getText()+ ventAgP.txtNumTel.getText()+ ventAgP.txtNomDueño.getText()+ ventAgP.txtPuesto.getText()+ ventAgP.txtCorreo.getText()+ventAgP.txtNomDueñoC.getText()+ventAgP.txtPuestoC.getText()+ventAgP.txtPais.getText());
-                modelo.AgProveedores(ventAgP.txtNomP.getText(), ventAgP.txtCalle.getText(), ventAgP.txtColonia.getText(), ventAgP.txtNumDir.getText(), ventAgP.txtCiudad.getText(), ventAgP.txtEstado.getText(), ventAgP.txtCp.getText(), ventAgP.txtNumTel.getText(), ventAgP.txtNomDueño.getText(), ventAgP.txtPuesto.getText(), ventAgP.txtCorreo.getText(),ventAgP.txtNomDueñoC.getText(),ventAgP.txtPuestoC.getText(),ventAgP.txtPais.getText());
+                //System.out.println(ventAgP.txtNomP.getText()+ ventAgP.txtCalle.getText()+ ventAgP.txtColonia.getText()+ ventAgP.txtNumDir.getText()+ ventAgP.txtCiudad.getText()+ ventAgP.txtEstado.getText()+ ventAgP.txtPais.getText()+ ventAgP.txtNumTel.getText()+ ventAgP.txtNomDueño.getText()+ ventAgP.txtPuesto.getText()+ ventAgP.txtCorreo.getText()+ventAgP.txtNomDueñoC.getText()+ventAgP.txtPuestoC.getText()+ventAgP.txtPais.getText());
+                modelo.AgProveedores(ventAgP.txtNomP.getText(), ventAgP.txtCalle.getText(), 
+                        ventAgP.txtColonia.getText(), ventAgP.txtNumDir.getText(), ventAgP.txtCiudad.getText(),
+                        ventAgP.txtEstado.getText(), ventAgP.txtCp.getText(), ventAgP.txtNumTel.getText(),
+                        ventAgP.txtNomDueño.getText(), ventAgP.txtPuesto.getText(), ventAgP.txtCorreo.getText(),
+                        ventAgP.txtNomDueñoC.getText(),ventAgP.txtPuestoC.getText(),ventAgP.txtPais.getText());
                 controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
                 ctProv.IniciarVista();
                 ventAgP.setVisible(false);
