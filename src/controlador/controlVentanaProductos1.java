@@ -8,8 +8,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.VentanaClientes2;
 import vista.ventanaAgProducto;
 import vista.ventanaAgStock;
+import vista.ventanaEmpleados;
 import vista.ventanaModProducto;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
@@ -23,6 +25,8 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     ventanaAgStock ventSt = new ventanaAgStock();
     ventanaProvedores ventProv=new ventanaProvedores();
+    VentanaClientes2 ventCli=new VentanaClientes2();
+    ventanaEmpleados ventEmp=new ventanaEmpleados();
     consultas modelo = new consultas();
     int row;
 
@@ -112,6 +116,26 @@ public class controlVentanaProductos1 implements ActionListener{
                 ventProd1.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana productos: "+e);
+            }
+        }
+        
+        else if(ventProd1.btnClientes==evento.getSource()){
+            try{
+                controlVentanaClientes ctCli=new controlVentanaClientes(ventCli,modelo);
+                ctCli.IniciarVista();
+                ventProd1.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana clientes: "+e);
+            }
+        }
+        
+        else if(ventProd1.btnEmpleados==evento.getSource()){
+            try{
+                controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp,modelo);
+                ctEmp.IniciarVista();
+                ventProd1.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
     }
