@@ -36,6 +36,7 @@ class controlVentanaProvedores implements ActionListener{
         this.ventProv.btnProductos.addActionListener(this);
         this.ventProv.btnClientes.addActionListener(this);
         this.ventProv.btnEmpleados.addActionListener(this);
+        this.ventProv.btnEliminarProveedor.addActionListener(this);
     }
     
     public void IniciarVista(){
