@@ -88,6 +88,20 @@ class controlVentanaProvedores implements ActionListener{
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
+        
+        else if(ventProv.btnEliminarProveedor==evento.getSource()){
+            try {
+                this.row = ventProv.tablaempleados.getSelectedRow();
+                //System.out.println(this.row); //debug line
+                String valor = String.valueOf(ventProv.tablaempleados.getValueAt(row, 0));
+                //System.out.println(valor); //debug line
+                this.modelo.elimProveedor(valor);
+                ventProd1.setVisible(false);
+                this.IniciarVista();
+            } catch(Exception e){
+                System.out.println("Error btnEliminar: " + e);
+            }
+        }
     }
     
 }

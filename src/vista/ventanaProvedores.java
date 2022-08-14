@@ -365,7 +365,7 @@ public class ventanaProvedores extends javax.swing.JFrame {
     private javax.swing.JPanel barraSup;
     public javax.swing.JButton btnAgregarProveedor;
     public javax.swing.JButton btnClientes;
-    private javax.swing.JButton btnEliminarProveedor;
+    public javax.swing.JButton btnEliminarProveedor;
     public javax.swing.JButton btnEmpleados;
     public javax.swing.JButton btnModificarProveedor;
     public javax.swing.JButton btnProductos;
