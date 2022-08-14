@@ -376,7 +376,7 @@ public class consultas {
                 
                 resultado = sentencia.executeUpdate();
             }catch(SQLException e){
-                System.out.println("Error en consultas (agregarPro)");
+                System.out.println("Error en consultas (agregarPro): " + e);
             }
             
             
@@ -449,7 +449,7 @@ public class consultas {
                 
                 resultado = sentencia.executeUpdate();
             }catch(SQLException e){
-                System.out.println("Error en consultas (agregarPro)");
+                System.out.println("Error en consultas (agregarEmp): " + e);
             }
             
             

@@ -311,21 +311,15 @@ public class ventanaEmpleados extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnAgregarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarEmpleadoActionPerformed
-        AgregarEmpleado abrir= new AgregarEmpleado();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnAgregarEmpleadoActionPerformed
 
     private void btnModificarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarEmpleadoActionPerformed
-        ModificarEmpleado abrir= new ModificarEmpleado();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnModificarEmpleadoActionPerformed
 
     private void btnVerEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerEmpleadoActionPerformed
-        ventanaVerEmpleado abrir= new ventanaVerEmpleado();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVerEmpleadoActionPerformed
 
     /**

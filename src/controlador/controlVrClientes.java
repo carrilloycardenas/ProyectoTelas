@@ -64,9 +64,9 @@ public class controlVrClientes implements ActionListener {
     public void actionPerformed(ActionEvent evento) {
         if(ventVr.btnVolverClientes == evento.getSource() ){
             controlVentanaClientes ctClien = new controlVentanaClientes (ventClien, modelo);
-            
+            ctClien.IniciarVista();
+            this.ventVr.setVisible(false);
         }
-        throw new UnsupportedOperationException("Not supported yet.");
     }
     
     
