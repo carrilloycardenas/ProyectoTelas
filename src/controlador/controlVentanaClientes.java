@@ -33,6 +33,9 @@ public class controlVentanaClientes implements ActionListener{
         this.ventCli.btnModificarCliente.addActionListener(this);
         this.ventCli.btnVercliente.addActionListener(this);
         this.ventCli.btnEliminarcliente.addActionListener(this);
+        this.ventCli.btnEmpleados.addActionListener(this);
+        this.ventCli.btnProveedores.addActionListener(this);
+        this.ventCli.btnProductos.addActionListener(this);
     }
 
     public void IniciarVista(){
