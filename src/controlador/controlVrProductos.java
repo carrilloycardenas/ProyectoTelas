@@ -32,7 +32,7 @@ public class controlVrProductos implements ActionListener{
         this.ventVr.btnVolver.addActionListener(this);
         //System.out.println(row);
         String valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
-        System.out.println(valor);
+        //System.out.println(valor);
         this.rs = modelo.VrProductos(valor);
         //this.rs = modelo.VrProductos("1");
     }
