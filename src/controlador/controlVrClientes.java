@@ -51,6 +51,7 @@ public class controlVrClientes implements ActionListener {
             ventVr.lblNumeroCliente.setText(rs.getString("numCasa"));
             ventVr.lblCiudadCliente.setText(rs.getString("Ciudad"));
             ventVr.lblEstadoCliente.setText(rs.getString("Estado"));
+            ventVr.lblCP.setText(this.rs.getString("Codigo_postal"));
             ventVr.tablaTelefonosCli.setModel(this.modelo.numCliente(this.valor));
             ventVr.tablaCorreoCli.setModel(this.modelo.correoCliente(this.valor));
         }catch(SQLException e){

@@ -88,7 +88,7 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl4 = new javax.swing.JLabel();
         lblEstadoCliente = new javax.swing.JLabel();
         lbl5 = new javax.swing.JLabel();
-        lblCodigoPProveedor = new javax.swing.JLabel();
+        lblCP = new javax.swing.JLabel();
         lbl6 = new javax.swing.JLabel();
         lblApellido = new javax.swing.JLabel();
         lbl15 = new javax.swing.JLabel();
@@ -348,9 +348,9 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         lbl5.setText("CP:");
         jPanel1.add(lbl5, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 190, -1, -1));
 
-        lblCodigoPProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblCodigoPProveedor.setText("82132");
-        jPanel1.add(lblCodigoPProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 210, -1, -1));
+        lblCP.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblCP.setText("82132");
+        jPanel1.add(lblCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 210, -1, -1));
 
         lbl6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl6.setText("Apellidos:");
@@ -548,10 +548,10 @@ public class ventanaVerClientes extends javax.swing.JFrame {
     private javax.swing.JLabel lbl7;
     private javax.swing.JLabel lbl8;
     public javax.swing.JLabel lblApellido;
+    public javax.swing.JLabel lblCP;
     public javax.swing.JLabel lblCalleCliente;
     private javax.swing.JLabel lblCiudad3;
     public javax.swing.JLabel lblCiudadCliente;
-    private javax.swing.JLabel lblCodigoPProveedor;
     public javax.swing.JLabel lblColoniaCliente;
     public javax.swing.JLabel lblEstadoCliente;
     public javax.swing.JLabel lblNombre;
