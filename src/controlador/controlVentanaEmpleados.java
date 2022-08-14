@@ -59,27 +59,27 @@ public class controlVentanaEmpleados implements ActionListener{
             try{
                 controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
                 ctProv.IniciarVista();
-                ventProd1.setVisible(false);
+                ventEm.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana productos: "+e);
             }
         }
         
-        else if(ventProd1.btnClientes==evento.getSource()){
+        else if(ventEm.btnClientes==evento.getSource()){
             try{
                 controlVentanaClientes ctCli=new controlVentanaClientes(ventCli,modelo);
                 ctCli.IniciarVista();
-                ventProd1.setVisible(false);
+                ventEm.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana clientes: "+e);
             }
         }
         
-        else if(ventProd1.btnEmpleados==evento.getSource()){
+        else if(ventEm.btnProductos==evento.getSource()){
             try{
                 controlVentanaProductos1 ctEmp=new controlVentanaProductos1(ventProd1,modelo);
                 ctEmp.IniciarVista();
-                ventProd1.setVisible(false);
+                ventEm.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
