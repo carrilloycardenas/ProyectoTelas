@@ -46,7 +46,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jPanel3 = new FondoPanel();
         jPanel4 = new FondoUsuario();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
         btnEmpleados = new javax.swing.JButton();
         btnProveedores = new javax.swing.JButton();
@@ -103,10 +103,10 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jLabel15.setText("Melissa Garza");
         barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(119, 119, 119));
-        jLabel16.setText("25 Junio 2022");
-        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(119, 119, 119));
+        lblFecha.setText("25 Junio 2022");
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(38, 18, 137));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -414,7 +414,6 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -439,6 +438,7 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     public javax.swing.JLabel lblCat;
     public javax.swing.JLabel lblDesProd;
+    public javax.swing.JLabel lblFecha;
     public javax.swing.JLabel lblID;
     public javax.swing.JLabel lblLocal;
     public javax.swing.JLabel lblMarca;

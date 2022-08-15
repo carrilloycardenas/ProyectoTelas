@@ -44,7 +44,7 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         jPanel3 = new FondoPanel();
         jPanel4 = new FondoUsuario();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -127,10 +127,10 @@ public class ventanaVerClientes extends javax.swing.JFrame {
         jLabel15.setText("Melissa Garza");
         barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(119, 119, 119));
-        jLabel16.setText("25 Junio 2022");
-        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(119, 119, 119));
+        lblFecha.setText("25 Junio 2022");
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
@@ -505,7 +505,6 @@ public class ventanaVerClientes extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -554,6 +553,7 @@ public class ventanaVerClientes extends javax.swing.JFrame {
     public javax.swing.JLabel lblCiudadCliente;
     public javax.swing.JLabel lblColoniaCliente;
     public javax.swing.JLabel lblEstadoCliente;
+    public javax.swing.JLabel lblFecha;
     public javax.swing.JLabel lblNombre;
     public javax.swing.JLabel lblNumeroCliente;
     public javax.swing.JLabel lblidCliente;

@@ -44,7 +44,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jPanel3 = new FondoPanel();
         jPanel4 = new FondoUsuario();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -175,10 +175,10 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jLabel15.setText("Melissa Garza");
         barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(119, 119, 119));
-        jLabel16.setText("25 Junio 2022");
-        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(119, 119, 119));
+        lblFecha.setText("25 Junio 2022");
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
@@ -191,7 +191,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton3.setText("Proveedores");
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
 
         jButton4.setBackground(new java.awt.Color(38, 18, 137));
@@ -199,7 +199,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Caja");
         jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -215,7 +215,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton7.setText("Cerrar sesión");
         jButton7.setBorderPainted(false);
         jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
 
         jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -226,7 +226,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton8.setText("Productos");
         jButton8.setBorderPainted(false);
         jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
 
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -243,7 +243,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setText("Inicio");
         jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel35.setBackground(new java.awt.Color(34, 19, 101));
@@ -258,7 +258,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton13.setText("Facturas");
         jButton13.setBorderPainted(false);
         jButton13.setContentAreaFilled(false);
-        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton13.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel36.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -276,7 +276,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton14.setText("Facturas");
         jButton14.setBorderPainted(false);
         jButton14.setContentAreaFilled(false);
-        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton14.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel39.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel39.add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -292,7 +292,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Clientes");
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel35.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel2.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, 60));
@@ -302,7 +302,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton6.setText("Reporte");
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
         jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 20, 20));
 
@@ -312,7 +312,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton5.setText("Facturas");
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
         jButton2.setBackground(new java.awt.Color(38, 18, 137));
@@ -321,7 +321,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton2.setText("Empleados");
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.setFocusPainted(false);
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
 
@@ -504,7 +504,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton17.setText("Facturas");
         jButton17.setBorderPainted(false);
         jButton17.setContentAreaFilled(false);
-        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel48.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel48.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -522,7 +522,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton18.setText("Facturas");
         jButton18.setBorderPainted(false);
         jButton18.setContentAreaFilled(false);
-        jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel51.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel51.add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -554,7 +554,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton19.setText("Facturas");
         jButton19.setBorderPainted(false);
         jButton19.setContentAreaFilled(false);
-        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton19.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel54.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel54.add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -572,7 +572,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton20.setText("Facturas");
         jButton20.setBorderPainted(false);
         jButton20.setContentAreaFilled(false);
-        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton20.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel57.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel57.add(jPanel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -608,7 +608,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton11.setText("Facturas");
         jButton11.setBorderPainted(false);
         jButton11.setContentAreaFilled(false);
-        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel30.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel30.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -626,7 +626,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton12.setText("Facturas");
         jButton12.setBorderPainted(false);
         jButton12.setContentAreaFilled(false);
-        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel33.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel33.add(jPanel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -658,7 +658,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton15.setText("Facturas");
         jButton15.setBorderPainted(false);
         jButton15.setContentAreaFilled(false);
-        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel42.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel42.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -676,7 +676,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton16.setText("Facturas");
         jButton16.setBorderPainted(false);
         jButton16.setContentAreaFilled(false);
-        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton16.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel45.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 60));
         jPanel45.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
@@ -773,7 +773,6 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -861,6 +860,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
     private javax.swing.JLabel lblCodigoCliente;
     private javax.swing.JLabel lblColoniaProveedor;
     private javax.swing.JLabel lblEstadoCliente;
+    public javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblNumeroProveedor;
     private javax.swing.JLabel lblidEmpleado1;
     private javax.swing.JLabel lblidEmpleado2;
