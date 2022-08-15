@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.AgregarCliente;
+import vista.Facturas;
 import vista.ModificarCliente;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
@@ -28,6 +29,7 @@ public class controlVentanaClientes implements ActionListener{
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
+    Facturas ventFac=new Facturas();
     int row;
     controladorReloj ctRel=new controladorReloj();
 
@@ -42,6 +44,7 @@ public class controlVentanaClientes implements ActionListener{
         this.ventCli.btnProveedores.addActionListener(this);
         this.ventCli.btnProductos.addActionListener(this);
         this.ventCli.btnInicio.addActionListener(this);
+        this.ventCli.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -120,6 +123,15 @@ public class controlVentanaClientes implements ActionListener{
             try{
                 controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
                 ctIni.IniciarVista();
+                ventCli.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        else if(ventCli.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
                 ventCli.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);

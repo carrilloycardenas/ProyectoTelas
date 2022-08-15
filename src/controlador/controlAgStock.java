@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Facturas;
 import vista.ventanaAgStock;
 import vista.ventanaProductos1;
 
@@ -19,6 +20,7 @@ public class controlAgStock implements ActionListener {
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
+    Facturas ventFac=new Facturas();
     ResultSet rs;
     String valor;
     controladorReloj ctRel=new controladorReloj();
@@ -30,6 +32,7 @@ public class controlAgStock implements ActionListener {
         this.valor = String.valueOf(ventProd.tablaproductos.getValueAt(row, 0));
         this.rs = modelo.VrProductos(valor);
         this.ventSt.btnGuardarStock.addActionListener(this);
+        this.ventSt.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -59,6 +62,15 @@ public class controlAgStock implements ActionListener {
             modelo.stockUpdate(ventSt.txtAgStock.getValue().toString(),this.valor);
             ventSt.setVisible(false);
             ventP1.IniciarVista();
+        }
+        else if(ventSt.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                ventSt.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
         }
     }
 

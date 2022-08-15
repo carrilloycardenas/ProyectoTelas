@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Facturas;
 import vista.ModificarCliente;
 import vista.VentanaClientes2;
 
@@ -20,6 +21,7 @@ public class controlModClientes implements ActionListener {
     ResultSet rsModCli;
     String valor;
     controladorReloj ctRel=new controladorReloj();
+    Facturas ventFac=new Facturas();
 
     public controlModClientes(ModificarCliente vent, consultas model, VentanaClientes2 ventCli, int row){
         this.vista = vent;
@@ -29,6 +31,7 @@ public class controlModClientes implements ActionListener {
         this.vista.btnModTelefono.addActionListener(this);
         this.vista.btnModTelefono.addActionListener(this);
         this.vista.btnGuardarModCli.addActionListener(this);
+        this.vista.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -64,6 +67,14 @@ public class controlModClientes implements ActionListener {
             ctCli.IniciarVista();
             this.vista.setVisible(false);
         }
+        else if(vista.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
     }
-
 }

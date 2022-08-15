@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Facturas;
 import vista.ventanaAgProducto;
 import vista.ventanaProductos1;
 
@@ -17,12 +18,14 @@ public class controlAgProductos implements ActionListener{
     consultas modelo = new consultas();
     ventanaProductos1 ventProd = new ventanaProductos1();
     controladorReloj ctRel=new controladorReloj();
+    Facturas ventFac=new Facturas();
 
     public controlAgProductos(ventanaAgProducto ventAg, consultas modelo) {
         this.ventAg = ventAg;
         this.modelo = modelo;
         this.ventAg.btnGuardarProducto.addActionListener(this);
         this.ventAg.btnCancelar.addActionListener(this);
+        this.ventAg.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -48,6 +51,15 @@ public class controlAgProductos implements ActionListener{
             controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
             ctProd.IniciarVista();
             ventAg.setVisible(false);
+        }
+        else if(ventAg.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                ventAg.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
         }
     }
 

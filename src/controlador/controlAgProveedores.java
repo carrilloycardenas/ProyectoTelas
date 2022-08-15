@@ -10,6 +10,7 @@ import vista.ventanaProvedores;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import vista.Facturas;
 
 /**
  *
@@ -20,12 +21,14 @@ public class controlAgProveedores implements ActionListener{
     consultas modelo = new consultas();
     ventanaProvedores ventProv=new ventanaProvedores();
     controladorReloj ctRel=new controladorReloj();
+    Facturas ventFac=new Facturas();
     
     public controlAgProveedores(AgregarProveedor ventAgP, consultas modelo){
         this.ventAgP=ventAgP;
         this.modelo=modelo;
         this.ventAgP.btnAgregar.addActionListener(this);
         this.ventAgP.btnCancelar.addActionListener(this);
+        this.ventAgP.btnFacturas.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -57,6 +60,15 @@ public class controlAgProveedores implements ActionListener{
             controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
             ctProv.IniciarVista();
             ventAgP.setVisible(false);
+        }
+        else if(ventAgP.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                ventAgP.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
         }
     }
 }

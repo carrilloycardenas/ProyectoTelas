@@ -45,8 +45,8 @@ public class Facturas extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnEmpleados = new javax.swing.JButton();
+        btnProveedores = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
@@ -56,21 +56,21 @@ public class Facturas extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jPanel22 = new IconoProductos();
         jPanel23 = new IconoClientes();
-        jButton1 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        btnClientes = new javax.swing.JButton();
+        btnProductos = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
         jPanel25 = new IconoProveedores();
         jPanel26 = new IconoCaja();
         jPanel28 = new IconoReporte();
         jPanel29 = new IconoCerrarSesion();
-        jButton9 = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
         jPanel27 = new IconoFacturas();
         jLabel1 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaFacturas = new javax.swing.JTable();
         btnAgregarFac = new javax.swing.JButton();
-        btnModificarFac = new javax.swing.JButton();
+        btnVerFac = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnModificarFac1 = new javax.swing.JButton();
@@ -101,24 +101,24 @@ public class Facturas extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(38, 18, 137));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setBackground(new java.awt.Color(38, 18, 137));
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Empleados");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton2.setFocusPainted(false);
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
+        btnEmpleados.setBackground(new java.awt.Color(38, 18, 137));
+        btnEmpleados.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnEmpleados.setForeground(new java.awt.Color(255, 255, 255));
+        btnEmpleados.setText("Empleados");
+        btnEmpleados.setBorderPainted(false);
+        btnEmpleados.setContentAreaFilled(false);
+        btnEmpleados.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnEmpleados.setFocusPainted(false);
+        jPanel2.add(btnEmpleados, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 200, 60));
 
-        jButton3.setBackground(new java.awt.Color(38, 18, 137));
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Proveedores");
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
+        btnProveedores.setBackground(new java.awt.Color(38, 18, 137));
+        btnProveedores.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnProveedores.setForeground(new java.awt.Color(255, 255, 255));
+        btnProveedores.setText("Proveedores");
+        btnProveedores.setBorderPainted(false);
+        btnProveedores.setContentAreaFilled(false);
+        btnProveedores.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
 
         jButton4.setBackground(new java.awt.Color(38, 18, 137));
         jButton4.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
@@ -175,21 +175,21 @@ public class Facturas extends javax.swing.JFrame {
         jPanel23.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 20, 20));
 
-        jButton1.setBackground(new java.awt.Color(38, 18, 137));
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Clientes");
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 60));
+        btnClientes.setBackground(new java.awt.Color(38, 18, 137));
+        btnClientes.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnClientes.setForeground(new java.awt.Color(255, 255, 255));
+        btnClientes.setText("Clientes");
+        btnClientes.setContentAreaFilled(false);
+        btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 200, 60));
 
-        jButton8.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Productos");
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
+        btnProductos.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnProductos.setForeground(new java.awt.Color(255, 255, 255));
+        btnProductos.setText("Productos");
+        btnProductos.setBorderPainted(false);
+        btnProductos.setContentAreaFilled(false);
+        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 60));
 
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 20, 20));
@@ -198,17 +198,17 @@ public class Facturas extends javax.swing.JFrame {
         jPanel2.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 20));
         jPanel2.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 20, 20));
 
-        jButton9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Inicio");
-        jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnInicio.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnInicio.setForeground(new java.awt.Color(255, 255, 255));
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+        btnInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btnInicioActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
+        jPanel2.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
         jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
@@ -221,9 +221,9 @@ public class Facturas extends javax.swing.JFrame {
         jLabel19.setText("Lista de facturas");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 350, 20));
 
-        jTable1.setBackground(new java.awt.Color(21, 8, 79));
-        jTable1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaFacturas.setBackground(new java.awt.Color(21, 8, 79));
+        tablaFacturas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        tablaFacturas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -252,7 +252,7 @@ public class Facturas extends javax.swing.JFrame {
                 "Folio", "Factura "
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaFacturas);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 550, 360));
 
@@ -267,16 +267,16 @@ public class Facturas extends javax.swing.JFrame {
         });
         jPanel1.add(btnAgregarFac, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 220, 150, 40));
 
-        btnModificarFac.setBackground(new java.awt.Color(181, 194, 254));
-        btnModificarFac.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnModificarFac.setForeground(new java.awt.Color(21, 8, 79));
-        btnModificarFac.setText("Ver Facturas");
-        btnModificarFac.addActionListener(new java.awt.event.ActionListener() {
+        btnVerFac.setBackground(new java.awt.Color(181, 194, 254));
+        btnVerFac.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnVerFac.setForeground(new java.awt.Color(21, 8, 79));
+        btnVerFac.setText("Ver Facturas");
+        btnVerFac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnModificarFacActionPerformed(evt);
+                btnVerFacActionPerformed(evt);
             }
         });
-        jPanel1.add(btnModificarFac, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 150, 40));
+        jPanel1.add(btnVerFac, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 150, 40));
 
         btnEliminar.setBackground(new java.awt.Color(189, 0, 0));
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
@@ -311,15 +311,15 @@ public class Facturas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
-    private void btnModificarFacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarFacActionPerformed
+    private void btnVerFacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerFacActionPerformed
         ventanaVerFacturas abrir= new ventanaVerFacturas();
         abrir.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_btnModificarFacActionPerformed
+    }//GEN-LAST:event_btnVerFacActionPerformed
 
     private void btnAgregarFacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarFacActionPerformed
         AgregarFacturas abrir= new AgregarFacturas();
@@ -368,19 +368,19 @@ public class Facturas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnAgregarFac;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnModificarFac;
-    private javax.swing.JButton btnModificarFac1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    public javax.swing.JButton btnAgregarFac;
+    public javax.swing.JButton btnClientes;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnEmpleados;
+    public javax.swing.JButton btnInicio;
+    public javax.swing.JButton btnModificarFac1;
+    public javax.swing.JButton btnProductos;
+    public javax.swing.JButton btnProveedores;
+    public javax.swing.JButton btnVerFac;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
@@ -401,8 +401,8 @@ public class Facturas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable jTable1;
     public javax.swing.JLabel lblFecha;
+    public javax.swing.JTable tablaFacturas;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

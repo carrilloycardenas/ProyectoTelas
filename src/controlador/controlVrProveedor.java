@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Facturas;
 import vista.ventanaProvedores;
 import vista.ventanaVerProveedores;
 
@@ -20,6 +21,7 @@ public class controlVrProveedor implements ActionListener {
     ResultSet rsVrPorv;
     String valor;
     controladorReloj ctRel=new controladorReloj();
+    Facturas ventFac=new Facturas();
     
     public controlVrProveedor(ventanaVerProveedores vist, consultas model, ventanaProvedores vtPro, int row){
         this.vista = vist;
@@ -28,6 +30,7 @@ public class controlVrProveedor implements ActionListener {
         this.rsVrPorv = this.modelo.VrProveedores(this.valor);
         this.vista.btnVolverProveedor.addActionListener(this);
         this.vista.btnElimProv.addActionListener(this);
+        this.vista.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -59,6 +62,15 @@ public class controlVrProveedor implements ActionListener {
             controlVentanaProvedores ctPro = new controlVentanaProvedores(this.vtProv, this.modelo);
             ctPro.IniciarVista();
             this.vista.setVisible(false);
+        }
+        else if(vista.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
         }
     }
     

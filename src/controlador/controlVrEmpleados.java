@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Facturas;
 import vista.ventanaEmpleados;
 import vista.ventanaVerEmpleado;
 
@@ -25,6 +26,7 @@ public class controlVrEmpleados implements ActionListener{
     ResultSet rs;
     String valor;
     controladorReloj ctRel=new controladorReloj();
+    Facturas ventFac=new Facturas();
     
     public controlVrEmpleados(ventanaVerEmpleado ventVrEm, consultas modelo, int row,ventanaEmpleados ventEm){
         this.ventEm = ventEm;
@@ -37,6 +39,7 @@ public class controlVrEmpleados implements ActionListener{
         System.out.println(valor);
         this.rs = modelo.VrEmpleados(this.valor);
         //this.rs = modelo.VrProductos("1");
+        this.ventVrEm.btnFacturas.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -79,6 +82,14 @@ public class controlVrEmpleados implements ActionListener{
             ctEm.IniciarVista();
             ventVrEm.setVisible(false);
         }
+        else if(ventVrEm.btnFacturas==evento.getSource()){
+            try{
+                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
+                ctFac.IniciarVista();
+                ventVrEm.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
     }
-    
 }

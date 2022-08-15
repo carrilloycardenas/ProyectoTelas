@@ -47,7 +47,7 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         jPanel2 = new FondoInicioSesion();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnFacturas = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jButton7 = new javax.swing.JButton();
@@ -157,14 +157,14 @@ public class AgregarEmpleado extends javax.swing.JFrame {
         });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
 
-        jButton5.setBackground(new java.awt.Color(38, 18, 137));
-        jButton5.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Facturas");
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
+        btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
+        btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
+        btnFacturas.setText("Facturas");
+        btnFacturas.setBorderPainted(false);
+        btnFacturas.setContentAreaFilled(false);
+        btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
         jButton6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
@@ -539,11 +539,11 @@ public class AgregarEmpleado extends javax.swing.JFrame {
     private javax.swing.JPanel barraSup;
     public javax.swing.JButton btnAgregar;
     public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnFacturas;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
