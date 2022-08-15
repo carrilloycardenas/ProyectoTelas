@@ -60,48 +60,37 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
         jButton2 = new javax.swing.JButton();
-        jPanel5 = new FotoProveedor();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
+        txtColonia = new javax.swing.JTextField();
+        txtCalle = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txtNumC = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtCiudad = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
+        txtEstado = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
+        txtCP = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jPanel10 = new addIcon();
-        jPanel11 = new addIcon();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablaTelefonos = new javax.swing.JTable();
+        btnModTel = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        tablaCorreos = new javax.swing.JTable();
+        btnModCorreo = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Modificar proveedores");
@@ -254,33 +243,20 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jLabel3.setText("Nombre:");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel4.setText("Apellidos:");
-        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 6, -1, -1));
-
-        jTextField2.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField2.setText("Garzas");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 32, 185, -1));
-
-        jTextField3.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField3.setText("Melissa");
-        jPanel6.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
+        txtNombre.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtNombre.setText("Melissa");
+        jPanel6.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 32, 182, -1));
 
         jSeparator2.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 490, 20));
 
-        jTextField10.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField10.setText("Centro");
-        jPanel6.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 150, -1));
+        txtColonia.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtColonia.setText("Centro");
+        jPanel6.add(txtColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 150, -1));
 
-        jTextField11.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField11.setText("Libertad");
-        jPanel6.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 150, -1));
+        txtCalle.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCalle.setText("Libertad");
+        jPanel6.add(txtCalle, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 150, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel12.setText("Calle:");
@@ -294,33 +270,33 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jLabel14.setText("Dirección");
         jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        jTextField12.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField12.setText("13");
-        jPanel6.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, -1));
+        txtNumC.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtNumC.setText("13");
+        jPanel6.add(txtNumC, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel17.setText("Numero:");
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
 
-        jTextField13.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField13.setText("Mazatlán");
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 150, -1));
+        txtCiudad.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCiudad.setText("Mazatlán");
+        jPanel6.add(txtCiudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 150, -1));
 
         jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel18.setText("Ciudad:");
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
-        jTextField14.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField14.setText("Sinaloa");
-        jPanel6.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 118, -1));
+        txtEstado.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtEstado.setText("Sinaloa");
+        jPanel6.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 118, -1));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Estado:");
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, -1, -1));
 
-        jTextField15.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField15.setText("82000");
-        jPanel6.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
+        txtCP.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        txtCP.setText("82000");
+        jPanel6.add(txtCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("CP:");
@@ -333,85 +309,44 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jLabel21.setText("Teléfonos");
         jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
 
-        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel22.setText("Números:");
-        jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
-
-        jTextField16.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField16.setText("6692344351");
-        jPanel6.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 150, -1));
-
-        jTextField17.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField17.setText("Melissa");
-        jPanel6.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 150, -1));
-
-        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel23.setText("Nombre de dueño:");
-        jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
-
-        jTextField18.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField18.setText("Empleada");
-        jPanel6.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 150, -1));
-
-        jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel24.setText("Parentesco: ");
-        jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel25.setText("Agregar teléfono");
-        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, -1, -1));
-
-        jTextField19.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
-        jTextField19.setText("melissa@gmail.com");
-        jTextField19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField19ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 486, -1));
-
-        jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel26.setText("Direccion de correo:");
-        jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
-
         jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel27.setText("Correos");
         jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel30.setText("Agregar correo");
-        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, -1, 27));
-
         jSeparator4.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 588, 490, 0));
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
+        tablaTelefonos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2"
+            }
+        ));
+        jScrollPane2.setViewportView(tablaTelefonos);
 
-        jPanel6.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 10, 10));
+        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 80));
 
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
+        btnModTel.setText("Modificar");
+        jPanel6.add(btnModTel, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, -1, -1));
 
-        jPanel6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 10, 10));
+        tablaCorreos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2"
+            }
+        ));
+        jScrollPane3.setViewportView(tablaCorreos);
+
+        jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 340, 410, 80));
+
+        btnModCorreo.setText("Modificar");
+        jPanel6.add(btnModCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 340, -1, -1));
 
         jScrollPane1.setViewportView(jPanel6);
 
@@ -427,12 +362,6 @@ public class ModificarProveedor extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
-        jLabel5.setText("Editar foto");
-
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
-        jLabel6.setText("Eliminar");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -442,25 +371,16 @@ public class ModificarProveedor extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel6)))
+                        .addGap(590, 590, 590)
+                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
                                 .addComponent(jLabel1)
                                 .addGap(11, 11, 11)
                                 .addComponent(jLabel2))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(590, 590, 590)
-                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -469,20 +389,13 @@ public class ModificarProveedor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(32, 32, 32))))
         );
@@ -506,14 +419,6 @@ public class ModificarProveedor extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
@@ -571,7 +476,9 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
-    private javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnModCorreo;
+    public javax.swing.JButton btnModTel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -593,20 +500,9 @@ public class ModificarProveedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
@@ -620,25 +516,23 @@ public class ModificarProveedor extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JTable tablaCorreos;
+    public javax.swing.JTable tablaTelefonos;
+    public javax.swing.JTextField txtCP;
+    public javax.swing.JTextField txtCalle;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtColonia;
+    public javax.swing.JTextField txtEstado;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtNumC;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

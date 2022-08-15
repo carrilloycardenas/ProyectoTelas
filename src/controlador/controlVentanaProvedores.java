@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.AgregarProveedor;
+import vista.ModificarProveedor;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
@@ -21,6 +22,8 @@ import vista.ventanaVerProveedores;
  * @author daniel
  */
 class controlVentanaProvedores implements ActionListener{
+
+    ModificarProveedor vtP = new ModificarProveedor();
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaVerProveedores vrPro = new ventanaVerProveedores();
     AgregarProveedor ventAgP=new AgregarProveedor();
@@ -62,6 +65,14 @@ class controlVentanaProvedores implements ActionListener{
                 ventProv.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error en iniciar ventana Ag Proveedores: "+e);
+            }
+        } else if(ventProv.btnModificarProveedor == evento.getSource()){
+            try{
+                controlModProveedores ctModP = new controlModProveedores(this.vtP, this.modelo, this.ventProv, this.row);
+                ctModP.IniciarVista();
+                this.ventProv.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error btnModProv: " + e);
             }
         }
         
