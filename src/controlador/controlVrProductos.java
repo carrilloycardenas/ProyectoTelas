@@ -10,7 +10,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.VentanaClientes2;
+import vista.ventanaEmpleados;
+import vista.ventanaInicio;
 import vista.ventanaProductos1;
+import vista.ventanaProvedores;
 import vista.ventanaVerProducto;
 
 /**
@@ -23,6 +27,10 @@ public class controlVrProductos implements ActionListener{
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
     ResultSet rs;
+    ventanaProvedores ventProv=new ventanaProvedores();
+    VentanaClientes2 ventCli=new VentanaClientes2();
+    ventanaEmpleados ventEmp=new ventanaEmpleados();
+    ventanaInicio ventIni=new ventanaInicio();
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row,ventanaProductos1 ventProd){
         this.ventProd = ventProd;
@@ -35,6 +43,10 @@ public class controlVrProductos implements ActionListener{
         //System.out.println(valor);
         this.rs = modelo.VrProductos(valor);
         //this.rs = modelo.VrProductos("1");
+        this.ventVr.btnProveedores.addActionListener(this);
+        this.ventVr.btnClientes.addActionListener(this);
+        this.ventVr.btnEmpleados.addActionListener(this);
+        this.ventVr.btnInicio.addActionListener(this);
     }
     public void IniciarVista(){
         ventVr.setTitle("Mostrar producto");
@@ -64,6 +76,44 @@ public class controlVrProductos implements ActionListener{
             controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
             ctProd.IniciarVista();
             ventVr.setVisible(false);
+        }
+        else if(ventVr.btnProveedores==evento.getSource()){
+            try{
+                controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
+                ctProv.IniciarVista();
+                ventVr.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana productos: "+e);
+            }
+        }
+        
+        else if(ventVr.btnClientes==evento.getSource()){
+            try{
+                controlVentanaClientes ctCli=new controlVentanaClientes(ventCli,modelo);
+                ctCli.IniciarVista();
+                ventVr.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana clientes: "+e);
+            }
+        }
+        
+        else if(ventVr.btnEmpleados==evento.getSource()){
+            try{
+                controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp,modelo);
+                ctEmp.IniciarVista();
+                ventVr.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        else if(ventVr.btnInicio==evento.getSource()){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
+                ctIni.IniciarVista();
+                ventVr.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
         }
     }
 }
