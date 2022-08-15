@@ -33,6 +33,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel22 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         barraSup = new javax.swing.JPanel();
         jPanel3 = new FondoPanel();
@@ -90,7 +91,12 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         tablaCorreos = new javax.swing.JTable();
         btnModCorreo = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
+        txtPais = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel22.setText("CP:");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Modificar proveedores");
@@ -296,11 +302,11 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         txtCP.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         txtCP.setText("82000");
-        jPanel6.add(txtCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 87, -1));
+        jPanel6.add(txtCP, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 87, -1));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel20.setText("CP:");
-        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, -1, -1));
+        jLabel20.setText("País:");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
 
         jSeparator3.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 490, 10));
@@ -347,6 +353,19 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         btnModCorreo.setText("Modificar");
         jPanel6.add(btnModCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 340, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel23.setText("CP:");
+        jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
+
+        txtPais.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtPais.setText("China");
+        txtPais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPaisActionPerformed(evt);
+            }
+        });
+        jPanel6.add(txtPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, -1, 20));
 
         jScrollPane1.setViewportView(jPanel6);
 
@@ -424,6 +443,10 @@ public class ModificarProveedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
 
+    private void txtPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPaisActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPaisActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -500,6 +523,8 @@ public class ModificarProveedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
@@ -533,6 +558,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
     public javax.swing.JTextField txtEstado;
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtNumC;
+    private javax.swing.JTextField txtPais;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

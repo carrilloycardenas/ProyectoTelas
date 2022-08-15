@@ -54,7 +54,9 @@ public class controlModProveedores implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento){
         if(this.vista.btnGuardar == evento.getSource()){
-            
+            this.modelo.modProveedores(this.vista.txtNombre.getText(), this.vista.txtCalle.getText(), this.vista.txtColonia.getText(), 
+                                        this.vista.txtNumC.getText(), this.vista.txtCiudad.getText(), this.vista.txtEstado.getText(), 
+                                        this.vista.txtCP.getText(), "", this.valor);
         }
     }
 
