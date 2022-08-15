@@ -732,4 +732,33 @@ public class consultas {
         }
     }
 
+    public int modProveedores(String nom, String calle, String colonia, String numD, String ciudad, String estado, String cp, String pais){
+            
+            int resultado=0;
+            Connection conex =null;
+            
+            String consulta="call ModificarProveedores(?,?,?,?,?,?,?,?,?);";
+            
+            try{
+                conex = con.conectar();
+                sentencia = conex.prepareStatement(consulta);
+                sentencia.setString(1, nom);
+                sentencia.setString(2, calle);
+                sentencia.setString(3, colonia);
+                sentencia.setString(4, numD);
+                sentencia.setString(5, ciudad);
+                sentencia.setString(6, estado);
+                sentencia.setString(7, numD);
+                sentencia.setString(8, cp);
+                sentencia.setString(9, ciudad);
+                
+                resultado = sentencia.executeUpdate();
+            }catch(SQLException e){
+                System.out.println("Error en consultas (agregarPro): " + e);
+            }
+            
+            
+            return resultado;
+        }
+
 }

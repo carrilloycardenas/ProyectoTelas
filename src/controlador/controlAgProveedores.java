@@ -24,6 +24,7 @@ public class controlAgProveedores implements ActionListener{
         this.ventAgP=ventAgP;
         this.modelo=modelo;
         this.ventAgP.btnAgregar.addActionListener(this);
+        this.ventAgP.btnCancelar.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -50,6 +51,10 @@ public class controlAgProveedores implements ActionListener{
             }catch(Exception e){
                 System.out.println("Error en btn agregar proveedor: "+e);
             }
+        } else if(this.ventAgP.btnCancelar == evento.getSource()){
+            controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
+            ctProv.IniciarVista();
+            ventAgP.setVisible(false);
         }
     }
 }
