@@ -21,6 +21,8 @@ public class controlAgStock implements ActionListener {
     ventanaProductos1 ventProd;
     ResultSet rs;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
+    
     public controlAgStock(ventanaAgStock ventSt, consultas model, int row, ventanaProductos1 ventProd){
         this.ventSt = ventSt;
         this.modelo = model;
@@ -47,6 +49,7 @@ public class controlAgStock implements ActionListener {
         } catch(SQLException e){
             System.out.println("error en controlVrProducto "+e);
         }
+        ventSt.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

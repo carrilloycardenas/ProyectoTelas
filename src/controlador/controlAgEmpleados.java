@@ -19,6 +19,7 @@ public class controlAgEmpleados implements ActionListener{
     AgregarEmpleado ventAgE=new AgregarEmpleado();
     consultas modelo = new consultas();
     ventanaEmpleados ventE=new ventanaEmpleados();
+    controladorReloj ctRel=new controladorReloj();
     
     public controlAgEmpleados(AgregarEmpleado ventAgE, consultas modelo){
         this.ventAgE=ventAgE;
@@ -33,6 +34,7 @@ public class controlAgEmpleados implements ActionListener{
         ventAgE.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventAgE.setLocationRelativeTo(null);
         ventAgE.setVisible(true);
+        ventAgE.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

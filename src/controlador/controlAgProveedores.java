@@ -19,6 +19,7 @@ public class controlAgProveedores implements ActionListener{
     AgregarProveedor ventAgP = new AgregarProveedor();
     consultas modelo = new consultas();
     ventanaProvedores ventProv=new ventanaProvedores();
+    controladorReloj ctRel=new controladorReloj();
     
     public controlAgProveedores(AgregarProveedor ventAgP, consultas modelo){
         this.ventAgP=ventAgP;
@@ -33,6 +34,7 @@ public class controlAgProveedores implements ActionListener{
         ventAgP.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventAgP.setLocationRelativeTo(null);
         ventAgP.setVisible(true);
+        ventAgP.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

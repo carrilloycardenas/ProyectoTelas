@@ -20,6 +20,7 @@ public class controlModProducto implements ActionListener {
     ventanaProductos1 ventProd;
     ResultSet rs;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
 
     public controlModProducto(ventanaModProducto ventMod, consultas model, int row, ventanaProductos1 venProd){
         this.ventMod = ventMod;
@@ -82,6 +83,7 @@ public class controlModProducto implements ActionListener {
         } catch(SQLException e){
             System.out.println("Mod: " + e);
         }
+        ventMod.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

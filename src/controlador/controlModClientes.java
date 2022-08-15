@@ -19,6 +19,7 @@ public class controlModClientes implements ActionListener {
     consultas modelo = new consultas();
     ResultSet rsModCli;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
 
     public controlModClientes(ModificarCliente vent, consultas model, VentanaClientes2 ventCli, int row){
         this.vista = vent;
@@ -50,6 +51,7 @@ public class controlModClientes implements ActionListener {
         } catch(Exception e){
             System.out.println("Error ModCli: " + e);
         }
+        vista.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

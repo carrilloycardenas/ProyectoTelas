@@ -19,6 +19,7 @@ public class controlVrProveedor implements ActionListener {
     consultas modelo = new consultas();
     ResultSet rsVrPorv;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
     
     public controlVrProveedor(ventanaVerProveedores vist, consultas model, ventanaProvedores vtPro, int row){
         this.vista = vist;
@@ -49,6 +50,7 @@ public class controlVrProveedor implements ActionListener {
         }catch(Exception e){
             System.out.println("Error ctVrProv: " + e);
         }
+        vista.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

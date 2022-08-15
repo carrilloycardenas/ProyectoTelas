@@ -24,6 +24,7 @@ public class controlVrClientes implements ActionListener {
     VentanaClientes2 ventClien;
     ResultSet rs;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
 
     public controlVrClientes(ventanaVerClientes ventVr,consultas modelo,VentanaClientes2 ventClien, int row){
         this.ventClien= ventClien;
@@ -58,6 +59,7 @@ public class controlVrClientes implements ActionListener {
             System.out.println("error en controlVrClientes: " + e);
              
         }
+        ventVr.lblFecha.setText(ctRel.calFechaC());
     }
     
 

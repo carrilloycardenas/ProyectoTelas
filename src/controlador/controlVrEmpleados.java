@@ -24,6 +24,7 @@ public class controlVrEmpleados implements ActionListener{
     ventanaEmpleados ventEm;
     ResultSet rs;
     String valor;
+    controladorReloj ctRel=new controladorReloj();
     
     public controlVrEmpleados(ventanaVerEmpleado ventVrEm, consultas modelo, int row,ventanaEmpleados ventEm){
         this.ventEm = ventEm;
@@ -67,7 +68,7 @@ public class controlVrEmpleados implements ActionListener{
         } catch(SQLException e){
             System.out.println("error en controlVrProducto "+e);
         }
-        
+        ventVrEm.lblFecha.setText(ctRel.calFechaC());
         
     }
 

@@ -33,6 +33,7 @@ class controlVentanaProvedores implements ActionListener{
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
     int row;
+    controladorReloj ctRel=new controladorReloj();
     
     public controlVentanaProvedores(ventanaProvedores ventP, consultas model){
         this.ventProv=ventP;
@@ -54,6 +55,7 @@ class controlVentanaProvedores implements ActionListener{
         ventProv.setLocationRelativeTo(null);
         ventProv.tablaempleados.setModel(modelo.venProv());
         ventProv.setVisible(true);
+        ventProv.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

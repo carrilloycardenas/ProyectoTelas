@@ -20,6 +20,7 @@ public class controlAgClientes implements ActionListener{
     AgregarCliente ventAgC =new AgregarCliente();
     consultas modelo=new consultas();
     VentanaClientes2 ventCli=new VentanaClientes2();
+    controladorReloj ctRel=new controladorReloj();
     
     public controlAgClientes(AgregarCliente ventAgC, consultas modelo){
         this.ventAgC=ventAgC;
@@ -34,6 +35,7 @@ public class controlAgClientes implements ActionListener{
         ventAgC.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventAgC.setLocationRelativeTo(null);
         ventAgC.setVisible(true);
+        ventAgC.lblFecha.setText(ctRel.calFechaC());
     }
     
     

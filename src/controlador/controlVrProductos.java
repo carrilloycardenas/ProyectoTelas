@@ -31,6 +31,7 @@ public class controlVrProductos implements ActionListener{
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaInicio ventIni=new ventanaInicio();
+    controladorReloj ctRel=new controladorReloj();
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row,ventanaProductos1 ventProd){
         this.ventProd = ventProd;
@@ -66,7 +67,7 @@ public class controlVrProductos implements ActionListener{
         } catch(SQLException e){
             System.out.println("error en controlVrProducto "+e);
         }
-        
+        ventVr.lblFecha.setText(ctRel.calFechaC());
         
     }
 

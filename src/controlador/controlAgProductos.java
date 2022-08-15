@@ -16,6 +16,7 @@ public class controlAgProductos implements ActionListener{
     ventanaAgProducto ventAg = new ventanaAgProducto();
     consultas modelo = new consultas();
     ventanaProductos1 ventProd = new ventanaProductos1();
+    controladorReloj ctRel=new controladorReloj();
 
     public controlAgProductos(ventanaAgProducto ventAg, consultas modelo) {
         this.ventAg = ventAg;
@@ -30,6 +31,7 @@ public class controlAgProductos implements ActionListener{
         ventAg.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventAg.setLocationRelativeTo(null);
         ventAg.setVisible(true);
+        ventAg.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

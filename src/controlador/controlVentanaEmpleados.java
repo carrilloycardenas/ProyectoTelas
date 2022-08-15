@@ -31,6 +31,7 @@ public class controlVentanaEmpleados implements ActionListener{
     ventanaVerEmpleado ventVrEm=new ventanaVerEmpleado();
     ventanaInicio ventIni=new ventanaInicio();
     int row;
+    controladorReloj ctRel=new controladorReloj();
     
     public controlVentanaEmpleados(ventanaEmpleados ventEm, consultas model){
         this.ventEm=ventEm;
@@ -51,6 +52,7 @@ public class controlVentanaEmpleados implements ActionListener{
         ventEm.setLocationRelativeTo(null);
         ventEm.tablaempleados.setModel(modelo.verEmpleados());
         ventEm.setVisible(true);
+        ventEm.lblFecha.setText(ctRel.calFechaC());
     }
 
     @Override

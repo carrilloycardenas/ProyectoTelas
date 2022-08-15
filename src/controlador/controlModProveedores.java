@@ -18,7 +18,8 @@ public class controlModProveedores implements ActionListener{
     ventanaProvedores vPro = new ventanaProvedores();
     consultas modelo = new consultas();
     ResultSet rsModP;
-    String valor;
+    String valor;       
+    controladorReloj ctRel=new controladorReloj();
 
     public controlModProveedores(ModificarProveedor modP, consultas model, ventanaProvedores vPro, int row){
         this.vista = modP;
@@ -50,6 +51,7 @@ public class controlModProveedores implements ActionListener{
         }catch(Exception e){
             System.out.println("Error ModProv: " + e);
         }
+        vista.lblFecha.setText(ctRel.calFechaC());
     }
     
     @Override
