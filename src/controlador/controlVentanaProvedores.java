@@ -13,6 +13,7 @@ import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
+import vista.ventanaVerProveedores;
 
 /**
  *
@@ -20,6 +21,7 @@ import vista.ventanaProvedores;
  */
 class controlVentanaProvedores implements ActionListener{
     ventanaProvedores ventProv=new ventanaProvedores();
+    ventanaVerProveedores vrPro = new ventanaVerProveedores();
     AgregarProveedor ventAgP=new AgregarProveedor();
     consultas modelo=new consultas();
     VentanaClientes2 ventCli=new VentanaClientes2();
@@ -101,6 +103,15 @@ class controlVentanaProvedores implements ActionListener{
                 this.IniciarVista();
             } catch(Exception e){
                 System.out.println("Error btnEliminar en proveedores: " + e);
+            }
+        } else if(ventProv.btnVerProveedor == evento.getSource()){
+            try{
+                this.row = ventProv.tablaempleados.getSelectedRow();
+                controlVrProveedor ctVrProv = new controlVrProveedor(this.vrPro, this.modelo, this.ventProv, this.row);
+                ctVrProv.IniciarVista();
+                this.ventProv.setVisible(false);
+            }catch(Exception e){
+                System.out.println("VerProv: " + e);
             }
         }
     }

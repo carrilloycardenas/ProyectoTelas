@@ -53,7 +53,11 @@ public class controlVrProveedor implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent evento){
-        
+        if(this.vista.btnVolverProveedor == evento.getSource()){
+            controlVentanaProvedores ctPro = new controlVentanaProvedores(this.vtProv, this.modelo);
+            ctPro.IniciarVista();
+            this.vista.setVisible(false);
+        }
     }
     
 }

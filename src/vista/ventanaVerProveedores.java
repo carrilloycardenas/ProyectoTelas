@@ -442,9 +442,7 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnVolverProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverProveedorActionPerformed
-        ventanaProvedores abrir= new ventanaProvedores();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVolverProveedorActionPerformed
 
     /**

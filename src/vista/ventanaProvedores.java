@@ -315,15 +315,11 @@ public class ventanaProvedores extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnModificarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarProveedorActionPerformed
-        ModificarProveedor abrir= new ModificarProveedor();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnModificarProveedorActionPerformed
 
     private void btnVerProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerProveedorActionPerformed
-        ventanaVerProveedores abrir= new ventanaVerProveedores();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVerProveedorActionPerformed
 
     /**
