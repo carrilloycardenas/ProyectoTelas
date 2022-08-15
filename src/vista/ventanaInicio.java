@@ -93,7 +93,7 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel19 = new FondoProductos();
         txtNumProdu = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel13 = new javax.swing.JLabel();
+        lblReloj = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jPanel30 = new javax.swing.JPanel();
         jPanel31 = new javax.swing.JPanel();
@@ -347,9 +347,9 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel1.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 240, 110, 130));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, 750, 10));
 
-        jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 75)); // NOI18N
-        jLabel13.setText("06:42:35");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, -1, -1));
+        lblReloj.setFont(new java.awt.Font("Century Gothic", 0, 75)); // NOI18N
+        lblReloj.setText("06:42:35");
+        jPanel1.add(lblReloj, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(38, 18, 137));
@@ -436,7 +436,6 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -480,6 +479,7 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    public javax.swing.JLabel lblReloj;
     public javax.swing.JLabel txtDin;
     public javax.swing.JLabel txtDinVentas;
     public javax.swing.JLabel txtNumClient;
