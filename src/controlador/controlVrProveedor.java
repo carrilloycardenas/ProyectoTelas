@@ -6,6 +6,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaProvedores;
@@ -16,10 +17,14 @@ public class controlVrProveedor implements ActionListener {
     ventanaVerProveedores vista = new ventanaVerProveedores();
     ventanaProvedores vtProv = new ventanaProvedores();
     consultas modelo = new consultas();
+    ResultSet rsVrPorv;
+    String valor;
     
     public controlVrProveedor(ventanaVerProveedores vist, consultas model, ventanaProvedores vtPro, int row){
         this.vista = vist;
         this.modelo = model;
+        this.valor = String.valueOf(vtPro.tablaempleados.getValueAt(row, 0));
+        this.rsVrPorv = this.modelo.VrProveedores(this.valor);
         this.vista.btnVolverProveedor.addActionListener(this);
         this.vista.btnElimProv.addActionListener(this);
     }
@@ -31,7 +36,16 @@ public class controlVrProveedor implements ActionListener {
         this.vista.setLocationRelativeTo(null);
         this.vista.setVisible(true);
         try{
-
+            this.vista.lblNombreProv.setText(this.rsVrPorv.getString("Nombre"));
+            this.vista.lblIdProveedor.setText(this.valor);
+            this.vista.lblCalleProveedor.setText(this.rsVrPorv.getString("calle"));
+            this.vista.lblColoniaProveedor.setText(this.rsVrPorv.getString("Colonia"));
+            this.vista.lblNumeroProveedor.setText(this.rsVrPorv.getString("numCasa"));
+            this.vista.lblCiudadProveedor.setText(this.rsVrPorv.getString("Ciudad"));
+            this.vista.lblEstadoProveedor.setText(this.rsVrPorv.getString("Estado"));
+            this.vista.lblCPProveedor.setText(this.rsVrPorv.getString("Codigo_postal"));
+            this.vista.tablaTelefonos.setModel(this.modelo.numProveedor(this.valor));
+            this.vista.tablaCorreos.setModel(this.modelo.correoProveedor(this.valor));
         }catch(Exception e){
             System.out.println("Error ctVrProv: " + e);
         }

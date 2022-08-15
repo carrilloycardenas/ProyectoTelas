@@ -75,11 +75,10 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jPanel27 = new IconoFacturas();
         jButton5 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        lblNombreProv = new javax.swing.JLabel();
         lblCalleProveedor = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jPanel5 = new FotoProveedor();
         btnVolverProveedor = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lbl = new javax.swing.JLabel();
@@ -94,7 +93,7 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
         lbl5 = new javax.swing.JLabel();
         lblCPProveedor = new javax.swing.JLabel();
         lbl6 = new javax.swing.JLabel();
-        lblidEmpleado = new javax.swing.JLabel();
+        lblIdProveedor = new javax.swing.JLabel();
         lbl15 = new javax.swing.JLabel();
         lblCiudad3 = new javax.swing.JLabel();
         lbl19 = new javax.swing.JLabel();
@@ -292,9 +291,9 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        jLabel1.setText("Silvana Distribuidora");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+        lblNombreProv.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        lblNombreProv.setText("Silvana Distribuidora");
+        jPanel1.add(lblNombreProv, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
 
         lblCalleProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblCalleProveedor.setText("Andador Palomas");
@@ -309,7 +308,6 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(41, 22, 130));
         jLabel4.setText("Información del proveedor");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, -1, -1));
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 180, 180));
 
         btnVolverProveedor.setBackground(new java.awt.Color(181, 194, 254));
         btnVolverProveedor.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
@@ -372,11 +370,11 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
 
         lbl6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl6.setText("ID:");
-        jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
+        jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
-        lblidEmpleado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        lblidEmpleado.setText("00012");
-        jPanel1.add(lblidEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+        lblIdProveedor.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        lblIdProveedor.setText("00012");
+        jPanel1.add(lblIdProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, -1, -1));
 
         lbl15.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl15.setText("Correos");
@@ -406,7 +404,7 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
         btnElimProv.setText("Eliminar");
         btnElimProv.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0)));
         btnElimProv.setContentAreaFilled(false);
-        jPanel1.add(btnElimProv, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 190, 30));
+        jPanel1.add(btnElimProv, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, 190, 30));
 
         tablaTelefonos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -499,7 +497,6 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
@@ -524,7 +521,6 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -550,8 +546,9 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
     public javax.swing.JLabel lblCiudadProveedor;
     public javax.swing.JLabel lblColoniaProveedor;
     public javax.swing.JLabel lblEstadoProveedor;
+    public javax.swing.JLabel lblIdProveedor;
+    public javax.swing.JLabel lblNombreProv;
     public javax.swing.JLabel lblNumeroProveedor;
-    private javax.swing.JLabel lblidEmpleado;
     public javax.swing.JTable tablaCorreos;
     public javax.swing.JTable tablaTelefonos;
     // End of variables declaration//GEN-END:variables
