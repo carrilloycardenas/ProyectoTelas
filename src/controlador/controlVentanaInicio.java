@@ -18,7 +18,7 @@ import vista.ventanaProvedores;
  *
  * @author daniel
  */
-public class controlVentanaInicio implements ActionListener{
+public class controlVentanaInicio implements ActionListener,Runnable{
     
     ventanaInicio vista=new ventanaInicio();
     consultas modelo=new consultas();
@@ -26,6 +26,8 @@ public class controlVentanaInicio implements ActionListener{
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProductos1 ventProd1=new ventanaProductos1();
+    controladorReloj ctRel=new controladorReloj();
+    Thread h1;
     
     
     public controlVentanaInicio(ventanaInicio vist, consultas model){
@@ -43,6 +45,10 @@ public class controlVentanaInicio implements ActionListener{
         vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
+        
+        //reloj
+        h1=new Thread(this);
+        h1.start();
     }
 
     @Override
@@ -84,6 +90,20 @@ public class controlVentanaInicio implements ActionListener{
                 vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana clientes: "+e);
+            }
+        }
+    }
+
+    @Override
+    public void run() {
+        Thread ct=Thread.currentThread();
+        
+        while(ct==h1){
+            vista.lblReloj.setText(ctRel.calcula());
+            try{
+                Thread.sleep(1000);
+            }catch(InterruptedException e){
+                System.out.println("Error durmiendo el hilo");
             }
         }
     }
