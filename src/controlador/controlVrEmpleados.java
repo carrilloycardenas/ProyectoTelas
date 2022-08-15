@@ -23,6 +23,7 @@ public class controlVrEmpleados implements ActionListener{
     consultas modelo=new consultas();
     ventanaEmpleados ventEm;
     ResultSet rs;
+    String valor;
     
     public controlVrEmpleados(ventanaVerEmpleado ventVrEm, consultas modelo, int row,ventanaEmpleados ventEm){
         this.ventEm = ventEm;
@@ -31,9 +32,9 @@ public class controlVrEmpleados implements ActionListener{
         this.ventVrEm.btnEliminar.addActionListener(this);
         this.ventVrEm.btnVolver.addActionListener(this);
         //System.out.println(row);
-        String valor = String.valueOf(ventEm.tablaempleados.getValueAt(row, 0));
+        valor = String.valueOf(ventEm.tablaempleados.getValueAt(row, 0));
         System.out.println(valor);
-        this.rs = modelo.VrEmpleados(valor);
+        this.rs = modelo.VrEmpleados(this.valor);
         //this.rs = modelo.VrProductos("1");
     }
     
@@ -59,6 +60,10 @@ public class controlVrEmpleados implements ActionListener{
             ventVrEm.lblCiudad.setText(rs.getString("Ciudad"));
             ventVrEm.lblEstado.setText(rs.getString("Estado"));
             ventVrEm.lblCodigoP.setText(rs.getString("Codigo_postal"));
+            this.ventVrEm.tablaTelefonos.setModel(this.modelo.numEmpleado(this.valor));
+            this.ventVrEm.tablaCorreos.setModel(this.modelo.correoEmpleado(this.valor));
+            
+            
         } catch(SQLException e){
             System.out.println("error en controlVrProducto "+e);
         }
