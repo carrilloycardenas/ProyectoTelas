@@ -44,6 +44,7 @@ public class controlModProveedores implements ActionListener{
             this.vista.txtCiudad.setText(this.rsModP.getString("Ciudad"));
             this.vista.txtEstado.setText(this.rsModP.getString("Estado"));
             this.vista.txtCP.setText(this.rsModP.getString("Codigo_postal"));
+            this.vista.txtPais.setText(this.rsModP.getString("pais"));
             this.vista.tablaTelefonos.setModel(this.modelo.numProveedor(this.valor));
             this.vista.tablaCorreos.setModel(this.modelo.correoProveedor(this.valor));
         }catch(Exception e){
@@ -56,7 +57,10 @@ public class controlModProveedores implements ActionListener{
         if(this.vista.btnGuardar == evento.getSource()){
             this.modelo.modProveedores(this.vista.txtNombre.getText(), this.vista.txtCalle.getText(), this.vista.txtColonia.getText(), 
                                         this.vista.txtNumC.getText(), this.vista.txtCiudad.getText(), this.vista.txtEstado.getText(), 
-                                        this.vista.txtCP.getText(), "", this.valor);
+                                        this.vista.txtCP.getText(), this.vista.txtPais.getText(), this.valor);
+            controlVentanaProvedores ctP = new controlVentanaProvedores(this.vPro, this.modelo);
+            ctP.IniciarVista();
+            this.vista.setVisible(false);
         }
     }
 
