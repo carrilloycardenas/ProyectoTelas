@@ -67,7 +67,7 @@ public class controladorReloj {
                 break;
         }
         
-        switch((fecha.get(Calendar.MONTH+1))){
+        switch((fecha.get(Calendar.MONTH))+1){
             case 1:
                 mes="Enero";
                 break;
