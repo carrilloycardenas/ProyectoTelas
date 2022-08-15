@@ -499,9 +499,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        ventanaEmpleados abrir= new ventanaEmpleados();
-        abrir.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
