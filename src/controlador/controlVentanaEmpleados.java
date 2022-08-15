@@ -11,6 +11,7 @@ import modelo.consultas;
 import vista.AgregarEmpleado;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
+import vista.ventanaInicio;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
 import vista.ventanaVerEmpleado;
@@ -28,6 +29,7 @@ public class controlVentanaEmpleados implements ActionListener{
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaVerEmpleado ventVrEm=new ventanaVerEmpleado();
+    ventanaInicio ventIni=new ventanaInicio();
     int row;
     
     public controlVentanaEmpleados(ventanaEmpleados ventEm, consultas model){
@@ -39,6 +41,7 @@ public class controlVentanaEmpleados implements ActionListener{
         this.ventEm.btnProveedores.addActionListener(this);
         this.ventEm.btnClientes.addActionListener(this);
         this.ventEm.btnProductos.addActionListener(this);
+        this.ventCli.btnInicio.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -97,6 +100,15 @@ public class controlVentanaEmpleados implements ActionListener{
                 ventEm.setVisible(false);
             } catch(Exception e){
                 System.out.println(e);
+            }
+        }
+        else if(ventEm.btnInicio==evento.getSource()){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
+                ctIni.IniciarVista();
+                ventEm.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
     }

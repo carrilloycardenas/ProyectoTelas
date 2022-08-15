@@ -61,7 +61,7 @@ public class ventanaEmpleados extends javax.swing.JFrame {
         jPanel27 = new IconoFacturas();
         jPanel28 = new IconoReporte();
         jPanel29 = new IconoCerrarSesion();
-        jButton9 = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
         jPanel21 = new IconoInicio();
         jPanel22 = new IconoProductos();
         btnProductos = new javax.swing.JButton();
@@ -186,12 +186,12 @@ public class ventanaEmpleados extends javax.swing.JFrame {
         jPanel2.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 20));
         jPanel2.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 20, 20));
 
-        jButton9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Inicio");
-        jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
+        btnInicio.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnInicio.setForeground(new java.awt.Color(255, 255, 255));
+        btnInicio.setText("Inicio");
+        btnInicio.setContentAreaFilled(false);
+        btnInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
 
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
@@ -362,6 +362,7 @@ public class ventanaEmpleados extends javax.swing.JFrame {
     public javax.swing.JButton btnAgregarEmpleado;
     public javax.swing.JButton btnClientes;
     private javax.swing.JButton btnEliminarEmpleado;
+    public javax.swing.JButton btnInicio;
     public javax.swing.JButton btnModificarEmpleado;
     public javax.swing.JButton btnProductos;
     public javax.swing.JButton btnProveedores;
@@ -371,7 +372,6 @@ public class ventanaEmpleados extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;

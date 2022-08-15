@@ -12,6 +12,7 @@ import vista.VentanaClientes2;
 import vista.ventanaAgProducto;
 import vista.ventanaAgStock;
 import vista.ventanaEmpleados;
+import vista.ventanaInicio;
 import vista.ventanaModProducto;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
@@ -27,6 +28,7 @@ public class controlVentanaProductos1 implements ActionListener{
     ventanaProvedores ventProv=new ventanaProvedores();
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
+    ventanaInicio ventIni=new ventanaInicio();
     consultas modelo = new consultas();
     int row;
 
@@ -42,6 +44,7 @@ public class controlVentanaProductos1 implements ActionListener{
         this.ventProd1.btnProveedores.addActionListener(this);
         this.ventProd1.btnClientes.addActionListener(this);
         this.ventProd1.btnEmpleados.addActionListener(this);
+        this.ventCli.btnInicio.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -135,6 +138,15 @@ public class controlVentanaProductos1 implements ActionListener{
             try{
                 controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp,modelo);
                 ctEmp.IniciarVista();
+                ventProd1.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        else if(ventProd1.btnInicio==evento.getSource()){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
+                ctIni.IniciarVista();
                 ventProd1.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);

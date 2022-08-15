@@ -12,6 +12,7 @@ import vista.AgregarCliente;
 import vista.ModificarCliente;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
+import vista.ventanaInicio;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
 import vista.ventanaVerClientes;
@@ -26,6 +27,7 @@ public class controlVentanaClientes implements ActionListener{
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaProductos1 ventProd1=new ventanaProductos1();
+    ventanaInicio ventIni=new ventanaInicio();
     int row;
 
     public controlVentanaClientes(VentanaClientes2 ventCl, consultas model){
@@ -38,10 +40,11 @@ public class controlVentanaClientes implements ActionListener{
         this.ventCli.btnEmpleados.addActionListener(this);
         this.ventCli.btnProveedores.addActionListener(this);
         this.ventCli.btnProductos.addActionListener(this);
+        this.ventCli.btnInicio.addActionListener(this);
     }
 
     public void IniciarVista(){
-        ventCli.setTitle("Productos");
+        ventCli.setTitle("Clientes");
         ventCli.pack();
         ventCli.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventCli.setLocationRelativeTo(null);
@@ -108,6 +111,16 @@ public class controlVentanaClientes implements ActionListener{
                 this.IniciarVista();
             } catch(Exception e){
                 System.out.println("Error btnEliminar: " + e);
+            }
+        }
+        
+        else if(ventCli.btnInicio==evento.getSource()){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
+                ctIni.IniciarVista();
+                ventCli.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
     }
