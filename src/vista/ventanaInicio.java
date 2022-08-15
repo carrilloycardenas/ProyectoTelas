@@ -94,7 +94,7 @@ public class ventanaInicio extends javax.swing.JFrame {
         txtNumProdu = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         lblReloj = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
         jPanel30 = new javax.swing.JPanel();
         jPanel31 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
@@ -351,10 +351,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         lblReloj.setText("06:42:35");
         jPanel1.add(lblReloj, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(38, 18, 137));
-        jLabel14.setText("Sábado, 25 de Junio de 2022");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
+        lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(38, 18, 137));
+        lblFecha.setText("Sábado, 25 de Junio de 2022");
+        jPanel1.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
 
         jPanel30.setBackground(new java.awt.Color(255, 255, 255));
         jPanel30.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(181, 194, 254), 2));
@@ -436,7 +436,6 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -479,6 +478,7 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    public javax.swing.JLabel lblFecha;
     public javax.swing.JLabel lblReloj;
     public javax.swing.JLabel txtDin;
     public javax.swing.JLabel txtDinVentas;

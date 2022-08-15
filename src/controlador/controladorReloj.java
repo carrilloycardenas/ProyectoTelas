@@ -35,5 +35,16 @@ public class controladorReloj {
         return hora+":"+min+":"+seg;
     }
     
+    public String calFecha(){
+        Calendar fecha=new GregorianCalendar();
+        
+        String anho=Integer.toString(fecha.get(Calendar.YEAR));
+        String mes=Integer.toString(fecha.get(Calendar.MONTH));
+        String dia=Integer.toString(fecha.get(Calendar.DATE));
+        String diaS=Integer.toString(fecha.get(Calendar.DAY_OF_WEEK));
+        
+        return diaS+", "+dia+" de "+mes+" de "+anho;
+    }
+    
 }
 

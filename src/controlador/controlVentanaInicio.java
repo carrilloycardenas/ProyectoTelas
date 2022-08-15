@@ -45,6 +45,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
+        vista.lblFecha.setText(ctRel.calFecha());
         
         //reloj
         h1=new Thread(this);
