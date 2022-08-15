@@ -306,7 +306,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("País:");
-        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, -1, -1));
 
         jSeparator3.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 490, 10));
@@ -358,7 +358,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jLabel23.setText("CP:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, -1));
 
-        txtPais.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
+        txtPais.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
         txtPais.setText("China");
         txtPais.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -558,7 +558,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
     public javax.swing.JTextField txtEstado;
     public javax.swing.JTextField txtNombre;
     public javax.swing.JTextField txtNumC;
-    private javax.swing.JTextField txtPais;
+    public javax.swing.JTextField txtPais;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
