@@ -47,7 +47,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel2 = new FondoInicioSesion();
         btnEmpleados = new javax.swing.JButton();
         btnProveedores = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jButton7 = new javax.swing.JButton();
         jPanel22 = new IconoProductos();
@@ -56,8 +55,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         btnProductos = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
         jPanel25 = new IconoProveedores();
-        jPanel26 = new IconoCaja();
-        jPanel28 = new IconoReporte();
         jPanel29 = new IconoCerrarSesion();
         jPanel21 = new IconoInicio();
         btnInicio = new javax.swing.JButton();
@@ -71,7 +68,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel40 = new IconoFacturas();
         jPanel27 = new IconoFacturas();
         btnFacturas = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         lblApell = new javax.swing.JLabel();
         lblCalle = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -166,19 +162,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         btnProveedores.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(btnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
 
-        jButton4.setBackground(new java.awt.Color(38, 18, 137));
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Caja");
-        jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
-
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 180, 10));
 
@@ -215,8 +198,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 20, 20));
         jPanel2.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 20, 20));
-        jPanel2.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 20, 20));
-        jPanel2.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 20));
         jPanel2.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 20, 20));
 
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -266,7 +247,9 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel38.add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
         jPanel35.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
-        jPanel35.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
+
+        jPanel2.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, 60));
+        jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 20, 20));
 
         btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
         btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
@@ -275,17 +258,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         btnFacturas.setBorderPainted(false);
         btnFacturas.setContentAreaFilled(false);
         btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel35.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
-
-        jPanel2.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, 60));
-
-        jButton6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Reporte");
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
+        jPanel2.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
@@ -495,10 +468,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
 
     }//GEN-LAST:event_btnVolverActionPerformed
@@ -550,8 +519,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     public javax.swing.JButton btnVolver;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel3;
@@ -564,9 +531,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel35;
