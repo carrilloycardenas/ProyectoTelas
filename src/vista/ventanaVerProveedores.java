@@ -131,12 +131,12 @@ public class ventanaVerProveedores extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
+        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, -1, 20));
 
         lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(119, 119, 119));
         lblFecha.setText("25 Junio 2022");
-        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, 20));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
