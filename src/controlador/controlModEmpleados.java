@@ -78,7 +78,9 @@ public class controlModEmpleados implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent evento){
-
+        if(vista.btnGuardar==evento.getSource()){
+            
+        }
     }
 
 }
