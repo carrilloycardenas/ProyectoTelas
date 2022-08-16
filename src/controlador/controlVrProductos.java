@@ -34,6 +34,7 @@ public class controlVrProductos implements ActionListener{
     ventanaInicio ventIni=new ventanaInicio();
     controladorReloj ctRel=new controladorReloj();
     Facturas ventFac=new Facturas();
+    
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row,ventanaProductos1 ventProd){
         this.ventProd = ventProd;
