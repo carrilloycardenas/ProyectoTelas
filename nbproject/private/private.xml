@@ -3,29 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ModificarProveedor.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/AgregarProveedor.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/AgregarCliente.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ModificarEmpleado.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaInicioSesion.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaProductos1.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaVerEmpleado.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaVerProducto.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/VentanaClientes2.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaEmpleados.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaProvedores.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/AgregarFacturas.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaModProducto.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaVerProveedores.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ModificarCliente.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ModificarFacturas.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaVerClientes.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaAgStock.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/Facturas.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaAgProducto.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaInicio.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/AgregarEmpleado.java</file>
-            <file>file:/home/daniel/Documents/GitHub/ProyectoTelas/src/vista/ventanaVerFacturas.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlModTelCliente.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/controlador/controlModClientes.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/ModificarTelefonosCli.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/vista/ModificarTelefonosProv.java</file>
+            <file>file:/C:/Users/luis-/OneDrive/Documentos/GitHub/ProyectoTelas/src/modelo/consultas.java</file>
         </group>
     </open-files>
 </project-private>
