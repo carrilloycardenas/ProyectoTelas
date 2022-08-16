@@ -69,9 +69,9 @@ public class Facturas extends javax.swing.JFrame {
         btnEliminar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnModificarFac1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        txtBuscar = new javax.swing.JTextField();
+        txtTipoB = new javax.swing.JComboBox<>();
+        btnBuscar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Facturas");
@@ -276,18 +276,18 @@ public class Facturas extends javax.swing.JFrame {
         });
         jPanel1.add(btnModificarFac1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 280, 150, 40));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtBuscarActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 180, 120, -1));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 180, 120, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre", " " }));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
+        txtTipoB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre" }));
+        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
 
-        jButton1.setText("Mostrar");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, -1, -1));
+        btnBuscar.setText("Mostrar");
+        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -320,9 +320,9 @@ public class Facturas extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnModificarFac1ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtBuscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -356,6 +356,7 @@ public class Facturas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
     public javax.swing.JButton btnAgregarFac;
+    public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnClientes;
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnEmpleados;
@@ -364,10 +365,8 @@ public class Facturas extends javax.swing.JFrame {
     public javax.swing.JButton btnProductos;
     public javax.swing.JButton btnProveedores;
     public javax.swing.JButton btnVerFac;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
@@ -385,9 +384,10 @@ public class Facturas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     public javax.swing.JLabel lblFecha;
     public javax.swing.JTable tablaFacturas;
+    public javax.swing.JTextField txtBuscar;
+    public javax.swing.JComboBox<String> txtTipoB;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

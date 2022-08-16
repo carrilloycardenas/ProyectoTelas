@@ -70,9 +70,9 @@ public class VentanaClientes2 extends javax.swing.JFrame {
         btnEliminarcliente = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton2 = new javax.swing.JButton();
+        txtBuscar = new javax.swing.JTextField();
+        txtTipoB = new javax.swing.JComboBox<>();
+        btnBuscar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Clientes");
@@ -285,18 +285,18 @@ public class VentanaClientes2 extends javax.swing.JFrame {
         jLabel4.setText("eliminar el cliente seleccionado");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 540, -1, -1));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtBuscarActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 200, 110, -1));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 200, 110, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre", " " }));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, -1, -1));
+        txtTipoB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre" }));
+        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, -1, -1));
 
-        jButton2.setText("Mostrar");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+        btnBuscar.setText("Mostrar");
+        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -323,9 +323,9 @@ public class VentanaClientes2 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnVerclienteActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtBuscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -365,6 +365,7 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
     public javax.swing.JButton btnAgregarCliente;
+    public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnEliminarcliente;
     public javax.swing.JButton btnEmpleados;
     public javax.swing.JButton btnFacturas;
@@ -374,9 +375,7 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     public javax.swing.JButton btnProveedores;
     public javax.swing.JButton btnVercliente;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
@@ -395,9 +394,10 @@ public class VentanaClientes2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     public javax.swing.JLabel lblFecha;
     public javax.swing.JTable tablaClientes;
+    public javax.swing.JTextField txtBuscar;
+    public javax.swing.JComboBox<String> txtTipoB;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
