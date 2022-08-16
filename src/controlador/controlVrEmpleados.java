@@ -49,7 +49,7 @@ public class controlVrEmpleados implements ActionListener{
         ventVrEm.setLocationRelativeTo(null);
         ventVrEm.setVisible(true);
         try {
-            ventVrEm.lblNombre.setText(rs.getString("NombreEmp"));
+            ventVrEm.lblApell.setText(rs.getString("NombreEmp"));
             ventVrEm.lblID.setText(rs.getString("idEmpleados"));
             ventVrEm.lblFecNacimiento.setText(rs.getString("FechaNacimiento"));
             ventVrEm.lblNumSocial.setText(rs.getString("NumSS"));

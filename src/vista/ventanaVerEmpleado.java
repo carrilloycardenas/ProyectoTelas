@@ -72,11 +72,10 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel27 = new IconoFacturas();
         btnFacturas = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        lblNombre = new javax.swing.JLabel();
+        lblApell = new javax.swing.JLabel();
         lblCalle = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jPanel5 = new FotoEmpleadoFacturas();
         btnEliminar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         lbl = new javax.swing.JLabel();
@@ -118,6 +117,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         tablaTelefonos = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         tablaCorreos = new javax.swing.JTable();
+        lblNombre1 = new javax.swing.JLabel();
 
         lbl16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl16.setText("Número:");
@@ -289,9 +289,9 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
-        lblNombre.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        lblNombre.setText("Melissa Garzas");
-        jPanel1.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 290, -1, -1));
+        lblApell.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        lblApell.setText("apellido");
+        jPanel1.add(lblApell, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 120, -1));
 
         lblCalle.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblCalle.setText("Andador Palomas");
@@ -306,7 +306,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(41, 22, 130));
         jLabel4.setText("Información del empleado");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 90, -1, -1));
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 170, 180));
 
         btnEliminar.setBackground(new java.awt.Color(181, 194, 254));
         btnEliminar.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
@@ -487,6 +486,10 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, 530, 130));
 
+        lblNombre1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        lblNombre1.setText("Melissa");
+        jPanel1.add(lblNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 120, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
         pack();
@@ -572,7 +575,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel38;
     private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
@@ -597,6 +599,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     private javax.swing.JLabel lbl7;
     private javax.swing.JLabel lbl8;
     private javax.swing.JLabel lbl9;
+    public javax.swing.JLabel lblApell;
     public javax.swing.JLabel lblCalle;
     public javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblCiudad3;
@@ -607,7 +610,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
     public javax.swing.JLabel lblFecNacimiento;
     public javax.swing.JLabel lblFecha;
     public javax.swing.JLabel lblID;
-    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblNombre1;
     public javax.swing.JLabel lblNumSocial;
     public javax.swing.JLabel lblNumero;
     public javax.swing.JLabel lblPassword;
