@@ -58,6 +58,8 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel29 = new IconoCerrarSesion();
         jPanel21 = new IconoInicio();
         btnInicio = new javax.swing.JButton();
+        jPanel27 = new IconoFacturas();
+        btnFacturas = new javax.swing.JButton();
         jPanel35 = new javax.swing.JPanel();
         jPanel36 = new javax.swing.JPanel();
         jButton13 = new javax.swing.JButton();
@@ -66,8 +68,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel39 = new javax.swing.JPanel();
         jButton14 = new javax.swing.JButton();
         jPanel40 = new IconoFacturas();
-        jPanel27 = new IconoFacturas();
-        btnFacturas = new javax.swing.JButton();
         lblApell = new javax.swing.JLabel();
         lblCalle = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -209,6 +209,16 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         btnInicio.setContentAreaFilled(false);
         btnInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 60));
+        jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 20, 20));
+
+        btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
+        btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
+        btnFacturas.setText("Facturas");
+        btnFacturas.setBorderPainted(false);
+        btnFacturas.setContentAreaFilled(false);
+        btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
 
         jPanel35.setBackground(new java.awt.Color(34, 19, 101));
         jPanel35.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -249,16 +259,6 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
         jPanel35.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
 
         jPanel2.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, 60));
-        jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 20, 20));
-
-        btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
-        btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
-        btnFacturas.setText("Facturas");
-        btnFacturas.setBorderPainted(false);
-        btnFacturas.setContentAreaFilled(false);
-        btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
 
