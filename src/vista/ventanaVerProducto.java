@@ -44,7 +44,6 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         barraSup = new javax.swing.JPanel();
         jPanel3 = new FondoPanel();
-        jPanel4 = new FondoUsuario();
         jLabel15 = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
@@ -97,16 +96,15 @@ public class ventanaVerProducto extends javax.swing.JFrame {
         barraSup.setBackground(new java.awt.Color(255, 255, 255));
         barraSup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         barraSup.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 120, 50));
-        barraSup.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 50, 50));
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
+        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
 
         lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(119, 119, 119));
         lblFecha.setText("25 Junio 2022");
-        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(38, 18, 137));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -433,7 +431,6 @@ public class ventanaVerProducto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator1;
     public javax.swing.JLabel lblCat;

@@ -108,12 +108,12 @@ public class ventanaModProducto extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
+        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
 
         lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(119, 119, 119));
         lblFecha.setText("25 Junio 2022");
-        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(38, 18, 137));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
