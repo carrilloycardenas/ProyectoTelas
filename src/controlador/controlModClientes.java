@@ -12,6 +12,7 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
 import vista.ModificarCliente;
+import vista.ModificarCorreosCli;
 import vista.ModificarTelefonosCli;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
@@ -31,6 +32,7 @@ public class controlModClientes implements ActionListener {
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaProductos1 ventProd1=new ventanaProductos1();
+    ModificarCorreosCli modCorCli = new ModificarCorreosCli();
     ventanaInicio ventIni=new ventanaInicio();
     ModificarTelefonosCli vModTelC = new ModificarTelefonosCli();
     int row;
@@ -42,7 +44,7 @@ public class controlModClientes implements ActionListener {
         this.valor = String.valueOf(ventCli.tablaClientes.getValueAt(row, 0));
         this.rsModCli = this.modelo.VrClientes(this.valor);
         this.vista.btnModTelefono.addActionListener(this);
-        this.vista.btnModTelefono.addActionListener(this);
+        this.vista.btnModCorreo.addActionListener(this);
         this.vista.btnGuardarModCli.addActionListener(this);
         this.vista.btnFacturas.addActionListener(this);
         this.vista.btnEmpleados.addActionListener(this);
@@ -86,6 +88,11 @@ public class controlModClientes implements ActionListener {
         } else if(this.vista.btnModTelefono == evento.getSource()){
             controlModTelCliente ctModTelCli = new controlModTelCliente(this.vModTelC, this.vista, this.modelo, this.vista.tablaTelefonos.getSelectedRow(), this.row);
             ctModTelCli.IniciarVista();
+            this.vista.setVisible(false);
+        } else if(this.vista.btnModCorreo == evento.getSource()){
+            controlModCorreoCliente ctModCorCli = new controlModCorreoCliente(this.modCorCli, this.vista, this.modelo, this.vista.tablaCorreos.getSelectedRow(), this.row);
+            ctModCorCli.IniciarVista();
+            this.vista.setVisible(false);
         }
         else if(vista.btnInicio==evento.getSource()){
             try{

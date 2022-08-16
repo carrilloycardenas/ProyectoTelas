@@ -35,13 +35,13 @@ public class controlModTelCliente implements ActionListener {
         this.vista.pack();
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.vista.setLocationRelativeTo(null);
-        this.vista.setVisible(true);
         try{
             this.vista.txtNumMod.setText(String.valueOf(this.modCli.tablaTelefonos.getValueAt(this.rowTel, 0)));
             this.vista.txtNomMod.setText(String.valueOf(this.modCli.tablaTelefonos.getValueAt(this.rowTel, 1)));
         }catch(Exception e){
             System.out.println("Error modTelCli: " + e);
         }
+        this.vista.setVisible(true);
     }
 
     @Override
@@ -50,16 +50,16 @@ public class controlModTelCliente implements ActionListener {
             try{
                 this.modelo.modTelCli((String.valueOf(this.modCli.tablaTelefonos.getValueAt(this.rowTel, 1))), this.vista.txtNumMod.getText(), 
                                         this.vista.txtNomMod.getText());
-                controlModClientes ctModCli = new controlModClientes(this.modCli, this.modelo, this.vCli, this.rowCli);
-                ctModCli.IniciarVista();
+                controlVentanaClientes ctCli = new controlVentanaClientes(this.vCli, this.modelo);
+                ctCli.IniciarVista();
                 this.vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("btnGuardarModTel: " + e);
             }
             
         } else if(this.vista.btnCancelar == evento.getSource()){
-            controlModClientes ctModCli = new controlModClientes(this.modCli, this.modelo, this.vCli, this.rowCli);
-            ctModCli.IniciarVista();
+            controlVentanaClientes ctCli = new controlVentanaClientes(this.vCli, this.modelo);
+            ctCli.IniciarVista();
             this.vista.setVisible(false);
         }
     }

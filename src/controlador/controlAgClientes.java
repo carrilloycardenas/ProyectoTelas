@@ -59,7 +59,9 @@ public class controlAgClientes implements ActionListener{
     public void actionPerformed(ActionEvent evento) {
         if(ventAgC.btnAgregar == evento.getSource()){
             try {
-                modelo.AgClientes(ventAgC.txtNomCli.getText(),ventAgC.txtApell.getText(),ventAgC.txtCalle.getText(), ventAgC.txtColonia.getText(),ventAgC.txtNumeroDire.getText(), ventAgC.txtCiudad.getText(), ventAgC.txtEstado.getText(), ventAgC.txtCP.getText(), ventAgC.txtTelNum.getText(),ventAgC.txtNomDue.getText(),ventAgC.txtCorreo.getText());
+                modelo.AgClientes(ventAgC.txtNomCli.getText(),ventAgC.txtApell.getText(),ventAgC.txtCalle.getText(), ventAgC.txtColonia.getText(),
+                                    ventAgC.txtNumeroDire.getText(), ventAgC.txtCiudad.getText(), ventAgC.txtEstado.getText(), ventAgC.txtCP.getText(), 
+                                    ventAgC.txtTelNum.getText(),ventAgC.txtNomDue.getText(),ventAgC.txtCorreo.getText(), this.ventAgC.txtNomD.getText());
                 controlVentanaClientes ctVentCli = new controlVentanaClientes(this.ventCli, this.modelo);
                 ctVentCli.IniciarVista();
                 this.ventAgC.setVisible(false);
