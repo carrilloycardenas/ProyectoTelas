@@ -7,6 +7,7 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ModificarEmpleado;
@@ -18,7 +19,7 @@ public class controlModEmpleados implements ActionListener {
     ModificarEmpleado vista = new ModificarEmpleado();
     consultas modelo = new consultas();
     String valor;
-    ResultSet rsEmp;
+    ResultSet rsEmp, rsDirEmp;
 
     public controlModEmpleados(ModificarEmpleado vist, consultas model, ventanaEmpleados vEmp, int row){
         this.vista = vist;
@@ -26,6 +27,8 @@ public class controlModEmpleados implements ActionListener {
         this.venEmp = vEmp;
         this.valor = String.valueOf(this.venEmp.tablaempleados.getValueAt(row, 0));
         this.rsEmp = this.modelo.VrEmpleados(this.valor);
+        this.rsDirEmp = this.modelo.idDirEmpleado(this.valor);
+        this.vista.btnGuardar.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -79,6 +82,19 @@ public class controlModEmpleados implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent evento){
         if(vista.btnGuardar==evento.getSource()){
+            try {
+                this.modelo.modEmp(this.vista.txtNombre.getText(), this.vista.txtApellidos.getText(), this.vista.txtFecha.getText(), 
+                                    this.vista.txtFechaCon.getText(), this.vista.txtNSS.getText(), this.vista.txtUsuario.getText(), 
+                                    this.vista.txtContra.getText(), Integer.toString(this.vista.cbPuesto.getSelectedIndex()+1), 
+                                    this.rsDirEmp.getString("idDireccionEmp"), this.vista.txtCalle.getText(), this.vista.txtColonia.getText(), 
+                                    this.vista.txtNumC.getText(), this.vista.txtCP.getText(), this.vista.txtCiudad.getText(), 
+                                    this.vista.txtEstado.getText(), this.valor);
+                controlVentanaEmpleados ctEmp = new controlVentanaEmpleados(this.venEmp, this.modelo);
+                ctEmp.IniciarVista();
+                this.vista.setVisible(false);
+            } catch(SQLException e){
+                System.out.println("btnGuardarEmp: " + e);
+            }
             
         }
     }

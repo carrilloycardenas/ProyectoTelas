@@ -761,4 +761,55 @@ public class consultas {
             return resultado;
         }
 
+        public int modEmp(String nomEmp, String apEmp, String fechaN, String fechaC, String NSS, String usuario, String contra, String puesto, String idDir, String calle, String col, String numC, String CP, String ciudad, String estado, String idEmp){
+        int resultado=0;
+        Connection conex=null;
+        
+        String consulta="call ModificarEmpleados(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+        
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, nomEmp);
+            sentencia.setString(2, apEmp);
+            sentencia.setString(3, fechaN);
+            sentencia.setString(4, fechaC);
+            sentencia.setString(5, NSS);
+            sentencia.setString(6, usuario);
+            sentencia.setString(7, contra);
+            sentencia.setString(8, puesto);
+            sentencia.setString(9, idDir);
+            sentencia.setString(10, calle);
+            sentencia.setString(11, col);
+            sentencia.setString(12, numC);
+            sentencia.setString(13, CP);
+            sentencia.setString(14, ciudad);
+            sentencia.setString(15, estado);
+            sentencia.setString(16, idEmp);
+
+            resultado = sentencia.executeUpdate();
+
+        }catch(SQLException e){
+            System.out.println("Error modEmp: " + e.toString());
+        }
+        return resultado;
+    }
+
+    public ResultSet idDirEmpleado(String id){
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+        try{
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            
+            ps=con.prepareStatement("call MostrarIdDireccionEmpleado(?);");
+            ps.setString(1, id);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException e){
+            System.out.println("Error idDirEmp: " + e);
+        }
+        return rs;
+    }
+
 }
