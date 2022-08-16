@@ -286,12 +286,12 @@ public class consultas {
         return rs;
     }
     
-        public int AgClientes(String NomCli,String Apell,String Calle,String Colonia,String NumeroDire,String Ciudad,String Estado,String CP,String TelNum,String NomDue,String Correo){
+        public int AgClientes(String NomCli,String Apell,String Calle,String Colonia,String NumeroDire,String Ciudad,String Estado,String CP,String TelNum,String NomDue,String Correo, String nomDueCorreo){
     
             int resultado = 0;
             Connection conex = null;
 
-            String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?);";
+            String consulta = "call AltasClientes(?,?,?,?,?,?,?,?,?,?,?,?);";
 
                 try{
                     conex = con.conectar();
@@ -306,6 +306,8 @@ public class consultas {
                     sentencia.setString(8, CP);
                     sentencia.setString(9, Ciudad);
                     sentencia.setString(10, Estado);
+                    sentencia.setString(11, NomDue);
+                    sentencia.setString(12, nomDueCorreo);
 
                     resultado = sentencia.executeUpdate();
 
@@ -828,12 +830,35 @@ public class consultas {
 
             resultado = sentencia.executeUpdate();
         }catch(SQLException e){
-            System.out.println("Error en consultas(ModProv): " + e);
+            System.out.println("Consultas ModTelCli: " + e);
         }
 
 
         return resultado;
 
+    }
+
+    public int modCorCli(String idCli, String correo, String nomDue){
+        
+int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarCorreoCliente(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idCli);
+            sentencia.setString(2, correo);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Consultas ModCorreoCli: " + e);
+        }
+
+
+        return resultado;
     }
 
 }

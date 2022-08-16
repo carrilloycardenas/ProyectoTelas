@@ -38,6 +38,7 @@ public class AgregarCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel28 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         barraSup = new javax.swing.JPanel();
         jPanel3 = new FondoPanel();
@@ -92,8 +93,13 @@ public class AgregarCliente extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
+        txtNomD = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
+
+        jLabel28.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel28.setText("Direccion de correo:");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Agregar cliente");
@@ -276,10 +282,10 @@ public class AgregarCliente extends javax.swing.JFrame {
         jLabel22.setText("Números:");
         jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
         jPanel6.add(txtTelNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 150, -1));
-        jPanel6.add(txtNomDue, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 150, -1));
+        jPanel6.add(txtNomDue, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 180, -1));
 
         jLabel23.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel23.setText("Nombre de dueño:");
+        jLabel23.setText("Nombre de contacto:");
         jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
 
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
@@ -287,11 +293,11 @@ public class AgregarCliente extends javax.swing.JFrame {
                 txtCorreoActionPerformed(evt);
             }
         });
-        jPanel6.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 486, -1));
+        jPanel6.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 280, -1));
 
         jLabel26.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel26.setText("Direccion de correo:");
-        jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
+        jLabel26.setText("Nombre de contacto:");
+        jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel27.setText("Correos");
@@ -299,6 +305,11 @@ public class AgregarCliente extends javax.swing.JFrame {
 
         jSeparator4.setForeground(new java.awt.Color(170, 170, 170));
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 490, 20));
+        jPanel6.add(txtNomD, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 400, 190, -1));
+
+        jLabel29.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel29.setText("Direccion de correo:");
+        jPanel6.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
 
         jScrollPane1.setViewportView(jPanel6);
 
@@ -457,6 +468,8 @@ public class AgregarCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
@@ -485,6 +498,7 @@ public class AgregarCliente extends javax.swing.JFrame {
     public javax.swing.JTextField txtCorreo;
     public javax.swing.JTextField txtEstado;
     public javax.swing.JTextField txtNomCli;
+    public javax.swing.JTextField txtNomD;
     public javax.swing.JTextField txtNomDue;
     public javax.swing.JTextField txtNumeroDire;
     public javax.swing.JTextField txtTelNum;
