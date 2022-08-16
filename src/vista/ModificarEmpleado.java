@@ -398,6 +398,11 @@ public class ModificarEmpleado extends javax.swing.JFrame {
         jPanel6.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 588, 490, 0));
 
         cbPuesto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gerente general", "Supervisor", "Gerente", "Encargado de ventas", "Cajero", "Vendedor", "Almacenista" }));
+        cbPuesto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbPuestoActionPerformed(evt);
+            }
+        });
         jPanel6.add(cbPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 180, -1));
 
         tablaTelefonos.setModel(new javax.swing.table.DefaultTableModel(
@@ -515,6 +520,10 @@ public class ModificarEmpleado extends javax.swing.JFrame {
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void cbPuestoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbPuestoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbPuestoActionPerformed
 
     /**
      * @param args the command line arguments
