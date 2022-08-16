@@ -291,7 +291,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         lblApell.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         lblApell.setText("apellido");
-        jPanel1.add(lblApell, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 120, -1));
+        jPanel1.add(lblApell, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 120, -1));
 
         lblCalle.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblCalle.setText("Andador Palomas");
@@ -365,67 +365,67 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         lbl6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl6.setText("ID:");
-        jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
+        jPanel1.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
 
         lblID.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblID.setText("0001");
-        jPanel1.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+        jPanel1.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, -1, -1));
 
         lbl7.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl7.setText("Fecha de nacimiento:");
-        jPanel1.add(lbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, -1, -1));
+        jPanel1.add(lbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
 
         lblFecNacimiento.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblFecNacimiento.setText("23/03/1993");
-        jPanel1.add(lblFecNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, -1, -1));
+        jPanel1.add(lblFecNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
 
         lblNumSocial.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblNumSocial.setText("72795608040");
-        jPanel1.add(lblNumSocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, -1, -1));
+        jPanel1.add(lblNumSocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, -1, -1));
 
         lbl8.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl8.setText("Número social:");
-        jPanel1.add(lbl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, -1, -1));
+        jPanel1.add(lbl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
 
         lblFecContratacion.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblFecContratacion.setText("13/08/2017");
-        jPanel1.add(lblFecContratacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 470, -1, -1));
+        jPanel1.add(lblFecContratacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
 
         lbl9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl9.setText("Fecha de contratación:");
-        jPanel1.add(lbl9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, -1, -1));
+        jPanel1.add(lbl9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
         lblPuesto.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblPuesto.setText("Gerente");
-        jPanel1.add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, -1, -1));
+        jPanel1.add(lblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, -1, -1));
 
         lbl10.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl10.setText("Puesto:");
-        jPanel1.add(lbl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, -1, -1));
+        jPanel1.add(lbl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, -1, -1));
 
         lbl11.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl11.setText("Sueldo:");
-        jPanel1.add(lbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, -1, -1));
+        jPanel1.add(lbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, -1, -1));
 
         lblSueldo.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblSueldo.setText("$8,000.00");
-        jPanel1.add(lblSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 520, -1, -1));
+        jPanel1.add(lblSueldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, -1, -1));
 
         lbl12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl12.setText("Usuario:");
-        jPanel1.add(lbl12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 550, -1, -1));
+        jPanel1.add(lbl12, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, -1, -1));
 
         lblUsuario.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblUsuario.setText("MelissaGarzas");
-        jPanel1.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, -1, -1));
+        jPanel1.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 480, -1, -1));
 
         lbl13.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl13.setText("Contraseña:");
-        jPanel1.add(lbl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 550, -1, -1));
+        jPanel1.add(lbl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, -1, -1));
 
         lblPassword.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         lblPassword.setText("12345");
-        jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 570, -1, -1));
+        jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 480, -1, -1));
 
         lbl15.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lbl15.setText("Correos");
@@ -488,7 +488,7 @@ public class ventanaVerEmpleado extends javax.swing.JFrame {
 
         lblNombre1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         lblNombre1.setText("Melissa");
-        jPanel1.add(lblNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 120, -1));
+        jPanel1.add(lblNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 120, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
