@@ -7,10 +7,12 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
 import vista.ModificarCliente;
+import vista.ModificarTelefonosCli;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
@@ -30,10 +32,13 @@ public class controlModClientes implements ActionListener {
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
+    ModificarTelefonosCli vModTelC = new ModificarTelefonosCli();
+    int row;
 
     public controlModClientes(ModificarCliente vent, consultas model, VentanaClientes2 ventCli, int row){
         this.vista = vent;
         this.modelo = model;
+        this.row = row;
         this.valor = String.valueOf(ventCli.tablaClientes.getValueAt(row, 0));
         this.rsModCli = this.modelo.VrClientes(this.valor);
         this.vista.btnModTelefono.addActionListener(this);
@@ -63,7 +68,7 @@ public class controlModClientes implements ActionListener {
             this.vista.txtCP.setText(this.rsModCli.getString("Codigo_postal"));
             this.vista.tablaTelefonos.setModel(this.modelo.numCliente(this.valor));
             this.vista.tablaCorreos.setModel(this.modelo.correoCliente(this.valor));
-        } catch(Exception e){
+        } catch(SQLException e){
             System.out.println("Error ModCli: " + e);
         }
         vista.lblFecha.setText(ctRel.calFechaC());
@@ -78,6 +83,9 @@ public class controlModClientes implements ActionListener {
             controlVentanaClientes ctCli = new controlVentanaClientes(this.vCli, this.modelo);
             ctCli.IniciarVista();
             this.vista.setVisible(false);
+        } else if(this.vista.btnModTelefono == evento.getSource()){
+            controlModTelCliente ctModTelCli = new controlModTelCliente(this.vModTelC, this.vista, this.modelo, this.vista.tablaTelefonos.getSelectedRow(), this.row);
+            ctModTelCli.IniciarVista();
         }
         else if(vista.btnInicio==evento.getSource()){
             try{

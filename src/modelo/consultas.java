@@ -812,4 +812,28 @@ public class consultas {
         return rs;
     }
 
+    public int modTelCli(String idCli, String numTel, String nomDue){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarTelefonoCliente(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idCli);
+            sentencia.setString(2, numTel);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Error en consultas(ModProv): " + e);
+        }
+
+
+        return resultado;
+
+    }
+
 }
