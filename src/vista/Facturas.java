@@ -69,6 +69,9 @@ public class Facturas extends javax.swing.JFrame {
         btnEliminar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnModificarFac1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Facturas");
@@ -83,12 +86,12 @@ public class Facturas extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
+        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
 
         lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(119, 119, 119));
         lblFecha.setText("25 Junio 2022");
-        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 20, -1, -1));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
@@ -190,7 +193,7 @@ public class Facturas extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel19.setText("Lista de facturas");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 350, 20));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 150, 20));
 
         tablaFacturas.setBackground(new java.awt.Color(21, 8, 79));
         tablaFacturas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
@@ -273,6 +276,19 @@ public class Facturas extends javax.swing.JFrame {
         });
         jPanel1.add(btnModificarFac1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 280, 150, 40));
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 180, 120, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre", " " }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
+
+        jButton1.setText("Mostrar");
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, -1, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
         pack();
@@ -303,6 +319,10 @@ public class Facturas extends javax.swing.JFrame {
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnModificarFac1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,8 +364,10 @@ public class Facturas extends javax.swing.JFrame {
     public javax.swing.JButton btnProductos;
     public javax.swing.JButton btnProveedores;
     public javax.swing.JButton btnVerFac;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
@@ -363,6 +385,7 @@ public class Facturas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextField1;
     public javax.swing.JLabel lblFecha;
     public javax.swing.JTable tablaFacturas;
     // End of variables declaration//GEN-END:variables
