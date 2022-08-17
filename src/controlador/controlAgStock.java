@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.Facturas;
+import vista.Caja;
 import vista.VentanaClientes2;
 import vista.ventanaAgStock;
 import vista.ventanaEmpleados;
@@ -24,7 +24,7 @@ public class controlAgStock implements ActionListener {
     ventanaProductos1 ventProd1 = new ventanaProductos1();
     consultas modelo = new consultas();
     ventanaProductos1 ventProd;
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
     ResultSet rs;
     String valor;
     controladorReloj ctRel=new controladorReloj();
@@ -77,11 +77,11 @@ public class controlAgStock implements ActionListener {
         }
         else if(ventSt.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 ventSt.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
         else if(ventSt.btnProveedores==evento.getSource()){
