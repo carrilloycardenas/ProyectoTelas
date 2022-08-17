@@ -45,6 +45,7 @@ public class controlVentanaClientes implements ActionListener{
         this.ventCli.btnProductos.addActionListener(this);
         this.ventCli.btnInicio.addActionListener(this);
         this.ventCli.btnFacturas.addActionListener(this);
+        this.ventCli.btnBuscar.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -52,7 +53,7 @@ public class controlVentanaClientes implements ActionListener{
         ventCli.pack();
         ventCli.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventCli.setLocationRelativeTo(null);
-        ventCli.tablaClientes.setModel(modelo.verClientes());
+        //ventCli.tablaClientes.setModel(modelo.verClientes());
         ventCli.setVisible(true);
         ventCli.lblFecha.setText(ctRel.calFechaC());
     }
@@ -73,6 +74,18 @@ public class controlVentanaClientes implements ActionListener{
             controlModClientes ctModCli = new controlModClientes(this.modCli, this.modelo, this.ventCli, this.row);
             ctModCli.IniciarVista();
             this.ventCli.setVisible(false);
+        } else if(this.ventCli.btnBuscar == evento.getSource()){
+            switch(this.ventCli.txtTipoB.getSelectedIndex()){
+                case 0:
+                    ventCli.tablaClientes.setModel(modelo.verClientes());
+                    break;
+                case 1:
+                    this.ventCli.tablaClientes.setModel(this.modelo.buscarCli(this.ventCli.txtBuscar.getText()));
+                    break;
+                case 2:
+                    this.ventCli.tablaClientes.setModel(this.modelo.buscarCliNom(this.ventCli.txtBuscar.getText()));
+                    break;
+            }
         }
         
         else if(this.ventCli.btnEmpleados==evento.getSource()){

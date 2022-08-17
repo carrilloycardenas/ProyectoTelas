@@ -290,10 +290,10 @@ public class VentanaClientes2 extends javax.swing.JFrame {
                 txtBuscarActionPerformed(evt);
             }
         });
-        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 200, 110, -1));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 150, -1));
 
         txtTipoB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre" }));
-        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, -1, -1));
+        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
 
         btnBuscar.setText("Mostrar");
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));

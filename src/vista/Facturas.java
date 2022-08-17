@@ -193,7 +193,7 @@ public class Facturas extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
         jLabel19.setText("Lista de facturas");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 150, 20));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 140, 20));
 
         tablaFacturas.setBackground(new java.awt.Color(21, 8, 79));
         tablaFacturas.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
@@ -281,10 +281,10 @@ public class Facturas extends javax.swing.JFrame {
                 txtBuscarActionPerformed(evt);
             }
         });
-        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 180, 120, -1));
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 180, 180, -1));
 
         txtTipoB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "ID", "Nombre" }));
-        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
+        jPanel1.add(txtTipoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, -1, -1));
 
         btnBuscar.setText("Mostrar");
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 180, -1, -1));

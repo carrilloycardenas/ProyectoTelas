@@ -183,7 +183,7 @@ public class ventanaProductos1 extends javax.swing.JFrame {
         jLabel1.setText("Productos");
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 16)); // NOI18N
-        jLabel2.setText("Sumario del sistema:");
+        jLabel2.setText("Lista de productos:");
 
         tablaproductos.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         tablaproductos.setModel(new javax.swing.table.DefaultTableModel(
