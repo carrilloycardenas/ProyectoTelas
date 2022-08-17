@@ -7,6 +7,7 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import modelo.consultas;
 import vista.ventanaInicio;
 import vista.ventanaInicioSesion;
@@ -45,6 +46,9 @@ public class controlVentanaInicioSesion implements ActionListener{
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Usuario o contraceña incorrecto");
             }
         }
     }
