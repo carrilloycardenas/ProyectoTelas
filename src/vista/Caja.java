@@ -60,12 +60,11 @@ public class Caja extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jPanel26 = new IconoCaja();
         jLabel1 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaProductosCaja = new javax.swing.JTable();
         lblticket1 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
+        btnGenTicket = new javax.swing.JButton();
         lblticket2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -82,6 +81,12 @@ public class Caja extends javax.swing.JFrame {
         btnAgregar = new javax.swing.JButton();
         spinCantidad = new javax.swing.JSpinner();
         jLabel8 = new javax.swing.JLabel();
+        txtIdCli = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        txtNomCli = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
+        btnBuscarCli = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Caja");
@@ -200,23 +205,12 @@ public class Caja extends javax.swing.JFrame {
         jLabel1.setText("Caja");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, -1));
 
-        jButton10.setBackground(new java.awt.Color(181, 194, 254));
-        jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(21, 8, 79));
-        jButton10.setText("Ventas del dia");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 520, 140, 40));
-
         jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel3.setText("Cambio:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
 
-        jTable1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaProductosCaja.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        tablaProductosCaja.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -224,24 +218,24 @@ public class Caja extends javax.swing.JFrame {
                 "ID", "Nombre del producto", "Descripción", "Cantidad", "Precio"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaProductosCaja);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 680, 130));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 680, 130));
 
         lblticket1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblticket1.setText("Ticket");
         jPanel1.add(lblticket1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 70, 30));
 
-        jButton12.setBackground(new java.awt.Color(181, 194, 254));
-        jButton12.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(21, 8, 79));
-        jButton12.setText("Generar factura");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnGenTicket.setBackground(new java.awt.Color(181, 194, 254));
+        btnGenTicket.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnGenTicket.setForeground(new java.awt.Color(21, 8, 79));
+        btnGenTicket.setText("Generar ticket");
+        btnGenTicket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnGenTicketActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, 150, 40));
+        jPanel1.add(btnGenTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 520, 150, 40));
 
         lblticket2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblticket2.setForeground(new java.awt.Color(21, 8, 79));
@@ -250,7 +244,7 @@ public class Caja extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel4.setText("Código:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel5.setText("Total:");
@@ -298,6 +292,26 @@ public class Caja extends javax.swing.JFrame {
 
         jLabel8.setText("Cantidad:");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
+        jPanel1.add(txtIdCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 90, -1));
+
+        jLabel9.setText("Id Cliente:");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, -1));
+
+        txtNomCli.setEditable(false);
+        jPanel1.add(txtNomCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 430, 180, -1));
+
+        jLabel10.setText("Nombre:");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, -1, -1));
+
+        btnCancelar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(204, 51, 0));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 51, 0), 2));
+        btnCancelar.setContentAreaFilled(false);
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 520, 110, 40));
+
+        btnBuscarCli.setText("Buscar");
+        jPanel1.add(btnBuscarCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 430, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -308,13 +322,9 @@ public class Caja extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnGenTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenTicketActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnGenTicketActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         // TODO add your handling code here:
@@ -359,9 +369,10 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JPanel barraSup;
     public javax.swing.JButton btnAgregar;
     public javax.swing.JButton btnBuscar;
+    public javax.swing.JButton btnBuscarCli;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnGenTicket;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -369,6 +380,7 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -377,6 +389,7 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
@@ -391,14 +404,16 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTable jTable1;
     public javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblticket1;
     private javax.swing.JLabel lblticket2;
     private javax.swing.JLabel lblticket4;
     private javax.swing.JLabel lblticket5;
     public javax.swing.JSpinner spinCantidad;
+    public javax.swing.JTable tablaProductosCaja;
+    public javax.swing.JTextField txtIdCli;
     public javax.swing.JTextField txtIdProd;
+    public javax.swing.JTextField txtNomCli;
     public javax.swing.JTextField txtNomProd;
     public javax.swing.JTextField txtStock;
     // End of variables declaration//GEN-END:variables
