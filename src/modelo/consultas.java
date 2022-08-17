@@ -1047,5 +1047,210 @@ public class consultas {
             return null;
         }
     }
+    
+    public DefaultTableModel buscarEm(String id){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarEmpleadoID("+id+");");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(ID): " + e);
+            return null;
+        }
+    }
+    
+    public DefaultTableModel buscarEmNom(String nom){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarEmpleadoNombre('"+nom+"');");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(Nombre): " + e);
+            return null;
+        }
+    }
+    
+    public DefaultTableModel buscarProd(String id){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarProductosID("+id+");");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(ID): " + e);
+            return null;
+        }
+    }
+    
+    
+    public DefaultTableModel buscarProdNom(String nom){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarProductosNombre('"+nom+"');");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(Nombre): " + e);
+            return null;
+        }
+    }
+    
+    public DefaultTableModel buscarProv(String id){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarProveedoresID("+id+");");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(ID): " + e);
+            return null;
+        }
+    }
+    
+    public DefaultTableModel buscarProvNom(String nom){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call BuscarProveedoresNombre('"+nom+"');");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Buscar Cli(Nombre): " + e);
+            return null;
+        }
+    }
 
 }

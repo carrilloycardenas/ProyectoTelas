@@ -204,27 +204,6 @@ public class VentanaClientes2 extends javax.swing.JFrame {
         tablaClientes.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"1", "Alessandra Ramírez Lizárraga"},
-                {"2", "Daniel Andres Cardenas Alarcón"},
-                {"3", "Jorge Luis Carrillo Cuevas"},
-                {"4", "Elvira Josselin Estrada Lizárraga"},
-                {"5", "Elizabeth Ramírez Lizárraga"},
-                {"6", "Alessandra Ramírez Lizárraga"},
-                {"7", "Daniel Andres Cardenas Alarcón"},
-                {"8", "Jorge Luis Carrillo Cuevas"},
-                {"9", "Elvira Josselin Estrada Lizárraga"},
-                {"10", "Elizabeth Ramírez Lizárraga"},
-                {"11", "Daniel Andres Cardenas Alarcón"},
-                {"12", "Alessandra Ramírez Lizárraga"},
-                {"13", "Daniel Andres Cardenas Alarcón"},
-                {"14", "Jorge Luis Carrillo Cuevas"},
-                {"15", "Elvira Josselin Estrada Lizárraga"},
-                {"16", "Elizabeth Ramírez Lizárraga"},
-                {"17", "Alessandra Ramírez Lizárraga"},
-                {"18", "Daniel Andres Cardenas Alarcón"},
-                {"19", "Jorge Luis Carrillo Cuevas"},
-                {"20", null},
-                {"21", null},
                 {null, null}
             },
             new String [] {
