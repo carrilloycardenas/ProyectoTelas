@@ -58,7 +58,7 @@ public class controlModCorreoEmpleado implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent evento){
         if(this.vista.btnGuardarModTel == evento.getSource()){
-            this.modelo.modCorCli((String.valueOf(this.modEm.tablaCorreos.getValueAt(this.rowCor, 1))), this.vista.txtCorreo.getText(), 
+            this.modelo.modCorEm((String.valueOf(this.modEm.tablaCorreos.getValueAt(this.rowCor, 1))), this.vista.txtCorreo.getText(), 
                                     this.vista.txtNomMod.getText());
             controlVentanaEmpleados ctEm = new controlVentanaEmpleados(this.vEm, this.modelo);
             ctEm.IniciarVista();
