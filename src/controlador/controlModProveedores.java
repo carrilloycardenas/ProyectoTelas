@@ -10,7 +10,9 @@ import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
+import vista.ModificarCorreosProv;
 import vista.ModificarProveedor;
+import vista.ModificarTelefonosProv;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
@@ -30,13 +32,17 @@ public class controlModProveedores implements ActionListener{
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
+    ModificarCorreosProv modCorProv = new ModificarCorreosProv();
+    ModificarTelefonosProv vModTelP = new ModificarTelefonosProv();
+    int row;
 
     public controlModProveedores(ModificarProveedor modP, consultas model, ventanaProvedores vPro, int row){
         this.vista = modP;
         this.modelo = model;
+        this.row = row;
         this.valor = String.valueOf(vPro.tablaempleados.getValueAt(row, 0));
         this.rsModP = this.modelo.VrProveedores(this.valor);
-        this.vista.btnModTel.addActionListener(this);
+        this.vista.btnModTelefono.addActionListener(this);
         this.vista.btnModCorreo.addActionListener(this);
         this.vista.btnGuardar.addActionListener(this);
         this.vista.btnInicio.addActionListener(this);
@@ -44,6 +50,8 @@ public class controlModProveedores implements ActionListener{
         this.vista.btnProductos.addActionListener(this);
         this.vista.btnClientes.addActionListener(this);
         this.vista.btnEmpleados.addActionListener(this);
+        this.vista.btnModTelefono.addActionListener(this);
+        this.vista.btnModCorreo.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -125,6 +133,15 @@ public class controlModProveedores implements ActionListener{
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
+        }
+        else if(this.vista.btnModTelefono == evento.getSource()){
+            controlModTelProveedores ctModTelCli = new controlModTelProveedores(this.vModTelP, this.vista, this.modelo, this.vista.tablaTelefonos.getSelectedRow(), this.row);
+            ctModTelCli.IniciarVista();
+            this.vista.setVisible(false);
+        } else if(this.vista.btnModCorreo == evento.getSource()){
+            controlModCorreoProveedores ctModCorCli = new controlModCorreoProveedores(this.modCorProv, this.vista, this.modelo, this.vista.tablaCorreos.getSelectedRow(), this.row);
+            ctModCorCli.IniciarVista();
+            this.vista.setVisible(false);
         }
     }
 }

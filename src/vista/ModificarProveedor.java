@@ -82,7 +82,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
         tablaTelefonos = new javax.swing.JTable();
-        btnModTel = new javax.swing.JButton();
+        btnModTelefono = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tablaCorreos = new javax.swing.JTable();
         btnModCorreo = new javax.swing.JButton();
@@ -306,8 +306,8 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 80));
 
-        btnModTel.setText("Modificar");
-        jPanel6.add(btnModTel, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, -1, -1));
+        btnModTelefono.setText("Modificar");
+        jPanel6.add(btnModTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, -1, -1));
 
         tablaCorreos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -472,7 +472,7 @@ public class ModificarProveedor extends javax.swing.JFrame {
     public javax.swing.JButton btnGuardar;
     public javax.swing.JButton btnInicio;
     public javax.swing.JButton btnModCorreo;
-    public javax.swing.JButton btnModTel;
+    public javax.swing.JButton btnModTelefono;
     public javax.swing.JButton btnProductos;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton7;

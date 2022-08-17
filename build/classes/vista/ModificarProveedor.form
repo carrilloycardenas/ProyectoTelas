@@ -836,7 +836,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JButton" name="btnModTel">
+                <Component class="javax.swing.JButton" name="btnModTelefono">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Modificar"/>
                   </Properties>
