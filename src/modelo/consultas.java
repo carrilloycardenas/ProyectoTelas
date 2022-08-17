@@ -920,7 +920,7 @@ int resultado=0;
         int resultado=0;
         Connection conex =null;
 
-        String consulta="call ModificarTelefonoEmpleado(?,?,?);";
+        String consulta="call ModificarTelefonoProveedor(?,?,?);";
 
         try{
             conex = con.conectar();
@@ -934,7 +934,6 @@ int resultado=0;
             System.out.println("Consultas ModTelProv: " + e);
         }
 
-
         return resultado;
 
     }
@@ -945,7 +944,7 @@ int resultado=0;
         int resultado=0;
         Connection conex =null;
 
-        String consulta="call ModificarCorreoEmpleado(?,?,?);";
+        String consulta="call ModificarCorreoProveedor(?,?,?);";
 
         try{
             conex = con.conectar();
