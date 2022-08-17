@@ -295,11 +295,11 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         tablaTelefonos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null}
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2"
+                "Title 1", "Title 2", "Title 3"
             }
         ));
         jScrollPane2.setViewportView(tablaTelefonos);
@@ -311,11 +311,11 @@ public class ModificarProveedor extends javax.swing.JFrame {
 
         tablaCorreos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null}
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2"
+                "Title 1", "Title 2", "Title 3"
             }
         ));
         jScrollPane3.setViewportView(tablaCorreos);
