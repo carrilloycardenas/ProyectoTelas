@@ -283,7 +283,7 @@ public class Caja extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 520, 130, 40));
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, 150, 40));
 
         lblticket2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblticket2.setForeground(new java.awt.Color(21, 8, 79));
