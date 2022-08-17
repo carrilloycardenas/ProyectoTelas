@@ -19,6 +19,7 @@ public class controlVentanaFacturas implements ActionListener {
     public controlVentanaFacturas(Facturas vist, consultas model){
         this.vista = vist;
         this.modelo = model;
+        this.vista.btnBuscar.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -26,13 +27,26 @@ public class controlVentanaFacturas implements ActionListener {
         this.vista.pack();
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.vista.setLocationRelativeTo(null);
+        //this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturas());
         this.vista.setVisible(true);
         this.vista.lblFecha.setText(ctR.calFechaC());
     }
 
     @Override
     public void actionPerformed(ActionEvent evento){
-
+        if(this.vista.btnBuscar == evento.getSource()){
+            switch(this.vista.txtTipoB.getSelectedIndex()){
+                case 0:
+                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturas());
+                    break;
+                case 1:
+                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasFolio(this.vista.txtBuscar.getText()));
+                    break;
+                case 2:
+                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasCli(this.vista.txtBuscar.getText()));
+                    break;
+            }
+        }
     }
 
 }
