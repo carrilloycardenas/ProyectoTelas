@@ -6,6 +6,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
@@ -29,6 +30,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
     ventanaProductos1 ventProd1=new ventanaProductos1();
     controladorReloj ctRel=new controladorReloj();
     Facturas ventFac=new Facturas();
+    ResultSet rsVrPorv;
     Thread h1;
     
     
@@ -40,12 +42,13 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         this.vista.btnEmpleados.addActionListener(this);
         this.vista.btnProductos.addActionListener(this);
         this.vista.btnFacturas.addActionListener(this);
+        this.rsVrPorv = this.modelo.ventanaInicio();
     }
     
     public void IniciarVista(){
         vista.setTitle("Inicio");
         vista.pack();
-        vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
         vista.lblFecha.setText(ctRel.calFecha());
@@ -53,6 +56,8 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         //reloj
         h1=new Thread(this);
         h1.start();
+        
+        vista.lblNumClient.setText(text);
     }
 
     @Override

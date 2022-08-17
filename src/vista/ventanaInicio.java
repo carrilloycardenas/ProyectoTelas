@@ -66,27 +66,27 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jPanel9 = new FondoClientes();
-        txtNumClient = new javax.swing.JLabel();
+        lblNumClient = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jPanel10 = new FondoEmpleados();
-        txtNumEmplea = new javax.swing.JLabel();
+        lblNumEmplea = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jPanel13 = new FondoProv();
-        txtNumProv = new javax.swing.JLabel();
+        lblNumProv = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jPanel16 = new FondoCaja();
-        txtDin = new javax.swing.JLabel();
+        lblDin = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jPanel19 = new FondoProductos();
-        txtNumProdu = new javax.swing.JLabel();
+        lblNumProdu = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         lblReloj = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
@@ -94,7 +94,7 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel31 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jPanel32 = new FondoVentas();
-        txtDinVentas = new javax.swing.JLabel();
+        lblDinVentas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -226,10 +226,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 30));
         jPanel5.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtNumClient.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtNumClient.setForeground(new java.awt.Color(189, 0, 0));
-        txtNumClient.setText("Muchos");
-        jPanel5.add(txtNumClient, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+        lblNumClient.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblNumClient.setForeground(new java.awt.Color(189, 0, 0));
+        lblNumClient.setText("Muchos");
+        jPanel5.add(lblNumClient, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 110, 130));
 
@@ -247,10 +247,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 30));
         jPanel7.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtNumEmplea.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtNumEmplea.setForeground(new java.awt.Color(189, 0, 0));
-        txtNumEmplea.setText("Poquitos");
-        jPanel7.add(txtNumEmplea, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+        lblNumEmplea.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblNumEmplea.setForeground(new java.awt.Color(189, 0, 0));
+        lblNumEmplea.setText("Poquitos");
+        jPanel7.add(lblNumEmplea, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, 110, 130));
 
@@ -268,10 +268,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 30));
         jPanel11.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtNumProv.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtNumProv.setForeground(new java.awt.Color(189, 0, 0));
-        txtNumProv.setText("Menos");
-        jPanel11.add(txtNumProv, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
+        lblNumProv.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblNumProv.setForeground(new java.awt.Color(189, 0, 0));
+        lblNumProv.setText("Menos");
+        jPanel11.add(lblNumProv, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
 
         jPanel1.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 110, 130));
 
@@ -289,10 +289,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 30));
         jPanel14.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtDin.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtDin.setForeground(new java.awt.Color(189, 0, 0));
-        txtDin.setText("No sé");
-        jPanel14.add(txtDin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+        lblDin.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblDin.setForeground(new java.awt.Color(189, 0, 0));
+        lblDin.setText("No sé");
+        jPanel14.add(lblDin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
         jPanel1.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, 110, 130));
 
@@ -310,10 +310,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel17.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 30));
         jPanel17.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtNumProdu.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtNumProdu.setForeground(new java.awt.Color(189, 0, 0));
-        txtNumProdu.setText("Muchisimos");
-        jPanel17.add(txtNumProdu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+        lblNumProdu.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblNumProdu.setForeground(new java.awt.Color(189, 0, 0));
+        lblNumProdu.setText("Muchisimos");
+        jPanel17.add(lblNumProdu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
         jPanel1.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 240, 110, 130));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, 750, 10));
@@ -343,10 +343,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel32.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel30.add(jPanel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 50, 50));
 
-        txtDinVentas.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
-        txtDinVentas.setForeground(new java.awt.Color(189, 0, 0));
-        txtDinVentas.setText("MaoMeno");
-        jPanel30.add(txtDinVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+        lblDinVentas.setFont(new java.awt.Font("Century Gothic", 0, 13)); // NOI18N
+        lblDinVentas.setForeground(new java.awt.Color(189, 0, 0));
+        lblDinVentas.setText("MaoMeno");
+        jPanel30.add(lblDinVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
 
         jPanel1.add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 240, 110, 130));
 
@@ -440,14 +440,14 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    public javax.swing.JLabel lblDin;
+    public javax.swing.JLabel lblDinVentas;
     public javax.swing.JLabel lblFecha;
+    public javax.swing.JLabel lblNumClient;
+    public javax.swing.JLabel lblNumEmplea;
+    public javax.swing.JLabel lblNumProdu;
+    public javax.swing.JLabel lblNumProv;
     public javax.swing.JLabel lblReloj;
-    public javax.swing.JLabel txtDin;
-    public javax.swing.JLabel txtDinVentas;
-    public javax.swing.JLabel txtNumClient;
-    public javax.swing.JLabel txtNumEmplea;
-    public javax.swing.JLabel txtNumProdu;
-    public javax.swing.JLabel txtNumProv;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {

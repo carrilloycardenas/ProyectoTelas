@@ -35,6 +35,7 @@ public class controlModEmpleados implements ActionListener {
     ModificarCorreosEm modCorEm = new ModificarCorreosEm();
     ModificarTelefonosEm vModTelEm = new ModificarTelefonosEm();
     int row;
+    controladorReloj ctRel=new controladorReloj();
 
     public controlModEmpleados(ModificarEmpleado vist, consultas model, ventanaEmpleados vEmp, int row){
         this.vista = vist;
@@ -58,6 +59,7 @@ public class controlModEmpleados implements ActionListener {
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.vista.setLocationRelativeTo(null);
         this.vista.setVisible(true);
+        ventProv.lblFecha.setText(ctRel.calFechaC());
         try{
             this.vista.txtNombre.setText(this.rsEmp.getString("Nombre"));
             this.vista.txtApellidos.setText(this.rsEmp.getString("Apellidos"));
