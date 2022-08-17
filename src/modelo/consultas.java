@@ -866,5 +866,101 @@ int resultado=0;
 
         return resultado;
     }
+    
+    public int modTelEm(String idEm, String numTel, String nomDue){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarTelefonoEmpleado(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idEm);
+            sentencia.setString(2, numTel);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Consultas ModTelEm: " + e);
+        }
+
+
+        return resultado;
+
+    }
+    
+
+    public int modCorEm(String idEm, String correo, String nomDue){
+        
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarCorreoEmpleado(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idEm);
+            sentencia.setString(2, correo);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Consultas ModCorreoEm: " + e);
+        }
+
+
+        return resultado;
+    }
+    
+    public int modTelProv(String idProv, String numTel, String nomDue){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarTelefonoEmpleado(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idProv);
+            sentencia.setString(2, numTel);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Consultas ModTelProv: " + e);
+        }
+
+
+        return resultado;
+
+    }
+    
+
+    public int modCorProv(String idProv, String correo, String nomDue){
+        
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call ModificarCorreoEmpleado(?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idProv);
+            sentencia.setString(2, correo);
+            sentencia.setString(3, nomDue);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("Consultas ModCorreoProv: " + e);
+        }
+
+
+        return resultado;
+    }
 
 }

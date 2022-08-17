@@ -28,13 +28,8 @@ public class controlVentanaInicioSesion implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(this.vista.btnEntrar==evento.getSource()){
-            try{
-                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
-                ctIni.IniciarVista();
-                vista.setVisible(false);
-            }catch(Exception e){
-                System.out.println("Error en iniciar ventana inicio: "+e);
-            }
+            this.modelo.iniciarSesion(vista.txtUsuario.getText(),vista.txtContraIS.getText());
+            this.vista.btnEntrar.setEnabled(false);
         }
     }
 }

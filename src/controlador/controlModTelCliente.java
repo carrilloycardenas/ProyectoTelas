@@ -18,14 +18,13 @@ public class controlModTelCliente implements ActionListener {
     VentanaClientes2 vCli = new VentanaClientes2();
     consultas modelo = new consultas();
     ModificarCliente modCli = new ModificarCliente();
-    int rowTel, rowCli;
+    int rowTel;
 
     public controlModTelCliente(ModificarTelefonosCli modTC, ModificarCliente modCli, consultas model, int rowT, int rowC){
         this.vista = modTC;
         this.modelo = model;
         this.modCli = modCli;
         this.rowTel = this.modCli.tablaTelefonos.getSelectedRow();
-        this.rowCli = rowC;
         this.vista.btnGuardarModTel.addActionListener(this);
         this.vista.btnCancelar.addActionListener(this);
     }
