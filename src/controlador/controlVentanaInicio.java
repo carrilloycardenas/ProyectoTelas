@@ -57,7 +57,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         h1=new Thread(this);
         h1.start();
         
-        vista.lblNumClient.setText(text);
+        //vista.lblNumClient.setText();
     }
 
     @Override

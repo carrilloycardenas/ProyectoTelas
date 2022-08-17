@@ -1123,7 +1123,7 @@ public class consultas {
             Connection con=conn.conectar();
             Statement s=con.createStatement();
             
-            ResultSet rs=s.executeQuery("call BuscarProductosID("+id+");");//aqui se pone la consulta a sql
+            ResultSet rs=s.executeQuery("call BuscarProductoID("+id+");");//aqui se pone la consulta a sql
             DefaultTableModel dtm=new DefaultTableModel();
             
             ResultSetMetaData rsMd=rs.getMetaData();
@@ -1145,7 +1145,7 @@ public class consultas {
             
             
         }catch(SQLException e){
-            System.out.println("Buscar Cli(ID): " + e);
+            System.out.println("Buscar Prod(ID): " + e);
             return null;
         }
     }
@@ -1158,7 +1158,7 @@ public class consultas {
             Connection con=conn.conectar();
             Statement s=con.createStatement();
             
-            ResultSet rs=s.executeQuery("call BuscarProductosNombre('"+nom+"');");//aqui se pone la consulta a sql
+            ResultSet rs=s.executeQuery("call BuscarProductoNombre('"+nom+"');");//aqui se pone la consulta a sql
             DefaultTableModel dtm=new DefaultTableModel();
             
             ResultSetMetaData rsMd=rs.getMetaData();
@@ -1180,7 +1180,7 @@ public class consultas {
             
             
         }catch(SQLException e){
-            System.out.println("Buscar Cli(Nombre): " + e);
+            System.out.println("Buscar Prod(Nombre): " + e);
             return null;
         }
     }
@@ -1192,7 +1192,7 @@ public class consultas {
             Connection con=conn.conectar();
             Statement s=con.createStatement();
             
-            ResultSet rs=s.executeQuery("call BuscarProveedoresID("+id+");");//aqui se pone la consulta a sql
+            ResultSet rs=s.executeQuery("call BuscarProveedorID("+id+");");//aqui se pone la consulta a sql
             DefaultTableModel dtm=new DefaultTableModel();
             
             ResultSetMetaData rsMd=rs.getMetaData();
@@ -1214,7 +1214,7 @@ public class consultas {
             
             
         }catch(SQLException e){
-            System.out.println("Buscar Cli(ID): " + e);
+            System.out.println("Buscar Prov(ID): " + e);
             return null;
         }
     }
@@ -1226,7 +1226,7 @@ public class consultas {
             Connection con=conn.conectar();
             Statement s=con.createStatement();
             
-            ResultSet rs=s.executeQuery("call BuscarProveedoresNombre('"+nom+"');");//aqui se pone la consulta a sql
+            ResultSet rs=s.executeQuery("call BuscarProveedorNombre('"+nom+"');");//aqui se pone la consulta a sql
             DefaultTableModel dtm=new DefaultTableModel();
             
             ResultSetMetaData rsMd=rs.getMetaData();
@@ -1248,7 +1248,7 @@ public class consultas {
             
             
         }catch(SQLException e){
-            System.out.println("Buscar Cli(Nombre): " + e);
+            System.out.println("Buscar Prov(Nombre): " + e);
             return null;
         }
     }
@@ -1299,74 +1299,6 @@ public class consultas {
             
         }catch(SQLException e){
             System.out.println("Buscar Fact(Todo): " + e);
-            return null;
-        }
-    }
-
-    public DefaultTableModel mostrarFacturasFolio(String fol){
-        try{
-            PreparedStatement ps=null;
-            conexion conn=new conexion();
-            Connection con=conn.conectar();
-            Statement s=con.createStatement();
-            
-            ResultSet rs=s.executeQuery("call BuscarFacturaID("+fol+");");//aqui se pone la consulta a sql
-            DefaultTableModel dtm=new DefaultTableModel();
-            
-            ResultSetMetaData rsMd=rs.getMetaData();
-            int columnas=rsMd.getColumnCount();
-            
-            //ciclo de las columnas
-            for(int i=1;i<=columnas;i++){
-                dtm.addColumn(rsMd.getColumnLabel(i));
-            }
-            
-            while(rs.next()){
-                Object[] fila=new Object[columnas];
-                for(int i=0;i<columnas;i++){
-                    fila[i]=rs.getObject(i+1);
-                }
-                dtm.addRow(fila);
-            }
-            return dtm;
-            
-            
-        }catch(SQLException e){
-            System.out.println("Buscar Fact(Folio): " + e);
-            return null;
-        }
-    }
-
-    public DefaultTableModel mostrarFacturasCli(String cli){
-        try{
-            PreparedStatement ps=null;
-            conexion conn=new conexion();
-            Connection con=conn.conectar();
-            Statement s=con.createStatement();
-            
-            ResultSet rs=s.executeQuery("call BuscarFacturaID('"+cli+"');");//aqui se pone la consulta a sql
-            DefaultTableModel dtm=new DefaultTableModel();
-            
-            ResultSetMetaData rsMd=rs.getMetaData();
-            int columnas=rsMd.getColumnCount();
-            
-            //ciclo de las columnas
-            for(int i=1;i<=columnas;i++){
-                dtm.addColumn(rsMd.getColumnLabel(i));
-            }
-            
-            while(rs.next()){
-                Object[] fila=new Object[columnas];
-                for(int i=0;i<columnas;i++){
-                    fila[i]=rs.getObject(i+1);
-                }
-                dtm.addRow(fila);
-            }
-            return dtm;
-            
-            
-        }catch(SQLException e){
-            System.out.println("Buscar Fact(Cli): " + e);
             return null;
         }
     }
