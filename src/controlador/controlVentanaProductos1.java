@@ -176,7 +176,7 @@ public class controlVentanaProductos1 implements ActionListener{
                     this.ventProd1.tablaproductos.setModel(this.modelo.buscarProd(this.ventProd1.txtBuscar.getText()));
                     break;
                 case 2:
-                    this.ventProd1.tablaproductos.setModel(this.modelo.buscarProd(this.ventProd1.txtBuscar.getText()));
+                    this.ventProd1.tablaproductos.setModel(this.modelo.buscarProdNom(this.ventProd1.txtBuscar.getText()));
                     break;
             }
         }

@@ -35,17 +35,17 @@ public class controlVentanaFacturas implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent evento){
         if(this.vista.btnBuscar == evento.getSource()){
-            switch(this.vista.txtTipoB.getSelectedIndex()){
-                case 0:
-                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturas());
-                    break;
-                case 1:
-                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasFolio(this.vista.txtBuscar.getText()));
-                    break;
-                case 2:
-                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasCli(this.vista.txtBuscar.getText()));
-                    break;
-            }
+//            switch(this.vista.txtTipoB.getSelectedIndex()){
+//                case 0:
+//                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturas());
+//                    break;
+//                case 1:
+//                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasFolio(this.vista.txtBuscar.getText()));
+//                    break;
+//                case 2:
+//                    this.vista.tablaFacturas.setModel(this.modelo.mostrarFacturasCli(this.vista.txtBuscar.getText()));
+//                    break;
+//            }
         }
     }
 
