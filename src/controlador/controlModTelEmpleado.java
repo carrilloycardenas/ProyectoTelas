@@ -53,7 +53,18 @@ public class controlModTelEmpleado implements ActionListener{
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         try{
             this.vista.txtNumMod.setText(String.valueOf(this.modEm.tablaTelefonos.getValueAt(this.rowTel, 0)));
-            this.vista.txtNomMod.setText(String.valueOf(this.modEm.tablaTelefonos.getValueAt(this.rowTel, 1)));
+            String op=(String.valueOf(this.modEm.tablaTelefonos.getValueAt(this.rowTel, 1)));
+            switch(op){
+                case "Personal":
+                    this.vista.txtNomTipo.setSelectedIndex(0);
+                    break;
+                case "Casa":
+                    this.vista.txtNomTipo.setSelectedIndex(1);
+                    break;
+                case "Emergencia":
+                    this.vista.txtNomTipo.setSelectedIndex(2);
+                    break;
+            }
         }catch(Exception e){
             System.out.println("Error modTelCli: " + e);
         }
@@ -64,8 +75,8 @@ public class controlModTelEmpleado implements ActionListener{
     public void actionPerformed(ActionEvent evento) {
         if(this.vista.btnGuardarModTel == evento.getSource()){
             try{
-                this.modelo.modTelEm((String.valueOf(this.modEm.tablaTelefonos.getValueAt(this.rowTel, 1))), this.vista.txtNumMod.getText(), 
-                                        this.vista.txtNomMod.getText());
+                this.modelo.modTelEm((String.valueOf(this.modEm.tablaTelefonos.getValueAt(this.rowTel, 0))), this.vista.txtNumMod.getText(), 
+                                        String.valueOf(this.vista.txtNomTipo.getSelectedIndex()+1));
                 controlVentanaEmpleados ctEm = new controlVentanaEmpleados(this.vEm, this.modelo);
                 ctEm.IniciarVista();
                 this.vista.setVisible(false);

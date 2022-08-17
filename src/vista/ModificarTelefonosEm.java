@@ -64,10 +64,10 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnGuardarModTel = new javax.swing.JButton();
         txtNumMod = new javax.swing.JTextField();
-        txtNomMod = new javax.swing.JTextField();
         lblNumMod = new javax.swing.JLabel();
         lblNomMod = new javax.swing.JLabel();
         btnCancelar = new javax.swing.JButton();
+        txtNomTipo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Modificar cliente");
@@ -190,8 +190,6 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
 
         txtNumMod.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
 
-        txtNomMod.setFont(new java.awt.Font("Century Gothic", 0, 15)); // NOI18N
-
         lblNumMod.setText("Número:");
 
         lblNomMod.setText("Propietario:");
@@ -202,6 +200,8 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
         btnCancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(189, 0, 0), 2));
         btnCancelar.setContentAreaFilled(false);
         btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        txtNomTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Peronal", "Casa", "Emergencia" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -221,15 +221,14 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
                         .addGap(435, 435, 435))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(303, 303, 303)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblNumMod)
                             .addComponent(lblNomMod)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(btnGuardarModTel)
-                                    .addComponent(txtNumMod, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtNomMod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnGuardarModTel)
+                                .addComponent(txtNumMod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
+                            .addComponent(txtNomTipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -248,9 +247,9 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
                         .addComponent(txtNumMod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
                         .addComponent(lblNomMod)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNomMod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtNomTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
                         .addComponent(btnGuardarModTel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -404,7 +403,7 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
     public javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblNomMod;
     private javax.swing.JLabel lblNumMod;
-    public javax.swing.JTextField txtNomMod;
+    public javax.swing.JComboBox<String> txtNomTipo;
     public javax.swing.JTextField txtNumMod;
     // End of variables declaration//GEN-END:variables
 
