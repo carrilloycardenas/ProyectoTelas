@@ -40,14 +40,11 @@ public class Caja extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         barraSup = new javax.swing.JPanel();
         jPanel3 = new FondoPanel();
-        jPanel4 = new FondoUsuario();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jButton7 = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
@@ -59,32 +56,32 @@ public class Caja extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jPanel24 = new IconoEmpleados();
         jPanel25 = new IconoProveedores();
-        jPanel27 = new IconoFacturas();
-        jPanel28 = new IconoReporte();
         jPanel29 = new IconoCerrarSesion();
         jButton9 = new javax.swing.JButton();
         jPanel26 = new IconoCaja();
         jLabel1 = new javax.swing.JLabel();
-        lblticket = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         jButton10 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         lblticket1 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         lblticket2 = new javax.swing.JLabel();
-        jButton13 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        lblticket3 = new javax.swing.JLabel();
         lblticket4 = new javax.swing.JLabel();
         lblticket5 = new javax.swing.JLabel();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
+        txtIdProd = new javax.swing.JTextField();
+        txtNomProd = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtStock = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        btnBuscar = new javax.swing.JButton();
+        btnAgregar = new javax.swing.JButton();
+        spinCantidad = new javax.swing.JSpinner();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Caja");
@@ -96,16 +93,15 @@ public class Caja extends javax.swing.JFrame {
         barraSup.setBackground(new java.awt.Color(255, 255, 255));
         barraSup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         barraSup.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 120, 50));
-        barraSup.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 50, 50));
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 20, -1, -1));
+        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(119, 119, 119));
-        jLabel16.setText("25 Junio 2022");
-        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+        lblFecha.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        lblFecha.setForeground(new java.awt.Color(119, 119, 119));
+        lblFecha.setText("25 Junio 2022");
+        barraSup.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
@@ -130,23 +126,6 @@ public class Caja extends javax.swing.JFrame {
         jButton3.setContentAreaFilled(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 200, 60));
-
-        jButton5.setBackground(new java.awt.Color(38, 18, 137));
-        jButton5.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Facturas");
-        jButton5.setBorderPainted(false);
-        jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 200, 60));
-
-        jButton6.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Reporte");
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 200, 60));
 
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 180, 10));
@@ -205,8 +184,6 @@ public class Caja extends javax.swing.JFrame {
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 20, 20));
         jPanel2.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 20, 20));
-        jPanel2.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 20, 20));
-        jPanel2.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 20));
         jPanel2.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 20, 20));
 
         jButton9.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
@@ -221,20 +198,7 @@ public class Caja extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
         jLabel1.setText("Caja");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
-
-        lblticket.setFont(new java.awt.Font("Century Gothic", 1, 48)); // NOI18N
-        lblticket.setForeground(new java.awt.Color(21, 8, 79));
-        lblticket.setText("$0.00");
-        jPanel1.add(lblticket, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 400, 130, 50));
-
-        jTextField1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 350, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, -1));
 
         jButton10.setBackground(new java.awt.Color(181, 194, 254));
         jButton10.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
@@ -262,17 +226,11 @@ public class Caja extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 670, 100));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 680, 130));
 
         lblticket1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblticket1.setText("Ticket");
-        jPanel1.add(lblticket1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 70, 30));
-
-        jButton11.setBackground(new java.awt.Color(181, 192, 254));
-        jButton11.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(21, 8, 79));
-        jButton11.setText("Agregar producto");
-        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 190, 150, 30));
+        jPanel1.add(lblticket1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 70, 30));
 
         jButton12.setBackground(new java.awt.Color(181, 194, 254));
         jButton12.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
@@ -290,15 +248,9 @@ public class Caja extends javax.swing.JFrame {
         lblticket2.setText("$0.00");
         jPanel1.add(lblticket2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 50, 30));
 
-        jButton13.setBackground(new java.awt.Color(181, 194, 254));
-        jButton13.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton13.setForeground(new java.awt.Color(21, 8, 79));
-        jButton13.setText("Cambiar");
-        jPanel1.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 450, 90, 30));
-
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel4.setText("Código del producto:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, -1, -1));
+        jLabel4.setText("Código:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel5.setText("Total:");
@@ -307,11 +259,6 @@ public class Caja extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel6.setText("Págo con: ");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 520, -1, -1));
-
-        lblticket3.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        lblticket3.setForeground(new java.awt.Color(21, 8, 79));
-        lblticket3.setText("0 Productos en la venta actual");
-        jPanel1.add(lblticket3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 260, 30));
 
         lblticket4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         lblticket4.setForeground(new java.awt.Color(21, 8, 79));
@@ -322,24 +269,35 @@ public class Caja extends javax.swing.JFrame {
         lblticket5.setForeground(new java.awt.Color(21, 8, 79));
         lblticket5.setText("$0.00");
         jPanel1.add(lblticket5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 540, 50, 30));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 680, 10));
+        jPanel1.add(txtIdProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 160, -1));
 
-        jButton14.setBackground(new java.awt.Color(181, 194, 254));
-        jButton14.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton14.setForeground(new java.awt.Color(21, 8, 79));
-        jButton14.setText("Eliminar");
-        jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 90, 30));
+        txtNomProd.setEditable(false);
+        jPanel1.add(txtNomProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 180, 120, -1));
 
-        jButton15.setBackground(new java.awt.Color(189, 0, 0));
-        jButton15.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton15.setForeground(new java.awt.Color(255, 255, 255));
-        jButton15.setText("Cobrar");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setText("Nombre:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, -1));
+
+        txtStock.setEditable(false);
+        jPanel1.add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, -1, -1));
+
+        jLabel7.setText("Stock:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, -1, -1));
+
+        btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btnBuscarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 460, 110, 30));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 680, 10));
+        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 180, -1, -1));
+
+        btnAgregar.setText("Agregar");
+        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 180, -1, -1));
+        jPanel1.add(spinCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, -1, -1));
+
+        jLabel8.setText("Cantidad:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -350,10 +308,6 @@ public class Caja extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
@@ -362,9 +316,9 @@ public class Caja extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btnBuscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -403,28 +357,26 @@ public class Caja extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnBuscar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
@@ -434,22 +386,21 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblticket;
+    public javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblticket1;
     private javax.swing.JLabel lblticket2;
-    private javax.swing.JLabel lblticket3;
     private javax.swing.JLabel lblticket4;
     private javax.swing.JLabel lblticket5;
+    public javax.swing.JSpinner spinCantidad;
+    public javax.swing.JTextField txtIdProd;
+    public javax.swing.JTextField txtNomProd;
+    public javax.swing.JTextField txtStock;
     // End of variables declaration//GEN-END:variables
 
     class FondoPanel extends JPanel {
