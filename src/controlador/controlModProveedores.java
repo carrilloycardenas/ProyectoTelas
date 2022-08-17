@@ -50,8 +50,6 @@ public class controlModProveedores implements ActionListener{
         this.vista.btnProductos.addActionListener(this);
         this.vista.btnClientes.addActionListener(this);
         this.vista.btnEmpleados.addActionListener(this);
-        this.vista.btnModTelefono.addActionListener(this);
-        this.vista.btnModCorreo.addActionListener(this);
     }
 
     public void IniciarVista(){

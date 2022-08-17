@@ -97,7 +97,7 @@ public class ModificarEmpleado extends javax.swing.JFrame {
         tablaTelefonos = new javax.swing.JTable();
         jScrollPane3 = new javax.swing.JScrollPane();
         tablaCorreos = new javax.swing.JTable();
-        btnModTel = new javax.swing.JButton();
+        btnModTelefono = new javax.swing.JButton();
         btnModCorreo = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
 
@@ -402,8 +402,8 @@ public class ModificarEmpleado extends javax.swing.JFrame {
 
         jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 640, 420, 90));
 
-        btnModTel.setText("Modificar");
-        jPanel6.add(btnModTel, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 530, -1, -1));
+        btnModTelefono.setText("Modificar");
+        jPanel6.add(btnModTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 530, -1, -1));
 
         btnModCorreo.setText("Modificar");
         jPanel6.add(btnModCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 640, -1, -1));
@@ -537,7 +537,7 @@ public class ModificarEmpleado extends javax.swing.JFrame {
     public javax.swing.JButton btnGuardar;
     public javax.swing.JButton btnInicio;
     public javax.swing.JButton btnModCorreo;
-    public javax.swing.JButton btnModTel;
+    public javax.swing.JButton btnModTelefono;
     public javax.swing.JButton btnProductos;
     public javax.swing.JButton btnProveedores;
     public javax.swing.JComboBox<String> cbPuesto;

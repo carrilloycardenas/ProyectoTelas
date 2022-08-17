@@ -11,7 +11,9 @@ import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
+import vista.ModificarCorreosEm;
 import vista.ModificarEmpleado;
+import vista.ModificarTelefonosEm;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
@@ -30,6 +32,9 @@ public class controlModEmpleados implements ActionListener {
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
+    ModificarCorreosEm modCorEm = new ModificarCorreosEm();
+    ModificarTelefonosEm vModTelEm = new ModificarTelefonosEm();
+    int row;
 
     public controlModEmpleados(ModificarEmpleado vist, consultas model, ventanaEmpleados vEmp, int row){
         this.vista = vist;
@@ -160,6 +165,15 @@ public class controlModEmpleados implements ActionListener {
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
+        }
+        else if(this.vista.btnModTelefono == evento.getSource()){
+            controlModTelEmpleado ctModTelCli = new controlModTelEmpleado(this.vModTelEm, this.vista, this.modelo, this.vista.tablaTelefonos.getSelectedRow(), this.row);
+            ctModTelCli.IniciarVista();
+            this.vista.setVisible(false);
+        } else if(this.vista.btnModCorreo == evento.getSource()){
+            controlModCorreoEmpleado ctModCorCli = new controlModCorreoEmpleado(this.modCorEm, this.vista, this.modelo, this.vista.tablaCorreos.getSelectedRow(), this.row);
+            ctModCorCli.IniciarVista();
+            this.vista.setVisible(false);
         }
     }
 
