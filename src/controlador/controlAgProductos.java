@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.Facturas;
+import vista.Caja;
 import vista.VentanaClientes2;
 import vista.ventanaAgProducto;
 import vista.ventanaEmpleados;
@@ -26,7 +26,7 @@ public class controlAgProductos implements ActionListener{
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaInicio ventIni=new ventanaInicio();
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
 
     public controlAgProductos(ventanaAgProducto ventAg, consultas modelo) {
         this.ventAg = ventAg;
@@ -66,11 +66,11 @@ public class controlAgProductos implements ActionListener{
         }
         else if(ventAg.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 ventAg.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
         else if(ventAg.btnProveedores==evento.getSource()){
