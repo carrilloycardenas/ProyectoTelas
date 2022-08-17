@@ -7,6 +7,7 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Facturas;
@@ -30,7 +31,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
     ventanaProductos1 ventProd1=new ventanaProductos1();
     controladorReloj ctRel=new controladorReloj();
     Facturas ventFac=new Facturas();
-    ResultSet rsVrPorv;
+    ResultSet rsVrCant;
     Thread h1;
     
     
@@ -42,7 +43,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         this.vista.btnEmpleados.addActionListener(this);
         this.vista.btnProductos.addActionListener(this);
         this.vista.btnFacturas.addActionListener(this);
-        this.rsVrPorv = this.modelo.ventanaInicio();
+        this.rsVrCant = this.modelo.ventanaInicio();
     }
     
     public void IniciarVista(){
@@ -57,7 +58,16 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         h1=new Thread(this);
         h1.start();
         
-        vista.lblNumClient.setText(text);
+        try{
+            vista.lblNumClient.setText(this.rsVrCant.getString("NumClientes"));
+            vista.lblNumEmplea.setText(this.rsVrCant.getString("NumEmplea"));
+            vista.lblNumProdu.setText(this.rsVrCant.getString("NumProdu"));
+            vista.lblNumProv.setText(this.rsVrCant.getString("NumProv"));
+            vista.lblDin.setText(this.rsVrCant.getString("Din"));
+            vista.lblDinVentas.setText(this.rsVrCant.getString("DinVentas"));
+        }catch(SQLException e){
+            System.out.println("Error mostrando la cuenta? "+e);
+        }
     }
 
     @Override
