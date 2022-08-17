@@ -10,10 +10,8 @@ import vista.VentanaClientes2;
 public class testAgProductos {
     public static void main(String[] args) {
         
-        consultas modelo = new consultas();
-        VentanaClientes2 vista = new VentanaClientes2();
-        controlVentanaClientes controlador = new controlVentanaClientes(vista, modelo);
-        controlador.IniciarVista();
+        controlGenFactura fact = new controlGenFactura();
+        fact.pdf();
 
     }
     
