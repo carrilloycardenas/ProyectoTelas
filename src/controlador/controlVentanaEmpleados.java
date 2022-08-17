@@ -48,6 +48,7 @@ public class controlVentanaEmpleados implements ActionListener{
         this.ventEm.btnProductos.addActionListener(this);
         this.ventEm.btnInicio.addActionListener(this);
         this.ventEm.btnFacturas.addActionListener(this);
+        this.ventEm.btnBuscar.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -134,6 +135,19 @@ public class controlVentanaEmpleados implements ActionListener{
                 ventEm.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        else if(this.ventEm.btnBuscar == evento.getSource()){
+            switch(this.ventEm.txtTipoB.getSelectedIndex()){
+                case 0:
+                    ventEm.tablaempleados.setModel(modelo.verEmpleados());
+                    break;
+                case 1:
+                    this.ventEm.tablaempleados.setModel(this.modelo.buscarEm(this.ventEm.txtBuscar.getText()));
+                    break;
+                case 2:
+                    this.ventEm.tablaempleados.setModel(this.modelo.buscarEmNom(this.ventEm.txtBuscar.getText()));
+                    break;
             }
         }
     }
