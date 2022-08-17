@@ -27,7 +27,7 @@ public class controlModTelProveedores implements ActionListener{
     ModificarProveedor modProv=new ModificarProveedor();
     ModificarTelefonosProv vista=new ModificarTelefonosProv();
     consultas modelo = new consultas();
-    int rowCor;
+    int rowTel;
     Facturas ventFac=new Facturas();
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaProductos1 ventProd1=new ventanaProductos1();
@@ -38,7 +38,7 @@ public class controlModTelProveedores implements ActionListener{
         this.vista=modTE;
         this.modelo=model;
         this.modProv=modProv;
-        this.rowCor=this.modProv.tablaTelefonos.getSelectedRow();
+        this.rowTel=this.modProv.tablaTelefonos.getSelectedRow();
         this.vista.btnGuardarModTel.addActionListener(this);
         this.vista.btnCancelar.addActionListener(this);
         this.vista.btnEmpleados.addActionListener(this);
@@ -53,8 +53,8 @@ public class controlModTelProveedores implements ActionListener{
         this.vista.pack();
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         try{
-            this.vista.txtNumMod.setText(String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowCor, 0)));
-            this.vista.txtNomMod.setText(String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowCor, 1)));
+            this.vista.txtNumMod.setText(String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowTel, 0)));
+            this.vista.txtNomMod.setText(String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowTel, 1)));
         }catch(Exception e){
             System.out.println("Error modTelCli: " + e);
         }
@@ -65,7 +65,7 @@ public class controlModTelProveedores implements ActionListener{
     public void actionPerformed(ActionEvent evento) {
         if(this.vista.btnGuardarModTel == evento.getSource()){
             try{
-                this.modelo.modTelEm((String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowCor, 1))), this.vista.txtNumMod.getText(), 
+                this.modelo.modTelProv((String.valueOf(this.modProv.tablaTelefonos.getValueAt(this.rowTel, 1))), this.vista.txtNumMod.getText(), 
                                         this.vista.txtNomMod.getText());
                 controlVentanaProvedores ctEm = new controlVentanaProvedores(this.vProv, this.modelo);
                 ctEm.IniciarVista();
