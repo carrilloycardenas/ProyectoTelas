@@ -88,6 +88,8 @@ public class controlModEmpleados implements ActionListener {
             this.vista.txtCiudad.setText(this.rsEmp.getString("Ciudad"));
             this.vista.txtEstado.setText(this.rsEmp.getString("Estado"));
             this.vista.txtCP.setText(this.rsEmp.getString("Codigo_postal"));
+            this.vista.tablaTelefonos.setModel(this.modelo.numEmpleado(this.valor));
+            this.vista.tablaCorreos.setModel(this.modelo.correoEmpleado(this.valor));
         }catch(Exception e){
             System.out.println("ModEmp: " + e);
         }
