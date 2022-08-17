@@ -837,6 +837,12 @@ public class consultas {
         return resultado;
 
     }
+    
+    public int iniciarSesion(String user, String password){
+        int a=0;
+        
+        return a;
+    }
 
     public int modCorCli(String idCli, String correo, String nomDue){
         
