@@ -138,7 +138,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -174,7 +174,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -218,7 +218,7 @@
                 <Property name="text" type="java.lang.String" value="Inicio"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -270,7 +270,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <AuxValues>
@@ -311,7 +311,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
                 <Property name="focusPainted" type="boolean" value="false"/>
               </Properties>
@@ -351,7 +351,7 @@
                 <Property name="borderPainted" type="boolean" value="false"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Cursor Por defecto"/>
+                  <Color id="Default Cursor"/>
                 </Property>
               </Properties>
               <Events>
@@ -396,7 +396,7 @@
                     <Property name="text" type="java.lang.String" value="Clientes"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Cursor Por defecto"/>
+                      <Color id="Default Cursor"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -470,55 +470,9 @@
                   <Font name="Century Gothic" size="12" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="2" rowCount="22">
-                    <Column editable="true" title="ID" type="java.lang.Object">
-                      <Data value="1"/>
-                      <Data value="2"/>
-                      <Data value="3"/>
-                      <Data value="4"/>
-                      <Data value="5"/>
-                      <Data value="6"/>
-                      <Data value="7"/>
-                      <Data value="8"/>
-                      <Data value="9"/>
-                      <Data value="10"/>
-                      <Data value="11"/>
-                      <Data value="12"/>
-                      <Data value="13"/>
-                      <Data value="14"/>
-                      <Data value="15"/>
-                      <Data value="16"/>
-                      <Data value="17"/>
-                      <Data value="18"/>
-                      <Data value="19"/>
-                      <Data value="20"/>
-                      <Data value="21"/>
-                      <Data value="null"/>
-                    </Column>
-                    <Column editable="true" title="Nombre " type="java.lang.Object">
-                      <Data value="Alessandra Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Daniel Andres Cardenas Alarc&#xf3;n"/>
-                      <Data value="Jorge Luis Carrillo Cuevas"/>
-                      <Data value="Elvira Josselin Estrada Liz&#xe1;rraga"/>
-                      <Data value="Elizabeth Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Alessandra Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Daniel Andres Cardenas Alarc&#xf3;n"/>
-                      <Data value="Jorge Luis Carrillo Cuevas"/>
-                      <Data value="Elvira Josselin Estrada Liz&#xe1;rraga"/>
-                      <Data value="Elizabeth Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Daniel Andres Cardenas Alarc&#xf3;n"/>
-                      <Data value="Alessandra Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Daniel Andres Cardenas Alarc&#xf3;n"/>
-                      <Data value="Jorge Luis Carrillo Cuevas"/>
-                      <Data value="Elvira Josselin Estrada Liz&#xe1;rraga"/>
-                      <Data value="Elizabeth Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Alessandra Ram&#xed;rez Liz&#xe1;rraga"/>
-                      <Data value="Daniel Andres Cardenas Alarc&#xf3;n"/>
-                      <Data value="Jorge Luis Carrillo Cuevas"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                      <Data value="null"/>
-                    </Column>
+                  <Table columnCount="2" rowCount="1">
+                    <Column editable="true" title="ID" type="java.lang.Object"/>
+                    <Column editable="true" title="Nombre " type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
