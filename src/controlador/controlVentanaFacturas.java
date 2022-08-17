@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -22,7 +22,7 @@ public class controlVentanaFacturas implements ActionListener {
     }
 
     public void IniciarVista(){
-        this.vista.setTitle("Clientes");
+        this.vista.setTitle("Facturas");
         this.vista.pack();
         this.vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.vista.setLocationRelativeTo(null);
