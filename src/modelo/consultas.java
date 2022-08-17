@@ -838,15 +838,10 @@ public class consultas {
 
     }
     
-    public int iniciarSesion(String user, String password){
-        int a=0;
-        
-        return a;
-    }
 
     public int modCorCli(String idCli, String correo, String nomDue){
         
-int resultado=0;
+        int resultado=0;
         Connection conex =null;
 
         String consulta="call ModificarCorreoCliente(?,?,?);";
@@ -892,19 +887,18 @@ int resultado=0;
     }
     
 
-    public int modCorEm(String idEm, String correo, String nomDue){
+    public int modCorEm(String idEm, String correo){
         
         int resultado=0;
         Connection conex =null;
 
-        String consulta="call ModificarCorreoEmpleado(?,?,?);";
+        String consulta="call ModificarCorreoEmpleado(?,?);";
 
         try{
             conex = con.conectar();
             sentencia = conex.prepareStatement(consulta);
             sentencia.setString(1, idEm);
             sentencia.setString(2, correo);
-            sentencia.setString(3, nomDue);
 
             resultado = sentencia.executeUpdate();
         }catch(SQLException e){
@@ -962,6 +956,27 @@ int resultado=0;
         return resultado;
     }
     
-    
-
+    public boolean login(String user, String pass){
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        conexion conn=new conexion();
+        Connection con=conn.conectar();
+        String sql="call MostrarDatosEmpleado(?);";
+        try{
+            ps=con.prepareStatement(sql);
+            ps.setString(1,user);
+            rs=ps.executeQuery();
+            if(rs.next()){
+                if(pass.equals(rs.getString(2))){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            return false;
+        }catch(SQLException ex){
+            System.out.println("Error en inicio de sesion"+ex);
+            return false;
+        }
+    }
 }

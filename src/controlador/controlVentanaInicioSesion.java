@@ -6,6 +6,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 import modelo.consultas;
 import vista.ventanaInicio;
 import vista.ventanaInicioSesion;
@@ -24,12 +25,27 @@ public class controlVentanaInicioSesion implements ActionListener{
         this.modelo=model;
         this.vista.btnEntrar.addActionListener(this);
     }
+    
+    public void IniciarVista(){
+        vista.setTitle("Inicio de sesion");
+        vista.pack();
+        vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        vista.setLocationRelativeTo(null);
+        vista.setVisible(true);
+    }
 
     @Override
     public void actionPerformed(ActionEvent evento) {
         if(this.vista.btnEntrar==evento.getSource()){
-            this.modelo.iniciarSesion(vista.txtUsuario.getText(),vista.txtContraIS.getText());
-            this.vista.btnEntrar.setEnabled(false);
+            if(this.modelo.login(vista.txtUsuario.getText(),vista.txtContraIS.getText())==true){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
+                ctIni.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+            }
         }
     }
 }
