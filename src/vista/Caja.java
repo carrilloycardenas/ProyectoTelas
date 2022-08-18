@@ -87,6 +87,9 @@ public class Caja extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         btnCancelar = new javax.swing.JButton();
         btnBuscarCli = new javax.swing.JButton();
+        txtIdEmp = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        cbPago = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tedemaz | Caja");
@@ -264,6 +267,8 @@ public class Caja extends javax.swing.JFrame {
         lblticket5.setText("$0.00");
         jPanel1.add(lblticket5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 540, 50, 30));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 680, 10));
+
+        txtIdProd.setEditable(false);
         jPanel1.add(txtIdProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 160, -1));
 
         txtNomProd.setEditable(false);
@@ -279,6 +284,7 @@ public class Caja extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, -1, -1));
 
         btnBuscar.setText("Buscar");
+        btnBuscar.setEnabled(false);
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuscarActionPerformed(evt);
@@ -287,7 +293,10 @@ public class Caja extends javax.swing.JFrame {
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 180, -1, -1));
 
         btnAgregar.setText("Agregar");
+        btnAgregar.setEnabled(false);
         jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 180, -1, -1));
+
+        spinCantidad.setEnabled(false);
         jPanel1.add(spinCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, -1, -1));
 
         jLabel8.setText("Cantidad:");
@@ -312,6 +321,13 @@ public class Caja extends javax.swing.JFrame {
 
         btnBuscarCli.setText("Buscar");
         jPanel1.add(btnBuscarCli, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 430, -1, -1));
+        jPanel1.add(txtIdEmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 100, -1));
+
+        jLabel11.setText("Id Empleado:");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 400, -1, -1));
+
+        cbPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Efectivo", "Debito", "Credito" }));
+        jPanel1.add(cbPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 430, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 635));
 
@@ -372,6 +388,7 @@ public class Caja extends javax.swing.JFrame {
     public javax.swing.JButton btnBuscarCli;
     public javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnGenTicket;
+    public javax.swing.JComboBox<String> cbPago;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -381,6 +398,7 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -412,6 +430,7 @@ public class Caja extends javax.swing.JFrame {
     public javax.swing.JSpinner spinCantidad;
     public javax.swing.JTable tablaProductosCaja;
     public javax.swing.JTextField txtIdCli;
+    public javax.swing.JTextField txtIdEmp;
     public javax.swing.JTextField txtIdProd;
     public javax.swing.JTextField txtNomCli;
     public javax.swing.JTextField txtNomProd;
