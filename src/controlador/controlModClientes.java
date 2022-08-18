@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.Facturas;
+import vista.Caja;
 import vista.ModificarCliente;
 import vista.ModificarCorreosCli;
 import vista.ModificarTelefonosCli;
@@ -28,7 +28,7 @@ public class controlModClientes implements ActionListener {
     ResultSet rsModCli;
     String valor;
     controladorReloj ctRel=new controladorReloj();
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProvedores ventProv=new ventanaProvedores();
     ventanaProductos1 ventProd1=new ventanaProductos1();
@@ -105,11 +105,11 @@ public class controlModClientes implements ActionListener {
         }
         else if(vista.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 vista.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
         else if(this.vista.btnEmpleados==evento.getSource()){

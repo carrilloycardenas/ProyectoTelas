@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Caja;
 import vista.Facturas;
 import vista.ModificarProveedor;
 import vista.ModificarTelefonosProv;
@@ -28,7 +29,7 @@ public class controlModTelProveedores implements ActionListener{
     ModificarTelefonosProv vista=new ModificarTelefonosProv();
     consultas modelo = new consultas();
     int rowTel;
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     ventanaInicio ventIni=new ventanaInicio();
@@ -82,11 +83,11 @@ public class controlModTelProveedores implements ActionListener{
         
         else if(vista.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 vista.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
         

@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Caja;
 import vista.ModificarCliente;
 import vista.ModificarCorreosCli;
 import vista.VentanaClientes2;
@@ -19,6 +20,7 @@ public class controlModCorreoCliente implements ActionListener {
     ModificarCorreosCli vista = new ModificarCorreosCli();
     consultas modelo = new consultas();
     int rowCor, rowCli;
+    Caja ventCaja=new Caja();
 
     public controlModCorreoCliente(ModificarCorreosCli vist, ModificarCliente cli, consultas model, int rowC, int rowCli){
         this.vista = vist;
@@ -57,6 +59,15 @@ public class controlModCorreoCliente implements ActionListener {
             controlVentanaClientes ctCli = new controlVentanaClientes(this.vCli, this.modelo);
             ctCli.IniciarVista();
             this.vista.setVisible(false);
+        }
+        else if(vista.btnFacturas==evento.getSource()){
+            try{
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Caja: "+e);
+            }
         }
     }
 

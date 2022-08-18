@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.Facturas;
+import vista.Caja;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
@@ -33,7 +33,7 @@ public class controlVrProductos implements ActionListener{
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaInicio ventIni=new ventanaInicio();
     controladorReloj ctRel=new controladorReloj();
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
     
 
     public controlVrProductos(ventanaVerProducto ventVr, consultas modelo, int row,ventanaProductos1 ventProd){
@@ -122,11 +122,11 @@ public class controlVrProductos implements ActionListener{
         }
         else if(ventVr.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 ventVr.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
     }

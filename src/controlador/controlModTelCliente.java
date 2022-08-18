@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Caja;
 import vista.ModificarCliente;
 import vista.ModificarTelefonosCli;
 import vista.VentanaClientes2;
@@ -19,6 +20,7 @@ public class controlModTelCliente implements ActionListener {
     consultas modelo = new consultas();
     ModificarCliente modCli = new ModificarCliente();
     int rowTel;
+    Caja ventCaja=new Caja();
 
     public controlModTelCliente(ModificarTelefonosCli modTC, ModificarCliente modCli, consultas model, int rowT, int rowC){
         this.vista = modTC;
@@ -60,6 +62,15 @@ public class controlModTelCliente implements ActionListener {
             controlVentanaClientes ctCli = new controlVentanaClientes(this.vCli, this.modelo);
             ctCli.IniciarVista();
             this.vista.setVisible(false);
+        }
+        else if(vista.btnFacturas==evento.getSource()){
+            try{
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Caja: "+e);
+            }
         }
     }
 

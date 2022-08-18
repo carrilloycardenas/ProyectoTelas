@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
-import vista.Facturas;
+import vista.Caja;
 import vista.ModificarCorreosProv;
 import vista.ModificarProveedor;
 import vista.ModificarTelefonosProv;
@@ -27,7 +27,7 @@ public class controlModProveedores implements ActionListener{
     ResultSet rsModP;
     String valor;       
     controladorReloj ctRel=new controladorReloj();
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
     VentanaClientes2 ventCli=new VentanaClientes2();
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProductos1 ventProd1=new ventanaProductos1();
@@ -85,15 +85,6 @@ public class controlModProveedores implements ActionListener{
             ctP.IniciarVista();
             this.vista.setVisible(false);
         }
-        else if(vista.btnFacturas==evento.getSource()){
-            try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
-                vista.setVisible(false);
-            }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
-            }
-        }
         else if(vista.btnInicio==evento.getSource()){
             try{
                 controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
@@ -103,13 +94,13 @@ public class controlModProveedores implements ActionListener{
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
-        else if(vista.btnProductos==evento.getSource()){
+        else if(vista.btnFacturas==evento.getSource()){
             try{
-                controlVentanaProductos1 ctProv=new controlVentanaProductos1(ventProd1,modelo);
-                ctProv.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 vista.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana productos: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
         

@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
+import vista.Caja;
 import vista.Facturas;
 import vista.VentanaClientes2;
 
@@ -26,7 +27,7 @@ public class controlVrClientes implements ActionListener {
     ResultSet rs;
     String valor;
     controladorReloj ctRel=new controladorReloj();
-    Facturas ventFac=new Facturas();
+    Caja ventCaja=new Caja();
 
     public controlVrClientes(ventanaVerClientes ventVr,consultas modelo,VentanaClientes2 ventClien, int row){
         this.ventClien= ventClien;
@@ -75,11 +76,11 @@ public class controlVrClientes implements ActionListener {
         }
         else if(ventVr.btnFacturas==evento.getSource()){
             try{
-                controlFacturas ctFac=new controlFacturas(ventFac,modelo);
-                ctFac.IniciarVista();
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja,modelo);
+                ctCaj.IniciarVista();
                 ventVr.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
     }
