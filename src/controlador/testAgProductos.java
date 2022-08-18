@@ -11,7 +11,7 @@ public class testAgProductos {
     public static void main(String[] args) {
         
         controlGenFactura fact = new controlGenFactura();
-        fact.pdf();
+        fact.pdf("Juan");
 
     }
     

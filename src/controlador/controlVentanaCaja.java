@@ -18,6 +18,7 @@ public class controlVentanaCaja implements ActionListener {
     Caja vista = new Caja();
     consultas modelo = new consultas();
     ResultSet rs, rsCli;
+    controlGenFactura fact = new controlGenFactura();
 
     public controlVentanaCaja(Caja vist, consultas model){
         this.vista = vist;
@@ -25,6 +26,7 @@ public class controlVentanaCaja implements ActionListener {
         this.vista.btnBuscar.addActionListener(this);
         this.vista.btnAgregar.addActionListener(this);
         this.vista.btnBuscarCli.addActionListener(this);
+        this.vista.btnGenTicket.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -66,6 +68,9 @@ public class controlVentanaCaja implements ActionListener {
         } else if(this.vista.btnAgregar == evento.getSource()){
             this.modelo.setRegistra(this.vista.txtIdProd.getText(), String.valueOf(this.vista.spinCantidad.getValue()));
             this.vista.tablaProductosCaja.setModel(this.modelo.setTablaRegistra());
+        }
+        else if(this.vista.btnGenTicket==evento.getSource()){
+            fact.pdf(this.vista.txtNomCli.getText(),this.modelo.setTablaRegistra());
         }
     }
 

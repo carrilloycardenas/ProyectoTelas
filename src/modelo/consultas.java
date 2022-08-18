@@ -1399,4 +1399,21 @@ public class consultas {
             return rs;
     }
 
+    public ResultSet ticket(){
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        conexion conn=new conexion();
+        Connection con=conn.conectar();
+        String sql="call datosTicket();";
+        try{
+            ps=con.prepareStatement(sql);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException e){
+            System.out.println("Error en datos para ticket: "+e);
+            
+        }
+        return rs;
+    }
+
 }

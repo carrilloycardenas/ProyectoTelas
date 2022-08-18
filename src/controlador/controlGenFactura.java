@@ -18,13 +18,19 @@ import com.itextpdf.text.pdf.PdfWriter;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.table.DefaultTableModel;
+import modelo.consultas;
 
 public class controlGenFactura {
+
+    consultas modelo = new consultas();
+    controladorReloj ctRel=new controladorReloj();
  
-    public void pdf(){
+    public void pdf(String nomC, DefaultTableModel tablaProd){
         try{
+            String id=modelo.ticket().getString("idFacturas");
             FileOutputStream archivo;
-            File file = new File("src/pdf/venta.pdf");
+            File file = new File("src/pdf/venta "+id+".pdf");
             archivo = new FileOutputStream(file);
             Document doc = new Document();
             PdfWriter.getInstance(doc, archivo);
@@ -35,7 +41,7 @@ public class controlGenFactura {
             Font negrita = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD, BaseColor.BLUE);
             fecha.add(Chunk.NEWLINE);
             Date date = new Date();
-            fecha.add("Fecha: " + new SimpleDateFormat("dd-mm-yyyy").format(date)+"\n\n");
+            fecha.add("Fecha: " + ctRel.calFechaISO()+"\n\n");
             
             PdfPTable encabezado = new PdfPTable(4);
             encabezado.setWidthPercentage(100);
@@ -47,14 +53,12 @@ public class controlGenFactura {
 
             encabezado.addCell(img);
     
-            String ruc = "6519813227";
             String nom = "Tedemaz";
             String tel = "6513218913";
-            String dir = "Mazaclan";
-            String ra = "Porquesí";
+            String dir = "Mazatlán";
 
             encabezado.addCell("");
-            encabezado.addCell("Ruc: " + ruc + "\nNombre: " + nom + "\nTelefono: " + tel + "\nDirección: " + dir + "\nRazón: " + ra);;
+            encabezado.addCell("Nombre: " + nom + "\nTelefono: " + tel + "\nDirección: " + dir);
             encabezado.addCell(fecha);
             doc.add(encabezado);
 
@@ -69,23 +73,45 @@ public class controlGenFactura {
             float[] colCli = new float[]{20f, 50f, 30f, 40f};
             tablacli.setWidths(colCli);
             tablacli.setHorizontalAlignment(Element.ALIGN_LEFT);
-            PdfPCell cl1 = new PdfPCell(new Phrase("Dni/Ruc"));
-            PdfPCell cl2 = new PdfPCell(new Phrase("Nombre"));
-            PdfPCell cl3 = new PdfPCell(new Phrase("Telefono"));
-            PdfPCell cl4 = new PdfPCell(new Phrase("Direccion"));
+            PdfPCell cl1 = new PdfPCell(new Phrase("Nombre",negrita));
             cl1.setBorder(0);
-            cl2.setBorder(0);
-            cl3.setBorder(0);
-            cl4.setBorder(0);
             tablacli.addCell(cl1);
-            tablacli.addCell(cl2);
-            tablacli.addCell(cl3);
-            tablacli.addCell(cl4);
+            String algo=nomC;
+            tablacli.addCell(algo);
+            doc.add(tablacli);
 
+            PdfPTable tablaProdPDF = new PdfPTable(4);
+            tablaProdPDF.setWidthPercentage(100);
+            tablaProdPDF.getDefaultCell().setBorder(0);
+            float[] colProd = new float[]{20f, 50f, 30f, 40f};
+            tablaProdPDF.setWidths(colCli);
+            tablaProdPDF.setHorizontalAlignment(Element.ALIGN_LEFT);
+            PdfPCell pro1 = new PdfPCell(new Phrase("ID",negrita));
+            PdfPCell pro2 = new PdfPCell(new Phrase("Nombre",negrita));
+            PdfPCell pro3 = new PdfPCell(new Phrase("Precio",negrita));
+            PdfPCell pro4 = new PdfPCell(new Phrase("Cantidad",negrita));
+            pro1.setBorder(0);
+            pro2.setBorder(0);
+            pro3.setBorder(0);
+            pro4.setBorder(0);
+            for(int i=0;i<tablaProd.getRowCount();i++){
+                String Id=tablaProd.getValueAt(i, 0).toString();
+                String nombre=tablaProd.getValueAt(i, 1).toString();
+                String Precio=tablaProd.getValueAt(i, 2).toString();
+                String Cant=tablaProd.getValueAt(i, 3).toString();
+                tablaProdPDF.addCell(Id);
+                tablaProdPDF.addCell(nombre);
+                tablaProdPDF.addCell(Precio);
+                tablaProdPDF.addCell(Cant);
+            }
+            tablaProdPDF.addCell(pro1);
+            tablaProdPDF.addCell(nomC);
+            doc.add(tablaProdPDF);
+            
             doc.close();
             archivo.close();
         }catch(Exception e){
-
+            System.out.println("pdf");
         }
     }
    
