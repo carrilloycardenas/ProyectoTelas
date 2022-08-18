@@ -1303,4 +1303,84 @@ public class consultas {
         }
     }
 
+    public int genFactura(String fecha, String idCli, String tipo, String emp){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call GenerarFactura(?,?,?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, fecha);
+            sentencia.setString(2, idCli);
+            sentencia.setString(3, tipo);
+            sentencia.setString(4, emp);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("GenFact: " + e);
+        }
+
+        return resultado;
+
+    }
+
+    public int setRegistra(String idProd, String cant){
+
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call GenerarRegistra(?,?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, idProd);
+            sentencia.setString(2, cant);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("GenFact: " + e);
+        }
+
+        return resultado;
+
+    }
+
+    public DefaultTableModel setTablaRegistra(){
+        try{
+            PreparedStatement ps=null;
+            conexion conn=new conexion();
+            Connection con=conn.conectar();
+            Statement s=con.createStatement();
+            
+            ResultSet rs=s.executeQuery("call MostrarTodasFacturas();");//aqui se pone la consulta a sql
+            DefaultTableModel dtm=new DefaultTableModel();
+            
+            ResultSetMetaData rsMd=rs.getMetaData();
+            int columnas=rsMd.getColumnCount();
+            
+            //ciclo de las columnas
+            for(int i=1;i<=columnas;i++){
+                dtm.addColumn(rsMd.getColumnLabel(i));
+            }
+            
+            while(rs.next()){
+                Object[] fila=new Object[columnas];
+                for(int i=0;i<columnas;i++){
+                    fila[i]=rs.getObject(i+1);
+                }
+                dtm.addRow(fila);
+            }
+            return dtm;
+            
+            
+        }catch(SQLException e){
+            System.out.println("Tabla registra: " + e);
+            return null;
+        }
+    }
+
 }

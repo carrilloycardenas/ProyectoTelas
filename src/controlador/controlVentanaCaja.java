@@ -6,6 +6,8 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Caja;
@@ -15,10 +17,14 @@ public class controlVentanaCaja implements ActionListener {
     controladorReloj ctRel = new controladorReloj();
     Caja vista = new Caja();
     consultas modelo = new consultas();
+    ResultSet rs;
 
     public controlVentanaCaja(Caja vist, consultas model){
         this.vista = vist;
         this.modelo = model;
+        this.vista.btnBuscar.addActionListener(this);
+        this.vista.btnAgregar.addActionListener(this);
+        this.vista.btnBuscarCli.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -32,7 +38,31 @@ public class controlVentanaCaja implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent evento){
-
+        if(this.vista.btnBuscar == evento.getSource()){
+            try{
+                this.rs = this.modelo.VrProductos(this.vista.txtIdProd.getText());
+                this.vista.txtNomProd.setText(this.rs.getString("Nombre"));
+                this.vista.txtStock.setText(this.rs.getString("Stock"));
+                this.modelo.setRegistra(this.vista.txtIdProd.getText(), String.valueOf(this.vista.spinCantidad.getValue()));
+                this.vista.tablaProductosCaja.setModel(this.modelo.setTablaRegistra());
+            }catch(SQLException e){
+                System.out.println("BuscarProd (Caja): " + e);
+            }
+        } else if(this.vista.btnBuscarCli == evento.getSource()){
+            try{
+                this.vista.btnBuscar.setEnabled(true);
+                this.vista.txtNomProd.setEditable(true);
+                this.vista.spinCantidad.setEnabled(true);
+                this.vista.btnAgregar.setEnabled(true);
+                this.vista.txtIdCli.setEditable(false);
+                this.vista.txtIdEmp.setEditable(false);
+                this.vista.cbPago.setEnabled(false);
+                this.modelo.genFactura(this.ctRel.calFechaISO(), this.vista.txtIdCli.getText(), String.valueOf(this.vista.cbPago.getSelectedIndex()+1), 
+                                        this.vista.txtIdEmp.getText());
+            }catch(Exception e){
+                System.out.println("btnBuscarProd: " + e);
+            }
+        }
     }
 
 }
