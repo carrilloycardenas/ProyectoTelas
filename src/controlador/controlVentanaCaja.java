@@ -17,7 +17,7 @@ public class controlVentanaCaja implements ActionListener {
     controladorReloj ctRel = new controladorReloj();
     Caja vista = new Caja();
     consultas modelo = new consultas();
-    ResultSet rs;
+    ResultSet rs, rsCli;
 
     public controlVentanaCaja(Caja vist, consultas model){
         this.vista = vist;
@@ -49,6 +49,7 @@ public class controlVentanaCaja implements ActionListener {
             }
         } else if(this.vista.btnBuscarCli == evento.getSource()){
             try{
+                this.rsCli = this.modelo.setCliente(this.vista.txtIdCli.getText());
                 this.vista.btnBuscar.setEnabled(true);
                 this.vista.btnAgregar.setEnabled(true);
                 this.vista.spinCantidad.setEnabled(true);
@@ -56,6 +57,7 @@ public class controlVentanaCaja implements ActionListener {
                 this.vista.txtIdCli.setEditable(false);
                 this.vista.txtIdEmp.setEditable(false);
                 this.vista.cbPago.setEnabled(false);
+                this.vista.txtNomCli.setText(this.rsCli.getString("Nombre"));
                 this.modelo.genFactura(this.ctRel.calFechaISO(), this.vista.txtIdCli.getText(), String.valueOf(this.vista.cbPago.getSelectedIndex()+1), 
                                         this.vista.txtIdEmp.getText());
             }catch(Exception e){

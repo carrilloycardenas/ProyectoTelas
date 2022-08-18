@@ -243,7 +243,7 @@ public class Caja extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, -1));
 
         txtStock.setEditable(false);
-        jPanel1.add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, -1, -1));
+        jPanel1.add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 80, 29));
 
         jLabel7.setText("Stock:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 150, -1, -1));

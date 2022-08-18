@@ -1383,4 +1383,20 @@ public class consultas {
         }
     }
 
+    public ResultSet setCliente(String idCli){
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        conexion conn=new conexion();
+        Connection con=conn.conectar();
+        String sql="call BuscarClienteID("+idCli+");";
+        try{
+            ps=con.prepareStatement(sql);
+            rs=ps.executeQuery();
+            rs.next();
+        }catch(SQLException ex){
+            System.out.println("Error en inicio de sesion"+ex);
+        }
+            return rs;
+    }
+
 }
