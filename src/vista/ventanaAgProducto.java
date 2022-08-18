@@ -140,6 +140,7 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
         btnFacturas.setText("Facturas");
+        btnFacturas.setActionCommand("Caja");
         btnFacturas.setBorderPainted(false);
         btnFacturas.setContentAreaFilled(false);
         btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));

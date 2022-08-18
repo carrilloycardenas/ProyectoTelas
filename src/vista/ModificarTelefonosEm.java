@@ -102,7 +102,7 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
         btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
         btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
-        btnFacturas.setText("Facturas");
+        btnFacturas.setText("Caja");
         btnFacturas.setBorderPainted(false);
         btnFacturas.setContentAreaFilled(false);
         btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -225,9 +225,8 @@ public class ModificarTelefonosEm extends javax.swing.JFrame {
                             .addComponent(lblNumMod)
                             .addComponent(lblNomMod)
                             .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btnGuardarModTel)
-                                .addComponent(txtNumMod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE))
+                            .addComponent(btnGuardarModTel, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtNumMod, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
                             .addComponent(txtNomTipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
