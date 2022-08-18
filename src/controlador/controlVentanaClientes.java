@@ -148,7 +148,7 @@ public class controlVentanaClientes implements ActionListener{
                 ctCaj.IniciarVista();
                 ventCli.setVisible(false);
             }catch(Exception e){
-                System.out.println("Error iniciando ventana Empleados: "+e);
+                System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
     }

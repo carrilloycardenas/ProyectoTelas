@@ -229,7 +229,7 @@ public class ventanaVerFacturas extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(38, 18, 137));
         jButton5.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Facturas");
+        jButton5.setText("Caja");
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
         jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
