@@ -11,10 +11,12 @@ import java.sql.SQLException;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Caja;
+import vista.ventanaInicio;
 
 public class controlVentanaCaja implements ActionListener {
     
     controladorReloj ctRel = new controladorReloj();
+    ventanaInicio ini = new ventanaInicio();
     Caja vista = new Caja();
     consultas modelo = new consultas();
     ResultSet rs, rsCli;
@@ -27,6 +29,7 @@ public class controlVentanaCaja implements ActionListener {
         this.vista.btnAgregar.addActionListener(this);
         this.vista.btnBuscarCli.addActionListener(this);
         this.vista.btnGenTicket.addActionListener(this);
+        this.vista.btnCancelar.addActionListener(this);
     }
 
     public void IniciarVista(){
@@ -53,6 +56,7 @@ public class controlVentanaCaja implements ActionListener {
             try{
                 this.rsCli = this.modelo.setCliente(this.vista.txtIdCli.getText());
                 this.vista.btnBuscar.setEnabled(true);
+                this.vista.btnCancelar.setEnabled(true);
                 this.vista.btnAgregar.setEnabled(true);
                 this.vista.spinCantidad.setEnabled(true);
                 this.vista.btnAgregar.setEnabled(true);
@@ -71,6 +75,10 @@ public class controlVentanaCaja implements ActionListener {
         }
         else if(this.vista.btnGenTicket==evento.getSource()){
             fact.pdf(this.vista.txtNomCli.getText(),this.modelo.setTablaRegistra());
+        } else if(this.vista.btnCancelar == evento.getSource()){
+            this.vista.setVisible(false);
+            controlVentanaInicio ctIni = new controlVentanaInicio(this.ini, this.modelo);
+            ctIni.IniciarVista();
         }
     }
 

@@ -72,6 +72,12 @@ public class controlVrProveedor implements ActionListener {
                 System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
+        else if(this.vista.btnElimProv == evento.getSource()){
+            this.modelo.elimProveedor(this.valor);
+            controlVentanaProvedores ctPro = new controlVentanaProvedores(this.vtProv, this.modelo);
+            ctPro.IniciarVista();
+            this.vista.setVisible(false);
+        }
     }
     
 }

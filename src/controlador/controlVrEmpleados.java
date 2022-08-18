@@ -143,5 +143,11 @@ public class controlVrEmpleados implements ActionListener{
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
+        else if(this.ventVrEm.btnEliminar == evento.getSource()){
+            this.modelo.elimEmp(this.valor);
+            controlVentanaEmpleados ctEm = new controlVentanaEmpleados(ventEm, modelo);
+            ctEm.IniciarVista();
+            ventVrEm.setVisible(false);
+        }
     }
 }

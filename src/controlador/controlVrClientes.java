@@ -83,6 +83,12 @@ public class controlVrClientes implements ActionListener {
                 System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
+        else if(this.ventVr.btnEliminarCliente == evento.getSource()){
+            this.modelo.elimCli(this.valor);
+            controlVentanaClientes ctClien = new controlVentanaClientes (ventClien, modelo);
+            ctClien.IniciarVista();
+            this.ventVr.setVisible(false);
+        }
     }
     
     

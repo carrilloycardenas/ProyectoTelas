@@ -1416,4 +1416,45 @@ public class consultas {
         return rs;
     }
 
+    public int borrarCompra(){
+        
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call BorrarCompra();";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("delCompra: " + e);
+        }
+
+        return resultado;
+
+    }
+
+    public int elimEmp(String id){
+        
+        int resultado=0;
+        Connection conex =null;
+
+        String consulta="call BorrarEmpleado(?);";
+
+        try{
+            conex = con.conectar();
+            sentencia = conex.prepareStatement(consulta);
+            sentencia.setString(1, id);
+
+            resultado = sentencia.executeUpdate();
+        }catch(SQLException e){
+            System.out.println("delCompra: " + e);
+        }
+
+        return resultado;
+
+    }
+
 }

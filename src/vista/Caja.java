@@ -277,6 +277,7 @@ public class Caja extends javax.swing.JFrame {
         btnCancelar.setText("Cancelar");
         btnCancelar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 51, 0), 2));
         btnCancelar.setContentAreaFilled(false);
+        btnCancelar.setEnabled(false);
         jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 520, 110, 40));
 
         btnBuscarCli.setText("Buscar");
