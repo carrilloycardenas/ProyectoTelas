@@ -169,7 +169,7 @@ public class ModificarCorreosCli extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(41, 22, 130));
-        jLabel1.setText("Modificar telefono");
+        jLabel1.setText("Modificar correo");
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel2.setText("|  Clientes");
