@@ -41,7 +41,6 @@ public class ventanaInicio extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         barraSup = new javax.swing.JPanel();
         jPanel3 = new FondoPanel();
-        jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jPanel2 = new FondoInicioSesion();
         btnEmpleados = new javax.swing.JButton();
@@ -106,14 +105,10 @@ public class ventanaInicio extends javax.swing.JFrame {
         barraSup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         barraSup.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 120, 50));
 
-        jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jLabel15.setText("Melissa Garza");
-        barraSup.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 20, -1, -1));
-
         jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(153, 153, 153));
         jLabel16.setText("25 Junio 2022");
-        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 20, -1, -1));
+        barraSup.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 20, -1, -1));
 
         jPanel1.add(barraSup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 70));
 
@@ -401,7 +396,6 @@ public class ventanaInicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
