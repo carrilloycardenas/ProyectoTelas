@@ -43,15 +43,14 @@ public class controlVentanaCaja implements ActionListener {
                 this.rs = this.modelo.VrProductos(this.vista.txtIdProd.getText());
                 this.vista.txtNomProd.setText(this.rs.getString("Nombre"));
                 this.vista.txtStock.setText(this.rs.getString("Stock"));
-                this.modelo.setRegistra(this.vista.txtIdProd.getText(), String.valueOf(this.vista.spinCantidad.getValue()));
-                this.vista.tablaProductosCaja.setModel(this.modelo.setTablaRegistra());
+                
             }catch(SQLException e){
                 System.out.println("BuscarProd (Caja): " + e);
             }
         } else if(this.vista.btnBuscarCli == evento.getSource()){
             try{
                 this.vista.btnBuscar.setEnabled(true);
-                this.vista.txtNomProd.setEditable(true);
+                this.vista.btnAgregar.setEnabled(true);
                 this.vista.spinCantidad.setEnabled(true);
                 this.vista.btnAgregar.setEnabled(true);
                 this.vista.txtIdCli.setEditable(false);
@@ -62,6 +61,9 @@ public class controlVentanaCaja implements ActionListener {
             }catch(Exception e){
                 System.out.println("btnBuscarProd: " + e);
             }
+        } else if(this.vista.btnAgregar == evento.getSource()){
+            this.modelo.setRegistra(this.vista.txtIdProd.getText(), String.valueOf(this.vista.spinCantidad.getValue()));
+            this.vista.tablaProductosCaja.setModel(this.modelo.setTablaRegistra());
         }
     }
 

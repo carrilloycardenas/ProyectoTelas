@@ -1356,7 +1356,7 @@ public class consultas {
             Connection con=conn.conectar();
             Statement s=con.createStatement();
             
-            ResultSet rs=s.executeQuery("call MostrarTodasFacturas();");//aqui se pone la consulta a sql
+            ResultSet rs=s.executeQuery("call ActualizarRegistra();");//aqui se pone la consulta a sql
             DefaultTableModel dtm=new DefaultTableModel();
             
             ResultSetMetaData rsMd=rs.getMetaData();
