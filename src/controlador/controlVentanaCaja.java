@@ -43,6 +43,8 @@ public class controlVentanaCaja implements ActionListener {
                 this.rs = this.modelo.VrProductos(this.vista.txtIdProd.getText());
                 this.vista.txtNomProd.setText(this.rs.getString("Nombre"));
                 this.vista.txtStock.setText(this.rs.getString("Stock"));
+                this.modelo.setRegistra(this.vista.txtIdProd.getText(), String.valueOf(this.vista.spinCantidad.getValue()));
+                this.vista.tablaProductosCaja.setModel(this.modelo.setTablaRegistra());
             }catch(SQLException e){
                 System.out.println("BuscarProd (Caja): " + e);
             }
@@ -55,6 +57,8 @@ public class controlVentanaCaja implements ActionListener {
                 this.vista.txtIdCli.setEditable(false);
                 this.vista.txtIdEmp.setEditable(false);
                 this.vista.cbPago.setEnabled(false);
+                this.modelo.genFactura(this.ctRel.calFechaISO(), this.vista.txtIdCli.getText(), String.valueOf(this.vista.cbPago.getSelectedIndex()+1), 
+                                        this.vista.txtIdEmp.getText());
             }catch(Exception e){
                 System.out.println("btnBuscarProd: " + e);
             }
