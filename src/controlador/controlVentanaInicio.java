@@ -59,12 +59,11 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         h1.start();
         
         try{
-            vista.lblNumClient.setText(this.rsVrCant.getString("NumClientes"));
-            vista.lblNumEmplea.setText(this.rsVrCant.getString("NumEmplea"));
-            vista.lblNumProdu.setText(this.rsVrCant.getString("NumProdu"));
-            vista.lblNumProv.setText(this.rsVrCant.getString("NumProv"));
-            vista.lblDin.setText(this.rsVrCant.getString("Din"));
-            vista.lblDinVentas.setText(this.rsVrCant.getString("DinVentas"));
+            vista.lblNumClient.setText(this.rsVrCant.getString("Cli"));
+            vista.lblNumEmplea.setText(this.rsVrCant.getString("Emp"));
+            vista.lblNumProdu.setText(this.rsVrCant.getString("Prod"));
+            vista.lblNumProv.setText(this.rsVrCant.getString("Prov"));
+            vista.lblDin.setText(this.rsVrCant.getString("Venta"));
         }catch(SQLException e){
             System.out.println("Error mostrando la cuenta? "+e);
         }

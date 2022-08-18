@@ -1258,13 +1258,13 @@ public class consultas {
         ResultSet rs=null;
         conexion conn=new conexion();
         Connection con=conn.conectar();
-        String sql="call MostrarDatosEmpleado(?);";
+        String sql="call CargarInicio();";
         try{
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             rs.next();
         }catch(SQLException ex){
-            System.out.println("Error en inicio de sesion"+ex);
+            System.out.println("ErrorCargarInicio: "+ex);
         }
             return rs;
     }
