@@ -60,17 +60,11 @@ public class Caja extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jPanel26 = new IconoCaja();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaProductosCaja = new javax.swing.JTable();
         lblticket1 = new javax.swing.JLabel();
         btnGenTicket = new javax.swing.JButton();
-        lblticket2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        lblticket4 = new javax.swing.JLabel();
-        lblticket5 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         txtIdProd = new javax.swing.JTextField();
         txtNomProd = new javax.swing.JTextField();
@@ -208,10 +202,6 @@ public class Caja extends javax.swing.JFrame {
         jLabel1.setText("Caja");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel3.setText("Cambio:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
-
         tablaProductosCaja.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         tablaProductosCaja.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -240,35 +230,10 @@ public class Caja extends javax.swing.JFrame {
         });
         jPanel1.add(btnGenTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 520, 150, 40));
 
-        lblticket2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        lblticket2.setForeground(new java.awt.Color(21, 8, 79));
-        lblticket2.setText("$0.00");
-        jPanel1.add(lblticket2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 50, 30));
-
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel4.setText("Código:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel5.setText("Total:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 520, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel6.setText("Págo con: ");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 520, -1, -1));
-
-        lblticket4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        lblticket4.setForeground(new java.awt.Color(21, 8, 79));
-        lblticket4.setText("$0.00");
-        jPanel1.add(lblticket4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 540, 50, 30));
-
-        lblticket5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        lblticket5.setForeground(new java.awt.Color(21, 8, 79));
-        lblticket5.setText("$0.00");
-        jPanel1.add(lblticket5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 540, 50, 30));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 680, 10));
-
-        txtIdProd.setEditable(false);
         jPanel1.add(txtIdProd, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 160, -1));
 
         txtNomProd.setEditable(false);
@@ -401,10 +366,7 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -424,9 +386,6 @@ public class Caja extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     public javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblticket1;
-    private javax.swing.JLabel lblticket2;
-    private javax.swing.JLabel lblticket4;
-    private javax.swing.JLabel lblticket5;
     public javax.swing.JSpinner spinCantidad;
     public javax.swing.JTable tablaProductosCaja;
     public javax.swing.JTextField txtIdCli;
