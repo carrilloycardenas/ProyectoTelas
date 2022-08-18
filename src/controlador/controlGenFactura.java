@@ -118,7 +118,7 @@ public class controlGenFactura {
             doc.close();
             archivo.close();
         }catch(Exception e){
-            System.out.println("pdf");
+            System.out.println("pdf: " + e);
         }
     }
    
