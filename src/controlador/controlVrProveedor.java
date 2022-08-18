@@ -10,11 +10,19 @@ import java.sql.ResultSet;
 import javax.swing.JFrame;
 import modelo.consultas;
 import vista.Caja;
+import vista.VentanaClientes2;
+import vista.ventanaEmpleados;
+import vista.ventanaInicio;
+import vista.ventanaProductos1;
 import vista.ventanaProvedores;
 import vista.ventanaVerProveedores;
 
 public class controlVrProveedor implements ActionListener {
     
+    VentanaClientes2 ventCli=new VentanaClientes2();
+    ventanaEmpleados ventEmp=new ventanaEmpleados();
+    ventanaProductos1 ventProd1=new ventanaProductos1();
+    ventanaInicio ventIni=new ventanaInicio();
     ventanaVerProveedores vista = new ventanaVerProveedores();
     ventanaProvedores vtProv = new ventanaProvedores();
     consultas modelo = new consultas();
@@ -77,6 +85,52 @@ public class controlVrProveedor implements ActionListener {
             controlVentanaProvedores ctPro = new controlVentanaProvedores(this.vtProv, this.modelo);
             ctPro.IniciarVista();
             this.vista.setVisible(false);
+        }
+        else if(this.vista.btnProductos==evento.getSource()){
+            try{
+                controlVentanaProductos1 ctProv=new controlVentanaProductos1(ventProd1, modelo);
+                ctProv.IniciarVista();
+                this.vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana productos: "+e);
+            }
+        }
+        
+        else if(this.vista.btnClientes==evento.getSource()){
+            try{
+                controlVentanaClientes ctCli=new controlVentanaClientes(ventCli, modelo);
+                ctCli.IniciarVista();
+                this.vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana clientes: "+e);
+            }
+        }
+        
+        else if(this.vista.btnEmpleados==evento.getSource()){
+            try{
+                controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp, modelo);
+                ctEmp.IniciarVista();
+                this.vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }else if(this.vista.btnInicio==evento.getSource()){
+            try{
+                controlVentanaInicio ctIni=new controlVentanaInicio(ventIni, modelo);
+                ctIni.IniciarVista();
+                this.vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Empleados: "+e);
+            }
+        }
+        else if(this.vista.btnFacturas==evento.getSource()){
+            try{
+                controlVentanaCaja ctCaj=new controlVentanaCaja(ventCaja, modelo);
+                ctCaj.IniciarVista();
+                this.vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana Caja: "+e);
+            }
         }
     }
     
