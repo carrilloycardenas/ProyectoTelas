@@ -131,6 +131,7 @@ public class controlVrClientes implements ActionListener {
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
+        }
         else if(this.ventVr.btnEliminarCliente == evento.getSource()){
             this.modelo.elimCli(this.valor);
             controlVentanaClientes ctClien = new controlVentanaClientes (ventClien, modelo);
