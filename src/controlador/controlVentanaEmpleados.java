@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 import modelo.consultas;
 import vista.AgregarEmpleado;
 import vista.Caja;
-import vista.Facturas;
 import vista.ModificarEmpleado;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
