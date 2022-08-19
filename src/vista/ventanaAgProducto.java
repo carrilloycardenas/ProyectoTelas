@@ -134,11 +134,16 @@ public class ventanaAgProducto extends javax.swing.JFrame {
         btnFacturas.setBackground(new java.awt.Color(38, 18, 137));
         btnFacturas.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
         btnFacturas.setForeground(new java.awt.Color(255, 255, 255));
-        btnFacturas.setText("Facturas");
+        btnFacturas.setText("Caja");
         btnFacturas.setActionCommand("Caja");
         btnFacturas.setBorderPainted(false);
         btnFacturas.setContentAreaFilled(false);
         btnFacturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnFacturas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFacturasActionPerformed(evt);
+            }
+        });
         jPanel2.add(btnFacturas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 200, 60));
 
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
@@ -495,6 +500,10 @@ public class ventanaAgProducto extends javax.swing.JFrame {
     private void txtLocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLocalActionPerformed
+
+    private void btnFacturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacturasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFacturasActionPerformed
 
     /**
      * @param args the command line arguments

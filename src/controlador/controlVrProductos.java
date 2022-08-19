@@ -129,6 +129,16 @@ public class controlVrProductos implements ActionListener{
                 System.out.println("Error iniciando ventana Caja: "+e);
             }
         }
+        else if(this.ventVr.btnEliminar == evento.getSource()){
+            try{
+                this.modelo.EliminProd(this.rs.getString("idProductos"));
+                controlVentanaProductos1 ctProd = new controlVentanaProductos1(ventProd, modelo);
+                ctProd.IniciarVista();
+                ventVr.setVisible(false);
+            }catch(SQLException e){
+                System.out.println("Error ElimProd:" + e);
+            }  
+        }
     }
 }
 
