@@ -14,6 +14,7 @@ import vista.Caja;
 import vista.VentanaClientes2;
 import vista.ventanaEmpleados;
 import vista.ventanaInicio;
+import vista.ventanaInicioSesion;
 import vista.ventanaProductos1;
 import vista.ventanaProvedores;
 
@@ -30,6 +31,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
     ventanaEmpleados ventEmp=new ventanaEmpleados();
     ventanaProductos1 ventProd1=new ventanaProductos1();
     controladorReloj ctRel=new controladorReloj();
+    ventanaInicioSesion ventIniS=new ventanaInicioSesion();
     Caja ventCaja=new Caja();
     ResultSet rsVrCant;
     Thread h1;
@@ -44,6 +46,7 @@ public class controlVentanaInicio implements ActionListener,Runnable{
         this.vista.btnProductos.addActionListener(this);
         this.vista.btnFacturas.addActionListener(this);
         this.rsVrCant = this.modelo.ventanaInicio();
+        this.vista.btnCerrar.addActionListener(this);
     }
     
     public void IniciarVista(){
@@ -117,6 +120,15 @@ public class controlVentanaInicio implements ActionListener,Runnable{
                 vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Caja: "+e);
+            }
+        }
+        else if(vista.btnCerrar==evento.getSource()){
+            try{
+                controlVentanaInicioSesion ctSesion=new controlVentanaInicioSesion(ventIniS,modelo);
+                ctSesion.IniciarVista();
+                vista.setVisible(false);
+            }catch(Exception e){
+                System.out.println("Error iniciando ventana inicio sesion: "+e);
             }
         }
     }

@@ -47,7 +47,7 @@ public class ventanaInicio extends javax.swing.JFrame {
         btnProveedores = new javax.swing.JButton();
         btnFacturas = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton7 = new javax.swing.JButton();
+        btnCerrar = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new IconoInicio();
         jButton9 = new javax.swing.JButton();
@@ -141,13 +141,13 @@ public class ventanaInicio extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 180, 10));
 
-        jButton7.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Cerrar sesión");
-        jButton7.setBorderPainted(false);
-        jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
+        btnCerrar.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        btnCerrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCerrar.setText("Cerrar sesión");
+        btnCerrar.setBorderPainted(false);
+        btnCerrar.setContentAreaFilled(false);
+        btnCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 499, 200, 60));
 
         jPanel20.setBackground(new java.awt.Color(34, 19, 101));
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -359,12 +359,12 @@ public class ventanaInicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel barraSup;
+    public javax.swing.JButton btnCerrar;
     public javax.swing.JButton btnClientes;
     public javax.swing.JButton btnEmpleados;
     public javax.swing.JButton btnFacturas;
     public javax.swing.JButton btnProductos;
     public javax.swing.JButton btnProveedores;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
