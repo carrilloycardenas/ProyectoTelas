@@ -59,7 +59,6 @@ public class ventanaAgStock extends javax.swing.JFrame {
         jPanel29 = new IconoCerrarSesion();
         btnInicio = new javax.swing.JButton();
         jPanel21 = new IconoInicio();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
@@ -183,11 +182,6 @@ public class ventanaAgStock extends javax.swing.JFrame {
         jPanel2.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 20, 20));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 570));
-
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(133, 133, 133));
-        jLabel1.setText("< Volver a productos");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(38, 18, 137));
@@ -317,7 +311,6 @@ public class ventanaAgStock extends javax.swing.JFrame {
     public javax.swing.JButton btnProveedores;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
