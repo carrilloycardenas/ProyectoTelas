@@ -39,6 +39,11 @@ public class controlVrProveedor implements ActionListener {
         this.vista.btnVolverProveedor.addActionListener(this);
         this.vista.btnElimProv.addActionListener(this);
         this.vista.btnFacturas.addActionListener(this);
+        this.vista.btnEmpleados.addActionListener(this);
+        this.vista.btnClientes.addActionListener(this);
+        this.vista.btnProductos.addActionListener(this);
+        this.vista.btnInicio.addActionListener(this);
+        this.vista.btnFacturas.addActionListener(this);
     }
 
     public void IniciarVista(){
