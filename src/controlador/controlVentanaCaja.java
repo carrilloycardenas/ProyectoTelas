@@ -94,40 +94,40 @@ public class controlVentanaCaja implements ActionListener {
             controlVentanaInicio ctIni = new controlVentanaInicio(this.ini, this.modelo);
             ctIni.IniciarVista();
         }
-        else if(this.ventCli.btnEmpleados==evento.getSource()){
+        else if(this.vista.btnEmpleados==evento.getSource()){
             try{
                 controlVentanaEmpleados ctEmp=new controlVentanaEmpleados(ventEmp,modelo);
                 ctEmp.IniciarVista();
-                ventCli.setVisible(false);
+                vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
         
-        else if(ventCli.btnProveedores==evento.getSource()){
+        else if(vista.btnProveedores==evento.getSource()){
             try{
                 controlVentanaProvedores ctProv=new controlVentanaProvedores(ventProv,modelo);
                 ctProv.IniciarVista();
-                ventCli.setVisible(false);
+                vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana productos: "+e);
             }
         }
         
-        else if(ventCli.btnProductos==evento.getSource()){
+        else if(vista.btnProductos==evento.getSource()){
             try{
                 controlVentanaProductos1 ctProd1=new controlVentanaProductos1(ventProd1,modelo);
                 ctProd1.IniciarVista();
-                ventCli.setVisible(false);
+                vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
         }
-        else if(ventCli.btnInicio==evento.getSource()){
+        else if(vista.btnInicio==evento.getSource()){
             try{
                 controlVentanaInicio ctIni=new controlVentanaInicio(ventIni,modelo);
                 ctIni.IniciarVista();
-                ventCli.setVisible(false);
+                vista.setVisible(false);
             }catch(Exception e){
                 System.out.println("Error iniciando ventana Empleados: "+e);
             }
